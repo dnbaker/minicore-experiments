@@ -1,0 +1,48 @@
+---
+title: "Minicore experiments"
+output: html_notebook
+---
+
+```{r libs}
+library(ggplot2)
+library(dplyr)
+```
+
+```{r wd}
+setwd('~/git/minicore-experiments')
+```
+
+```{r rd}
+m <- read.table('p0.cao4m.filt.txt', header=T, sep='\t')
+```
+
+```{r measures}
+# From https://github.com/dnbaker/minicore/blob/main/docs/msr.md
+measures <- list('0'='L1',
+                 '1'='L2',
+                 '10'='TVD',
+                 '2'='SQRL2',
+                 '3'='JSM',
+                 '4'='JSD',
+                 '16'='IS',
+                 '5'='MKL',
+                 '17'='RIS',
+                 '30'='SIS',
+                 '7'='HELL',
+                 '8'='BATMET',
+                 '9'='BATDIST',
+                 '11'='LLR',
+                 '14'='UWLLR')
+```
+
+```{r add_msr_name}
+m$msr_name <- unlist(lapply(m$msr, function(x) { measures[[as.character(x)]] }))
+```
+
+```{r}
+ggplot(m %>% filter(Name == 'cao4m' & msr_name != 'SIS' & nthreads == 32),
+       aes(colour=msr_name, x=k, y=meancost)) + 
+  geom_line() +
+  geom_point() +
+  theme_bw()
+```
