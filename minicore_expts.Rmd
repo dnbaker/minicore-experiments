@@ -1,0 +1,60 @@
+---
+title: "Minicore experiments"
+output: html_notebook
+---
+
+```{r libs, message=FALSE}
+library(ggplot2)
+library(dplyr)
+```
+
+```{r wd}
+setwd('~/git/minicore-experiments')
+```
+
+```{r rd}
+cao4 <- read.table('p0.cao4m.filt.txt', header=T, sep='\t')
+cao2 <- read.table('p0.cao2m.txt', header=F, sep='\t')
+zeis <- read.table('zeisel.cat.txt', header=F, sep='\t')
+colnames(cao2) <- colnames(cao4)
+colnames(zeis) <- colnames(cao4)
+all <- rbind(cao4, cao2, zeis)
+all$msr_name <- unlist(lapply(all$msr, function(x) { measures[[as.character(x)]] }))
+```
+
+```{r measures}
+# From https://github.com/dnbaker/minicore/blob/main/docs/msr.md
+measures <- list('0'='L1',
+                 '1'='L2',
+                 '10'='TVD',
+                 '2'='SQRL2',
+                 '3'='JSM',
+                 '4'='JSD',
+                 '16'='IS',
+                 '5'='MKL',
+                 '17'='RIS',
+                 '30'='SIS',
+                 '7'='HELL',
+                 '8'='BATMET',
+                 '9'='BATDIST',
+                 '11'='LLR',
+                 '14'='UWLLR')
+```
+
+```{r time_for_32threads}
+ggplot(all %>% filter(Name %in% c('cao4m', 'cao', 'zeisel') & msr_name != 'SIS' & nthreads == 32),
+       aes(colour=msr_name, x=k, y=I(medtime/k))) + 
+  geom_point() +
+  facet_wrap(~Name) +
+  labs(x='k', y='time/k', title='Time-per-k versus k for 32 threads') +
+  theme_bw() + theme(legend.title = element_blank())
+```
+
+```{r time_for_k25}
+ggplot(all %>% filter(Name %in% c('cao4m', 'cao', 'zeisel') & msr_name != 'SIS' & k == 25),
+       aes(colour=msr_name, x=nthreads, y=I(medtime/k))) + 
+  geom_point() +
+  facet_wrap(~Name) +
+  labs(x='threads', y='time/k', title='Time-per-k versus # threads for k=25') +
+  theme_bw() + theme(legend.title = element_blank())
+```
