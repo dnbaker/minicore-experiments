@@ -6,13 +6,13 @@
 
 def loadcao4m():
     import numpy as np
+    import minicore as mc
     pref = "/net/langmead-bigmem-ib.bluecrab.cluster/storage/dnb/data/10xdata/4MEXP"
-    dat = np.fromfile(pref + "/cao4m.data.f.npy", dtype=np.float32)
-    idx = np.fromfile(pref + "/cao4m.indices.u32.npy", dtype=np.uint32)
+    dat = np.fromfile(pref + "/cao4m.data.u16.npy", dtype=np.uint16)
+    idx = np.fromfile(pref + "/cao4m.indices.u16.npy", dtype=np.uint16)
     ip = np.fromfile(pref + "/cao4m.indptr.u32.npy", dtype=np.uint32)
     shape = np.fromfile(pref + "/cao4m.shape.u32.npy", dtype=np.uint32)
-    import scipy.sparse as sp
-    return sp.csr_matrix((dat, idx, ip), shape=shape)
+    return mc.csr_tuple(data=dat, indices=idx, indptr=ip, shape=shape, nnz=len(dat))
 
 def getmat(name):
     if name == "zeisel":
