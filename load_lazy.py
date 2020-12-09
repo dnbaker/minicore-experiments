@@ -1,9 +1,3 @@
-#from load_dropviz import zeisel_cns_mat
-#from load_cao import cao_mat
-#from load_pbmc import pbmc_mat
-#from load_293t import t293_mat
-#from load_1M import million_mat
-
 def loadcao4m():
     import numpy as np
     import minicore as mc
@@ -39,6 +33,7 @@ exp_loads = {
     "1.3M": lambda: getmat("1.3M"),
     "cao4m": lambda: getmat('cao4m')
 }
+exp_loads['cao2m'] = exp_loads['cao']
 
 ordering = ['293t', 'pbmc', 'zeisel', 'cao', '1.3M', 'cao4m']
 
