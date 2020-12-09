@@ -9,9 +9,12 @@ import minicore as mc
 '''
 
 PATH="/net/langmead-bigmem-ib.bluecrab.cluster/storage/dnb/code2/clusterdash/minocore/scripts/pbmc.bin.pkl"
+# Modiy this path if you have a pre-pickled form of the matrix
 
-pbmc_mat = pickle.load(open(PATH, "rb"))
-
-pbmc_mat.indices = pbmc_mat.indices.astype(np.uint32)
+try:
+    pbmc_mat = pickle.load(open(PATH, "rb"))
+except Exception as e:
+    pbmc_mat = mmread(PATH).T.tocsr()
+    pbmc_mat = mc.csr_tuple(data=pbmc_mat.data.astype(np.uint16), indices=pbmc_mat.indices.astype(np.uint16), indptr=pbmc_mat.indptr, shape=pbmc_mat.shape, nnz=len(pbmc_mat.data))
 
 __all__ = ["pbmc_mat"]

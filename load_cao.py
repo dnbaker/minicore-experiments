@@ -8,7 +8,9 @@ import minicore as mc
 
 PREFIX = "/net/langmead-bigmem-ib.bluecrab.cluster/storage/dnb/data/10xdata/CAO/cao_atlas_"
 
-def load_files(pref):
+# Modify this parameter to load from the necessary path
+
+def load_cao2_files(pref=PREFIX):
     data = np.fromfile(pref + "data.file", dtype=np.uint8).view(np.float32)
     indices = np.fromfile(pref + "indices.file", dtype=np.uint8).view(np.uint32)
     indptr = np.fromfile(pref + "indptr.file", dtype=np.uint8).view(np.uint64)
@@ -16,7 +18,9 @@ def load_files(pref):
     return (data, indices, indptr, shape)
 
 
-data, indices, indptr, shape = load_files(PREFIX)
+data, indices, indptr, shape = load_cao2_files(PREFIX)
 cao_mat= sp.csr_matrix((data, indices, indptr), shape)
+cao_mat.indices = cao_mat.indices.astype(np.uint16)
+cao_mat.data = cao_mat.data.astype(np.uint16)
 
 __all__ = ["cao_mat"]

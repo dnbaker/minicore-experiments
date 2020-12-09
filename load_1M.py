@@ -18,5 +18,7 @@ def load_files(pref):
 
 data, indices, indptr, shape = load_files(PREFIX)
 million_mat = sp.csr_matrix((data, indices, indptr), shape)
+million_mat.data = million_mat.data.astype(np.uint16)
+million_mat.indices = million_mat.indices.astype(np.uint16)
 
 __all__ = ["million_mat"]

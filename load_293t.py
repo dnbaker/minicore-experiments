@@ -10,9 +10,7 @@ import minicore as mc
 PATH = "/net/langmead-bigmem-ib.bluecrab.cluster/storage/dnb/data/10xdata/berger_data/293t_jurkat/jurkat_293t_99_1/matrix.mtx"
 
 
-mat = mmread(PATH)
-mat.data = mat.data.astype(np.float32)  # max: 260
-mat = mat.T.tocsr()
+mat = mmread(PATH).T.tocsr().astype(np.float32)
 mat.indices = mat.indices.astype(np.uint32)
 mat.indptr = mat.indptr.astype(np.uint32)
 t293_mat = mat

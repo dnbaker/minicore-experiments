@@ -1,0 +1,101 @@
+Parsed matrix of 68579/32738
+Cost at iter 0 (mbsize 10000): 177834272
+Cost at iter 10 (mbsize 10000): 101425264
+Distance between old and new centers: 1032.92248535
+Cost at iter 20 (mbsize 10000): 101057384
+Distance between old and new centers: 216.830581665
+Cost at iter 30 (mbsize 10000): 100946728
+Distance between old and new centers: 174.199020386
+Cost at iter 40 (mbsize 10000): 100956288
+Cost at iter 49 (mbsize 10000): 100915888
+Distance between old and new centers: 223.648132324
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 177834272->100915888, in 5419.89ms
+Cost at iter 0 (mbsize 10000): 20202.677734375
+Cost at iter 10 (mbsize 10000): 15811.5361328125
+Distance between old and new centers: 1540.64978027
+Cost at iter 20 (mbsize 10000): 15841.2451171875
+Cost at iter 30 (mbsize 10000): 15857.8525390625
+Cost at iter 40 (mbsize 10000): 15874.44140625
+Cost at iter 49 (mbsize 10000): 15878.3046875
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 20202.6777344->15811.5361328, in 11151.8ms
+Cost at iter 0 (mbsize 10000): 6008.462890625
+Cost at iter 10 (mbsize 10000): 3722.591552734375
+Distance between old and new centers: 1403.42407227
+Cost at iter 20 (mbsize 10000): 3739.0927734375
+Cost at iter 30 (mbsize 10000): 3750.28515625
+Cost at iter 40 (mbsize 10000): 3754.60986328125
+Cost at iter 49 (mbsize 10000): 3758.809326171875
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 6008.46289062->3722.59155273, in 10654.5ms
+Cost at iter 0 (mbsize 10000): 28961.66796875
+Cost at iter 10 (mbsize 10000): 19166.951171875
+Distance between old and new centers: 1695.36950684
+Cost at iter 20 (mbsize 10000): 19254.95703125
+Cost at iter 30 (mbsize 10000): 19237.3203125
+Cost at iter 40 (mbsize 10000): 19335.888671875
+Cost at iter 49 (mbsize 10000): 19297.546875
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 28961.6679688->19166.9511719, in 10750.8ms
+Cost at iter 0 (mbsize 10000): 18706.271484375
+Cost at iter 10 (mbsize 10000): 15571.453125
+Distance between old and new centers: 1414.70385742
+Cost at iter 20 (mbsize 10000): 15592.5439453125
+Cost at iter 30 (mbsize 10000): 15590.69140625
+Cost at iter 40 (mbsize 10000): 15595.5986328125
+Cost at iter 49 (mbsize 10000): 15601.8310546875
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 18706.2714844->15571.453125, in 5405.28ms
+Cost at iter 0 (mbsize 10000): 19113.3359375
+Cost at iter 10 (mbsize 10000): 20587.099609375
+Cost at iter 20 (mbsize 10000): 20190.080078125
+Cost at iter 30 (mbsize 10000): 20980.68359375
+Cost at iter 40 (mbsize 10000): 20273.849609375
+Cost at iter 49 (mbsize 10000): 20147.947265625
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 19113.3359375->19113.3359375, in 763169ms
+Cost at iter 0 (mbsize 10000): 11203094
+Cost at iter 10 (mbsize 10000): 7555393
+Distance between old and new centers: 1698.99060059
+Cost at iter 20 (mbsize 10000): 7612481
+Cost at iter 30 (mbsize 10000): 7614735
+Cost at iter 40 (mbsize 10000): 7610099
+Cost at iter 49 (mbsize 10000): 7650474
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 11203094->7555393, in 11435.9ms
+Cost at iter 0 (mbsize 10000): 12930.2275390625
+Cost at iter 10 (mbsize 10000): 7578.8359375
+Distance between old and new centers: 1015.58129883
+Cost at iter 20 (mbsize 10000): 7615.86328125
+Cost at iter 30 (mbsize 10000): 7568.7607421875
+Distance between old and new centers: 254.62159729
+Cost at iter 40 (mbsize 10000): 7568.17919921875
+Distance between old and new centers: 219.470855713
+Cost at iter 49 (mbsize 10000): 7566.296875
+Distance between old and new centers: 218.684417725
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 12930.2275391->7566.296875, in 5903.22ms
+	Command being timed: "python3 pipeline.py -M3 -M4 -M5 -M7 -M9 -M10 -M15 --densify --dataset pbmc --nthreads 20 --maxiter 50 --mbsize 10000 --prior 0.1 --hvg 500 --lspp 25"
+	User time (seconds): 2795.14
+	System time (seconds): 76.61
+	Percent of CPU this job got: 329%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 14:31.80
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1398708
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 6875018
+	Voluntary context switches: 36116
+	Involuntary context switches: 5118
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 88
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

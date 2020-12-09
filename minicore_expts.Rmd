@@ -1,0 +1,144 @@
+---
+title: "Minicore experiments"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r libs, message=FALSE}
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(knitr)
+library(cowplot)
+library(grid)
+library(gridExtra)
+```
+
+```{r wd}
+setwd('~/git/minicore-experiments')
+```
+
+```{r kmpp_parse}
+m <- read.table('kmeanspp_exp/kmpp_merged.csv', header=T, sep=',')
+m$value <- ifelse(m$value > 1e300, NA, m$value)
+```
+
+```{r grid_arrange_shared_legend}
+grid_arrange_shared_legend <- function(..., ncol = length(list(...)), nrow = 1, position = c("bottom", "right")) {
+
+  plots <- list(...)
+  position <- match.arg(position)
+  g <- ggplotGrob(plots[[1]] + theme(legend.position = position))$grobs
+  legend <- g[[which(sapply(g, function(x) x$name) == "guide-box")]]
+  lheight <- sum(legend$height)
+  lwidth <- sum(legend$width)
+  gl <- lapply(plots, function(x) x + theme(legend.position="none"))
+  gl <- c(gl, ncol = ncol, nrow = nrow)
+
+  combined <- switch(position,
+                     "bottom" = arrangeGrob(do.call(arrangeGrob, gl),
+                                            legend,
+                                            ncol = 1,
+                                            heights = unit.c(unit(1, "npc") - lheight, lheight)),
+                     "right" = arrangeGrob(do.call(arrangeGrob, gl),
+                                           legend,
+                                           ncol = 2,
+                                           widths = unit.c(unit(1, "npc") - lwidth, lwidth)))
+  grid.newpage()
+  grid.draw(combined)
+  # return gtable invisibly
+  invisible(combined)
+}
+```
+
+### First result
+
+* MC and MCLS both faster than SKL
+    * Though note that as of 3/8/2021, the results are not really comparable as SKL only uses 1 thread
+* MC and MCLS competitive with, usually lower objective than SKL, with MCLS usually the lowest
+
+```{r kmpp_time_1t_time}
+#kable(m %>% filter(nthreads == 1 & measure == 'time') %>% select(-orig_name, -measure) %>% transform(value = as.character(signif(value, digits=3))))
+```
+
+```{r kmpp_time_1t_cost}
+#kable(m %>% filter(nthreads == 1 & measure == 'cost') %>% select(-orig_name, -measure) %>% transform(value = as.character(signif(value, digits=5))))
+```
+
+```{r kmpp_plot}
+kmpp_plot <- function(m, distance='SQRL2',
+                      nthreads=4, measure='time',
+                      kmin=25,
+                      sparsity='sparse', logy=F)
+{
+  measure_pretty <- if(measure == 'time') {
+    if(logy) {'Log10(time in seconds)'} else {'Time in seconds'}
+  } else {
+    'K-means objective cost'
+  }
+  m$name <- plyr::mapvalues(m$name, from=c('MC_KMLSpp', 'MC_KMpp', 'SKL'),
+                            to=c('Minicore KM++LS++', 'Minicore KM++', 'Scikit-learn KM++'))
+  mfilt <- m %>% filter(distance == !!distance & nthreads == !!nthreads &
+                        measure == !!measure & k >= kmin &
+                        sparsity == !!sparsity)
+  title_suffix <- paste0('(', sparsity, ')')
+  pl1 <- mfilt %>% filter(dataset == 'PBMC') %>%
+    ggplot(aes(x=k, y=value, color=name)) +
+      geom_line() + geom_point() + theme_bw() +
+      theme(legend.title = element_blank()) +
+      labs(y=measure_pretty, title=paste('PBMC', title_suffix))
+  pl2 <- mfilt %>% filter(dataset == 'Cao2m') %>%
+    ggplot(aes(x=k, y=value, color=name)) +
+      geom_line() + geom_point() + theme_bw() +
+      theme(legend.title = element_blank()) +
+      labs(y=measure_pretty, title=paste('Cao2m', title_suffix))
+  pl3 <- mfilt %>% filter(dataset == 'Cao4m') %>%
+    ggplot(aes(x=k, y=value, color=name)) +
+      geom_line() + geom_point() + theme_bw() +
+      theme(legend.title = element_blank()) +
+      labs(y=measure_pretty, title=paste('Cao4m', title_suffix))
+  if(logy) {
+    pl1 <- pl1 + scale_y_continuous(trans='log10')
+    pl2 <- pl2 + scale_y_continuous(trans='log10')
+    pl3 <- pl3 + scale_y_continuous(trans='log10')
+  }
+  grid_arrange_shared_legend(pl1, pl2, pl3)
+}
+```
+
+
+```{r kmpp_time_sparse}
+kmpp_plot(m, nthreads=1, kmin=2, sparsity='sparse', measure='time', distance='SQRL2', logy=F)
+```
+
+```{r kmpp_time_dense}
+kmpp_plot(m, nthreads=1, kmin=2, sparsity='dense', measure='time', distance='SQRL2', logy=T)
+```
+```{r kmpp_cost_sparse}
+kmpp_plot(m, nthreads=1, kmin=2, sparsity='sparse', measure='cost', distance='SQRL2', logy=F)
+```
+```{r kmpp_cost_dense}
+kmpp_plot(m, nthreads=1, kmin=2, sparsity='dense', measure='cost', distance='SQRL2', logy=F)
+```
+
+### Second result
+
+* Even the slowest distance is not _much_ slower than the fastest
+
+```{r kmpp_dist_t16}
+m %>% filter(nthreads == 16 & measure == 'time' & name == 'MC_KMpp' & sparsity == 'sparse' & dataset %in% c('Cao2m', 'Cao4m')) %>%
+  ggplot(aes(x=as.numeric(k), y=as.numeric(value), color=distance)) +
+    geom_point() + facet_grid(~dataset, scales="free_y") + theme_bw() +
+    labs(x='k', y='Time in seconds') + theme(legend.title = element_blank())
+```
+
+```{r kmpp_dist_t4}
+m %>% filter(nthreads == 4 & measure == 'time' & name == 'MC_KMpp' & sparsity == 'sparse' & dataset %in% c('tiny', 'PBMC')) %>%
+  ggplot(aes(x=as.numeric(k), y=as.numeric(value), color=distance)) + geom_point() + facet_grid(~dataset, scales="free_y")
+```
+
+### Third result
+
+* MC and MCLS both yield better downstream k-means objectives compared to SKL
+* Our minibatch k-means handles the various distances

@@ -1,0 +1,108 @@
+Getting hvg
+Got hvg
+Cost at iter 0 (mbsize 10000): 186541466
+Cost at iter 10 (mbsize 10000): 101262346.86602255702
+Distance between old and new centers: 1115.97314453
+Cost at iter 20 (mbsize 10000): 101092982.49793937802
+Distance between old and new centers: 232.389984131
+Cost at iter 30 (mbsize 10000): 100931392.43990141153
+Distance between old and new centers: 175.514404297
+Cost at iter 40 (mbsize 10000): 101010531.60066750646
+Cost at iter 49 (mbsize 10000): 100980215.75625492632
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 186541466->100931392.44, in 12855.8ms
+Returned from clustering
+Cost at iter 0 (mbsize 10000): 13053.127923620566435
+Cost at iter 10 (mbsize 10000): 9616.0484162489683513
+Distance between old and new centers: 1140.18688965
+Cost at iter 20 (mbsize 10000): 9616.9624215521525912
+Cost at iter 30 (mbsize 10000): 9613.939968058040904
+Distance between old and new centers: 374.97442627
+Cost at iter 40 (mbsize 10000): 9615.2648641818486794
+Cost at iter 49 (mbsize 10000): 9615.4019891109055607
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 13053.1279236->9613.93996806, in 10882.1ms
+Returned from clustering
+Cost at iter 0 (mbsize 10000): 2566.9016605708748102
+Cost at iter 10 (mbsize 10000): 1372.7103332700207829
+Distance between old and new centers: 1261.07141113
+Cost at iter 20 (mbsize 10000): 1372.2712365398183465
+Distance between old and new centers: 203.920410156
+Cost at iter 30 (mbsize 10000): 1360.5602340465411544
+Distance between old and new centers: 296.68649292
+Cost at iter 40 (mbsize 10000): 1359.3805157253518701
+Distance between old and new centers: 226.577850342
+Cost at iter 49 (mbsize 10000): 1359.7738806316629052
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 2566.90166057->1359.38051573, in 12758.8ms
+Returned from clustering
+Cost at iter 0 (mbsize 10000): 10325.701194569468498
+Cost at iter 10 (mbsize 10000): 5683.6193462572991848
+Distance between old and new centers: 1150.30187988
+Cost at iter 20 (mbsize 10000): 5638.2200415804982185
+Distance between old and new centers: 312.188598633
+Cost at iter 30 (mbsize 10000): 5640.1934503316879272
+Cost at iter 40 (mbsize 10000): 5649.1613873466849327
+Cost at iter 49 (mbsize 10000): 5650.3790068179368973
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 10325.7011946->5638.22004158, in 11892.7ms
+Returned from clustering
+Cost at iter 0 (mbsize 10000): 13241.860644805532502
+Cost at iter 10 (mbsize 10000): 9673.4264009372891451
+Distance between old and new centers: 1317.88806152
+Cost at iter 20 (mbsize 10000): 9674.8213298222544836
+Cost at iter 30 (mbsize 10000): 9675.5711064281913423
+Cost at iter 40 (mbsize 10000): 9676.3994289850816131
+Cost at iter 49 (mbsize 10000): 9677.7759927455954312
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 13241.8606448->9673.42640094, in 12922.5ms
+Returned from clustering
+Cost at iter 0 (mbsize 10000): 13723.438158429824398
+Found 14 centers with no assigned points; restart them.
+Cost at iter 10 (mbsize 10000): 14201.11226131382864
+Found 10 centers with no assigned points; restart them.
+Cost at iter 20 (mbsize 10000): 14532.395024239522172
+Found 10 centers with no assigned points; restart them.
+Cost at iter 30 (mbsize 10000): 14487.67682139298995
+Found 9 centers with no assigned points; restart them.
+Cost at iter 40 (mbsize 10000): 14295.098020318197086
+Found 8 centers with no assigned points; restart them.
+Cost at iter 49 (mbsize 10000): 14612.037433659672388
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 13723.4381584->13723.4381584, in 25508.4ms
+Returned from clustering
+Cost at iter 0 (mbsize 10000): 9001.3319804174989258
+Cost at iter 10 (mbsize 10000): 6715.0079040837308639
+Distance between old and new centers: 1158.21057129
+Cost at iter 20 (mbsize 10000): 6711.1533953951366129
+Distance between old and new centers: 116.422775269
+Cost at iter 30 (mbsize 10000): 6711.6199897224068991
+Cost at iter 40 (mbsize 10000): 6709.8718903665612743
+Distance between old and new centers: 113.568084717
+Cost at iter 49 (mbsize 10000): 6709.8721740153978317
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 9001.33198042->6709.87189037, in 13805ms
+Returned from clustering
+	Command being timed: "python3 pipeline.py -M3 --densify -M4 -M5 -M7 -M9 -M15 --dataset pbmc --nthreads 20 --maxiter 50 --mbsize 10000 --prior 1. --hvg 500 --lspp 0"
+	User time (seconds): 2037.23
+	System time (seconds): 11.33
+	Percent of CPU this job got: 1670%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:02.60
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1384956
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 2503507
+	Voluntary context switches: 21025
+	Involuntary context switches: 5195
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 88
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

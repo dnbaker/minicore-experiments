@@ -1,0 +1,1234 @@
+Cost at iter 0 (mbsize 10000): 6318154752
+Cost at iter 10 (mbsize 10000): 4792421888
+Distance between old and new centers: 4829.11328125
+Cost at iter 20 (mbsize 10000): 4774398976
+Distance between old and new centers: 3004.4050293
+Cost at iter 30 (mbsize 10000): 4703907840
+Distance between old and new centers: 3262.70654297
+Cost at iter 40 (mbsize 10000): 4696968192
+Distance between old and new centers: 3148.44262695
+Cost at iter 49 (mbsize 10000): 4635369472
+Distance between old and new centers: 2979.78686523
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 6318154752->4635369472, in 358145ms
+Cost at iter 0 (mbsize 10000): 945723.3125
+Cost at iter 10 (mbsize 10000): 782922.4375
+Distance between old and new centers: 1312.23339844
+Cost at iter 20 (mbsize 10000): 781399.3125
+Distance between old and new centers: 433.735412598
+Cost at iter 30 (mbsize 10000): 781809.5
+Cost at iter 40 (mbsize 10000): 779609.625
+Distance between old and new centers: 326.792907715
+Cost at iter 49 (mbsize 10000): 781164.8125
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 945723.3125->779609.625, in 353751ms
+Cost at iter 0 (mbsize 10000): 245842.78125
+Cost at iter 10 (mbsize 10000): 162721.4375
+Distance between old and new centers: 1499.09423828
+Cost at iter 20 (mbsize 10000): 164258.5
+Cost at iter 30 (mbsize 10000): 162525
+Distance between old and new centers: 267.000915527
+Cost at iter 40 (mbsize 10000): 161852.671875
+Distance between old and new centers: 507.664916992
+Cost at iter 49 (mbsize 10000): 160833.1875
+Distance between old and new centers: 504.636291504
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 245842.78125->160833.1875, in 342808ms
+Cost at iter 0 (mbsize 10000): 961466
+Cost at iter 10 (mbsize 10000): 702118.25
+Distance between old and new centers: 1021.71899414
+Cost at iter 20 (mbsize 10000): 703750.9375
+Cost at iter 30 (mbsize 10000): 689254.125
+Distance between old and new centers: 531.756713867
+Cost at iter 40 (mbsize 10000): 689702.375
+Cost at iter 49 (mbsize 10000): 688594.125
+Distance between old and new centers: 413.222045898
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 961466->688594.125, in 333533ms
+Cost at iter 0 (mbsize 10000): 1004320.375
+Cost at iter 10 (mbsize 10000): 860736.9375
+Distance between old and new centers: 1051.70666504
+Cost at iter 20 (mbsize 10000): 857604.375
+Distance between old and new centers: 209.434646606
+Cost at iter 30 (mbsize 10000): 855738
+Distance between old and new centers: 218.835235596
+Cost at iter 40 (mbsize 10000): 860061.9375
+Cost at iter 49 (mbsize 10000): 859473.625
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 1004320.375->855738, in 344329ms
+Cost at iter 0 (mbsize 10000): 1045479.3125
+*** Error in `python3': corrupted size vs. prev_size: 0x000055b4f5f0a670 ***
+======= Backtrace: =========
+/software/centos7/lib64/libc.so.6(+0x80da7)[0x2b02258dbda7]
+/software/centos7/lib64/libc.so.6(+0x82275)[0x2b02258dd275]
+/software/centos7/lib64/libc.so.6(__libc_malloc+0x4c)[0x2b02258e084c]
+/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/_lib/_uarray/../../../../../libstdc++.so.6(_Znwm+0x15)[0x2b023458152d]
+/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/minicore-0.3.1-py3.7-linux-x86_64.egg/pyminicore.cpython-37m-x86_64-linux-gnu.so(_ZNSt6vectorIfSaIfEE17_M_realloc_insertIJRKfEEEvN9__gnu_cxx17__normal_iteratorIPfS1_EEDpOT_+0x73)[0x2b023d43eba3]
+/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/minicore-0.3.1-py3.7-linux-x86_64.egg/pyminicore.cpython-37m-x86_64-linux-gnu.so(+0x814b87)[0x2b023d970b87]
+/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/minicore-0.3.1-py3.7-linux-x86_64.egg/pyminicore.cpython-37m-x86_64-linux-gnu.so(+0x84aa08)[0x2b023d9a6a08]
+/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/minicore-0.3.1-py3.7-linux-x86_64.egg/pyminicore.cpython-37m-x86_64-linux-gnu.so(+0x89d857)[0x2b023d9f9857]
+/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/minicore-0.3.1-py3.7-linux-x86_64.egg/pyminicore.cpython-37m-x86_64-linux-gnu.so(+0x89e5ce)[0x2b023d9fa5ce]
+/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/minicore-0.3.1-py3.7-linux-x86_64.egg/pyminicore.cpython-37m-x86_64-linux-gnu.so(+0x8ad4e3)[0x2b023da094e3]
+/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/minicore-0.3.1-py3.7-linux-x86_64.egg/pyminicore.cpython-37m-x86_64-linux-gnu.so(+0x8ae7b9)[0x2b023da0a7b9]
+/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/minicore-0.3.1-py3.7-linux-x86_64.egg/pyminicore.cpython-37m-x86_64-linux-gnu.so(+0x843b1)[0x2b023d1e03b1]
+python3(_PyMethodDef_RawFastCallKeywords+0x2c9)[0x55b4f4c8f569]
+python3(+0x145558)[0x55b4f4c90558]
+python3(_PyEval_EvalFrameDefault+0x1734)[0x55b4f4d01b44]
+python3(_PyEval_EvalCodeWithName+0x242)[0x55b4f4c485a2]
+python3(PyEval_EvalCodeEx+0x39)[0x55b4f4c497a9]
+python3(PyEval_EvalCode+0x1b)[0x55b4f4d2445b]
+python3(+0x23ed03)[0x55b4f4d89d03]
+python3(PyRun_FileExFlags+0x97)[0x55b4f4d93d27]
+python3(PyRun_SimpleFileExFlags+0x19c)[0x55b4f4d93efc]
+python3(+0x249459)[0x55b4f4d94459]
+python3(_Py_UnixMain+0x3c)[0x55b4f4d945ac]
+/software/centos7/lib64/libc.so.6(__libc_start_main+0xf5)[0x2b022587d445]
+python3(+0x1c5f61)[0x55b4f4d10f61]
+======= Memory map: ========
+2b0224b0a000-2b0224b2c000 r-xp 00000000 fd:00 33561267                   /usr/lib64/ld-2.17.so
+2b0224b2c000-2b0224cb2000 rw-p 00000000 00:00 0 
+2b0224cb2000-2b0224cb4000 r--p 00000000 00:31 37058073                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_posixsubprocess.cpython-37m-x86_64-linux-gnu.so
+2b0224cb4000-2b0224cb6000 r-xp 00002000 00:31 37058073                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_posixsubprocess.cpython-37m-x86_64-linux-gnu.so
+2b0224cb6000-2b0224cb7000 r--p 00004000 00:31 37058073                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_posixsubprocess.cpython-37m-x86_64-linux-gnu.so
+2b0224cb7000-2b0224cb8000 r--p 00004000 00:31 37058073                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_posixsubprocess.cpython-37m-x86_64-linux-gnu.so
+2b0224cb8000-2b0224cb9000 rw-p 00005000 00:31 37058073                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_posixsubprocess.cpython-37m-x86_64-linux-gnu.so
+2b0224cb9000-2b0224cbb000 r--p 00000000 00:31 37058086                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/select.cpython-37m-x86_64-linux-gnu.so
+2b0224cbb000-2b0224cbf000 r-xp 00002000 00:31 37058086                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/select.cpython-37m-x86_64-linux-gnu.so
+2b0224cbf000-2b0224cc0000 r--p 00006000 00:31 37058086                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/select.cpython-37m-x86_64-linux-gnu.so
+2b0224cc0000-2b0224cc1000 r--p 00006000 00:31 37058086                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/select.cpython-37m-x86_64-linux-gnu.so
+2b0224cc1000-2b0224cc3000 rw-p 00007000 00:31 37058086                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/select.cpython-37m-x86_64-linux-gnu.so
+2b0224cc3000-2b0224cc4000 r--p 00000000 00:31 37058056                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_opcode.cpython-37m-x86_64-linux-gnu.so
+2b0224cc4000-2b0224cc5000 r-xp 00001000 00:31 37058056                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_opcode.cpython-37m-x86_64-linux-gnu.so
+2b0224cc5000-2b0224cc6000 r--p 00002000 00:31 37058056                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_opcode.cpython-37m-x86_64-linux-gnu.so
+2b0224cc6000-2b0224cc7000 r--p 00002000 00:31 37058056                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_opcode.cpython-37m-x86_64-linux-gnu.so
+2b0224cc7000-2b0224cc8000 rw-p 00003000 00:31 37058056                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_opcode.cpython-37m-x86_64-linux-gnu.so
+2b0224cc8000-2b0224cca000 r--p 00000000 00:31 26786141                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libffi.so.7.1.0
+2b0224cca000-2b0224cd0000 r-xp 00002000 00:31 26786141                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libffi.so.7.1.0
+2b0224cd0000-2b0224cd1000 r--p 00008000 00:31 26786141                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libffi.so.7.1.0
+2b0224cd1000-2b0224cd2000 ---p 00009000 00:31 26786141                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libffi.so.7.1.0
+2b0224cd2000-2b0224cd3000 r--p 00009000 00:31 26786141                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libffi.so.7.1.0
+2b0224cd3000-2b0224cd4000 rw-p 0000a000 00:31 26786141                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libffi.so.7.1.0
+2b0224cd4000-2b0224cd5000 rwxp 00000000 00:00 0 
+2b0224cd5000-2b0224cd6000 rw-p 00000000 00:00 0 
+2b0224cd7000-2b0224d17000 rw-p 00000000 00:00 0 
+2b0224d17000-2b0224d18000 r--p 00000000 00:31 37058075                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_heapq.cpython-37m-x86_64-linux-gnu.so
+2b0224d18000-2b0224d1a000 r-xp 00001000 00:31 37058075                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_heapq.cpython-37m-x86_64-linux-gnu.so
+2b0224d1a000-2b0224d1b000 r--p 00003000 00:31 37058075                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_heapq.cpython-37m-x86_64-linux-gnu.so
+2b0224d1b000-2b0224d1c000 r--p 00003000 00:31 37058075                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_heapq.cpython-37m-x86_64-linux-gnu.so
+2b0224d1c000-2b0224d1e000 rw-p 00004000 00:31 37058075                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_heapq.cpython-37m-x86_64-linux-gnu.so
+2b0224d1e000-2b0224d21000 r--p 00000000 00:31 37058094                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/math.cpython-37m-x86_64-linux-gnu.so
+2b0224d21000-2b0224d26000 r-xp 00003000 00:31 37058094                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/math.cpython-37m-x86_64-linux-gnu.so
+2b0224d26000-2b0224d28000 r--p 00008000 00:31 37058094                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/math.cpython-37m-x86_64-linux-gnu.so
+2b0224d28000-2b0224d29000 r--p 00009000 00:31 37058094                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/math.cpython-37m-x86_64-linux-gnu.so
+2b0224d29000-2b0224d2b000 rw-p 0000a000 00:31 37058094                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/math.cpython-37m-x86_64-linux-gnu.so
+2b0224d2b000-2b0224d2c000 r--p 00021000 fd:00 33561267                   /usr/lib64/ld-2.17.so
+2b0224d2c000-2b0224d2d000 rw-p 00022000 fd:00 33561267                   /usr/lib64/ld-2.17.so
+2b0224d2d000-2b0224d2e000 rw-p 00000000 00:00 0 
+2b0224d2e000-2b0224d45000 r-xp 00000000 00:30 26479250                   /software/centos7/usr/lib64/libpthread-2.17.so
+2b0224d45000-2b0224f44000 ---p 00017000 00:30 26479250                   /software/centos7/usr/lib64/libpthread-2.17.so
+2b0224f44000-2b0224f45000 r--p 00016000 00:30 26479250                   /software/centos7/usr/lib64/libpthread-2.17.so
+2b0224f45000-2b0224f46000 rw-p 00017000 00:30 26479250                   /software/centos7/usr/lib64/libpthread-2.17.so
+2b0224f46000-2b0224f4a000 rw-p 00000000 00:00 0 
+2b0224f4a000-2b0224f4c000 r-xp 00000000 00:30 26479230                   /software/centos7/usr/lib64/libdl-2.17.so
+2b0224f4c000-2b022514c000 ---p 00002000 00:30 26479230                   /software/centos7/usr/lib64/libdl-2.17.so
+2b022514c000-2b022514d000 r--p 00002000 00:30 26479230                   /software/centos7/usr/lib64/libdl-2.17.so
+2b022514d000-2b022514e000 rw-p 00003000 00:30 26479230                   /software/centos7/usr/lib64/libdl-2.17.so
+2b022514e000-2b0225150000 r-xp 00000000 00:30 26479258                   /software/centos7/usr/lib64/libutil-2.17.so
+2b0225150000-2b022534f000 ---p 00002000 00:30 26479258                   /software/centos7/usr/lib64/libutil-2.17.so
+2b022534f000-2b0225350000 r--p 00001000 00:30 26479258                   /software/centos7/usr/lib64/libutil-2.17.so
+2b0225350000-2b0225351000 rw-p 00002000 00:30 26479258                   /software/centos7/usr/lib64/libutil-2.17.so
+2b0225351000-2b0225358000 r-xp 00000000 00:30 26479254                   /software/centos7/usr/lib64/librt-2.17.so
+2b0225358000-2b0225557000 ---p 00007000 00:30 26479254                   /software/centos7/usr/lib64/librt-2.17.so
+2b0225557000-2b0225558000 r--p 00006000 00:30 26479254                   /software/centos7/usr/lib64/librt-2.17.so
+2b0225558000-2b0225559000 rw-p 00007000 00:30 26479254                   /software/centos7/usr/lib64/librt-2.17.so
+2b0225559000-2b022565a000 r-xp 00000000 00:30 26479232                   /software/centos7/usr/lib64/libm-2.17.so
+2b022565a000-2b0225859000 ---p 00101000 00:30 26479232                   /software/centos7/usr/lib64/libm-2.17.so
+2b0225859000-2b022585a000 r--p 00100000 00:30 26479232                   /software/centos7/usr/lib64/libm-2.17.so
+2b022585a000-2b022585b000 rw-p 00101000 00:30 26479232                   /software/centos7/usr/lib64/libm-2.17.so
+2b022585b000-2b0225a1e000 r-xp 00000000 00:30 26479224                   /software/centos7/usr/lib64/libc-2.17.so
+2b0225a1e000-2b0225c1d000 ---p 001c3000 00:30 26479224                   /software/centos7/usr/lib64/libc-2.17.so
+2b0225c1d000-2b0225c21000 r--p 001c2000 00:30 26479224                   /software/centos7/usr/lib64/libc-2.17.so
+2b0225c21000-2b0225c23000 rw-p 001c6000 00:30 26479224                   /software/centos7/usr/lib64/libc-2.17.so
+2b0225c23000-2b0225d68000 rw-p 00000000 00:00 0 
+2b0225d68000-2b0225d6a000 r--p 00000000 00:31 26793025                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_hashlib.cpython-37m-x86_64-linux-gnu.so
+2b0225d6a000-2b0225d6d000 r-xp 00002000 00:31 26793025                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_hashlib.cpython-37m-x86_64-linux-gnu.so
+2b0225d6d000-2b0225d6f000 r--p 00005000 00:31 26793025                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_hashlib.cpython-37m-x86_64-linux-gnu.so
+2b0225d6f000-2b0225d70000 r--p 00006000 00:31 26793025                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_hashlib.cpython-37m-x86_64-linux-gnu.so
+2b0225d70000-2b0225d71000 rw-p 00007000 00:31 26793025                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_hashlib.cpython-37m-x86_64-linux-gnu.so
+2b0225d71000-2b0225dec000 r--p 00000000 00:31 26792984                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libcrypto.so.1.1
+2b0225dec000-2b0225f7f000 r-xp 0007b000 00:31 26792984                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libcrypto.so.1.1
+2b0225f7f000-2b022600c000 r--p 0020e000 00:31 26792984                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libcrypto.so.1.1
+2b022600c000-2b0226037000 r--p 0029a000 00:31 26792984                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libcrypto.so.1.1
+2b0226037000-2b0226039000 rw-p 002c5000 00:31 26792984                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libcrypto.so.1.1
+2b0226039000-2b022603d000 rw-p 00000000 00:00 0 
+2b022603d000-2b022603f000 r--p 00000000 00:31 37058005                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_blake2.cpython-37m-x86_64-linux-gnu.so
+2b022603f000-2b0226047000 r-xp 00002000 00:31 37058005                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_blake2.cpython-37m-x86_64-linux-gnu.so
+2b0226047000-2b0226048000 r--p 0000a000 00:31 37058005                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_blake2.cpython-37m-x86_64-linux-gnu.so
+2b0226048000-2b0226049000 ---p 0000b000 00:31 37058005                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_blake2.cpython-37m-x86_64-linux-gnu.so
+2b0226049000-2b022604a000 r--p 0000b000 00:31 37058005                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_blake2.cpython-37m-x86_64-linux-gnu.so
+2b022604a000-2b022604b000 rw-p 0000c000 00:31 37058005                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_blake2.cpython-37m-x86_64-linux-gnu.so
+2b022604b000-2b022604e000 r--p 00000000 00:31 37057795                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_sha3.cpython-37m-x86_64-linux-gnu.so
+2b022604e000-2b0226061000 r-xp 00003000 00:31 37057795                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_sha3.cpython-37m-x86_64-linux-gnu.so
+2b0226061000-2b0226062000 r--p 00016000 00:31 37057795                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_sha3.cpython-37m-x86_64-linux-gnu.so
+2b0226062000-2b0226063000 ---p 00017000 00:31 37057795                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_sha3.cpython-37m-x86_64-linux-gnu.so
+2b0226063000-2b0226064000 r--p 00017000 00:31 37057795                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_sha3.cpython-37m-x86_64-linux-gnu.so
+2b0226064000-2b0226066000 rw-p 00018000 00:31 37057795                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_sha3.cpython-37m-x86_64-linux-gnu.so
+2b0226066000-2b0226067000 r--p 00000000 00:31 37058058                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_bisect.cpython-37m-x86_64-linux-gnu.so
+2b0226067000-2b0226068000 r-xp 00001000 00:31 37058058                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_bisect.cpython-37m-x86_64-linux-gnu.so
+2b0226068000-2b0226069000 r--p 00002000 00:31 37058058                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_bisect.cpython-37m-x86_64-linux-gnu.so
+2b0226069000-2b022606a000 r--p 00002000 00:31 37058058                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_bisect.cpython-37m-x86_64-linux-gnu.so
+2b022606a000-2b022606b000 rw-p 00003000 00:31 37058058                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_bisect.cpython-37m-x86_64-linux-gnu.so
+2b022606b000-2b022606d000 r--p 00000000 00:31 37058068                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_random.cpython-37m-x86_64-linux-gnu.so
+2b022606d000-2b022606f000 r-xp 00002000 00:31 37058068                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_random.cpython-37m-x86_64-linux-gnu.so
+2b022606f000-2b0226070000 r--p 00004000 00:31 37058068                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_random.cpython-37m-x86_64-linux-gnu.so
+2b0226070000-2b0226071000 r--p 00004000 00:31 37058068                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_random.cpython-37m-x86_64-linux-gnu.so
+2b0226071000-2b0226072000 rw-p 00005000 00:31 37058068                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_random.cpython-37m-x86_64-linux-gnu.so
+2b0226072000-2b0226075000 r-xp 00000000 00:31 38302476                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/__check_build/_check_build.cpython-37m-x86_64-linux-gnu.so
+2b0226075000-2b0226274000 ---p 00003000 00:31 38302476                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/__check_build/_check_build.cpython-37m-x86_64-linux-gnu.so
+2b0226274000-2b0226275000 r--p 00002000 00:31 38302476                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/__check_build/_check_build.cpython-37m-x86_64-linux-gnu.so
+2b0226275000-2b0226276000 rw-p 00003000 00:31 38302476                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/__check_build/_check_build.cpython-37m-x86_64-linux-gnu.so
+2b0226276000-2b0226278000 rw-p 00010000 00:31 38302476                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/__check_build/_check_build.cpython-37m-x86_64-linux-gnu.so
+2b0226278000-2b022628d000 r-xp 00000000 00:31 38302208                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scikit_learn.libs/libgomp-f7e03b3e.so.1.0.0
+2b022628d000-2b022648c000 ---p 00015000 00:31 38302208                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scikit_learn.libs/libgomp-f7e03b3e.so.1.0.0
+2b022648c000-2b022648f000 rw-p 00014000 00:31 38302208                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scikit_learn.libs/libgomp-f7e03b3e.so.1.0.0
+2b022648f000-2b022654f000 rw-p 00000000 00:00 0 
+2b022654f000-2b0226557000 r--p 00000000 00:31 26793023                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_ctypes.cpython-37m-x86_64-linux-gnu.so
+2b0226557000-2b0226566000 r-xp 00008000 00:31 26793023                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_ctypes.cpython-37m-x86_64-linux-gnu.so
+2b0226566000-2b022656d000 r--p 00017000 00:31 26793023                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_ctypes.cpython-37m-x86_64-linux-gnu.so
+2b022656d000-2b022656e000 r--p 0001d000 00:31 26793023                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_ctypes.cpython-37m-x86_64-linux-gnu.so
+2b022656e000-2b0226572000 rw-p 0001e000 00:31 26793023                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_ctypes.cpython-37m-x86_64-linux-gnu.so
+2b0226572000-2b0226575000 r--p 00000000 00:31 37057993                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_struct.cpython-37m-x86_64-linux-gnu.so
+2b0226575000-2b022657a000 r-xp 00003000 00:31 37057993                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_struct.cpython-37m-x86_64-linux-gnu.so
+2b022657a000-2b022657c000 r--p 00008000 00:31 37057993                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_struct.cpython-37m-x86_64-linux-gnu.so
+2b022657c000-2b022657d000 ---p 0000a000 00:31 37057993                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_struct.cpython-37m-x86_64-linux-gnu.so
+2b022657d000-2b022657e000 r--p 0000a000 00:31 37057993                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_struct.cpython-37m-x86_64-linux-gnu.so
+2b022657e000-2b0226580000 rw-p 0000b000 00:31 37057993                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_struct.cpython-37m-x86_64-linux-gnu.so
+2b0226580000-2b0226581000 r--p 00000000 00:31 26787366                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/mkl/_mklinit.cpython-37m-x86_64-linux-gnu.so
+2b0226581000-2b0226582000 r-xp 00001000 00:31 26787366                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/mkl/_mklinit.cpython-37m-x86_64-linux-gnu.so
+2b0226582000-2b0226583000 r--p 00002000 00:31 26787366                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/mkl/_mklinit.cpython-37m-x86_64-linux-gnu.so
+2b0226583000-2b0226584000 r--p 00002000 00:31 26787366                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/mkl/_mklinit.cpython-37m-x86_64-linux-gnu.so
+2b0226584000-2b0226585000 rw-p 00003000 00:31 26787366                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/mkl/_mklinit.cpython-37m-x86_64-linux-gnu.so
+2b0226585000-2b0226ab9000 r-xp 00000000 00:31 36644520                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libmkl_rt.so
+2b0226ab9000-2b0226cb9000 ---p 00534000 00:31 36644520                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libmkl_rt.so
+2b0226cb9000-2b0226cbf000 r--p 00534000 00:31 36644520                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libmkl_rt.so
+2b0226cbf000-2b0226cc1000 rw-p 0053a000 00:31 36644520                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libmkl_rt.so
+2b0226cc1000-2b0226cd5000 rw-p 00000000 00:00 0 
+2b0226cd5000-2b0226ea2000 r-xp 00000000 00:31 36646416                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libiomp5.so
+2b0226ea2000-2b02270a2000 ---p 001cd000 00:31 36646416                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libiomp5.so
+2b02270a2000-2b02270a5000 r--p 001cd000 00:31 36646416                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libiomp5.so
+2b02270a5000-2b02270af000 rw-p 001d0000 00:31 36646416                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libiomp5.so
+2b02270af000-2b02270db000 rw-p 00000000 00:00 0 
+2b02270db000-2b02270de000 r--p 00000000 00:31 37051630                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libgcc_s.so.1
+2b02270de000-2b02270ea000 r-xp 00003000 00:31 37051630                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libgcc_s.so.1
+2b02270ea000-2b02270ed000 r--p 0000f000 00:31 37051630                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libgcc_s.so.1
+2b02270ed000-2b02270ee000 r--p 00011000 00:31 37051630                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libgcc_s.so.1
+2b02270ee000-2b02270ef000 rw-p 00012000 00:31 37051630                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libgcc_s.so.1
+2b02270ef000-2b02270f5000 r--p 00000000 00:31 26787367                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/mkl/_py_mkl_service.cpython-37m-x86_64-linux-gnu.so
+2b02270f5000-2b0227106000 r-xp 00006000 00:31 26787367                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/mkl/_py_mkl_service.cpython-37m-x86_64-linux-gnu.so
+2b0227106000-2b0227109000 r--p 00017000 00:31 26787367                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/mkl/_py_mkl_service.cpython-37m-x86_64-linux-gnu.so
+2b0227109000-2b022710a000 ---p 0001a000 00:31 26787367                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/mkl/_py_mkl_service.cpython-37m-x86_64-linux-gnu.so
+2b022710a000-2b022710b000 r--p 0001a000 00:31 26787367                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/mkl/_py_mkl_service.cpython-37m-x86_64-linux-gnu.so
+2b022710b000-2b022710e000 rw-p 0001b000 00:31 26787367                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/mkl/_py_mkl_service.cpython-37m-x86_64-linux-gnu.so
+2b022710e000-2b022714f000 rw-p 00000000 00:00 0 
+2b022714f000-2b0227179000 r--p 00000000 00:31 26784820                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/core/_multiarray_umath.cpython-37m-x86_64-linux-gnu.so
+2b0227179000-2b02273ea000 r-xp 0002a000 00:31 26784820                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/core/_multiarray_umath.cpython-37m-x86_64-linux-gnu.so
+2b02273ea000-2b0227472000 r--p 0029b000 00:31 26784820                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/core/_multiarray_umath.cpython-37m-x86_64-linux-gnu.so
+2b0227472000-2b0227473000 ---p 00323000 00:31 26784820                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/core/_multiarray_umath.cpython-37m-x86_64-linux-gnu.so
+2b0227473000-2b0227476000 r--p 00323000 00:31 26784820                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/core/_multiarray_umath.cpython-37m-x86_64-linux-gnu.so
+2b0227476000-2b0227492000 rw-p 00326000 00:31 26784820                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/core/_multiarray_umath.cpython-37m-x86_64-linux-gnu.so
+2b0227492000-2b02274f3000 rw-p 00000000 00:00 0 
+2b02274f3000-2b02274f8000 r--p 00000000 00:31 37057798                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_datetime.cpython-37m-x86_64-linux-gnu.so
+2b02274f8000-2b022750a000 r-xp 00005000 00:31 37057798                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_datetime.cpython-37m-x86_64-linux-gnu.so
+2b022750a000-2b0227510000 r--p 00017000 00:31 37057798                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_datetime.cpython-37m-x86_64-linux-gnu.so
+2b0227510000-2b0227511000 r--p 0001c000 00:31 37057798                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_datetime.cpython-37m-x86_64-linux-gnu.so
+2b0227511000-2b0227513000 rw-p 0001d000 00:31 37057798                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_datetime.cpython-37m-x86_64-linux-gnu.so
+2b0227513000-2b0227593000 rw-p 00000000 00:00 0 
+2b0227593000-2b0227598000 r--p 00000000 00:31 37057797                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_pickle.cpython-37m-x86_64-linux-gnu.so
+2b0227598000-2b02275ac000 r-xp 00005000 00:31 37057797                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_pickle.cpython-37m-x86_64-linux-gnu.so
+2b02275ac000-2b02275b0000 r--p 00019000 00:31 37057797                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_pickle.cpython-37m-x86_64-linux-gnu.so
+2b02275b0000-2b02275b1000 ---p 0001d000 00:31 37057797                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_pickle.cpython-37m-x86_64-linux-gnu.so
+2b02275b1000-2b02275b2000 r--p 0001d000 00:31 37057797                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_pickle.cpython-37m-x86_64-linux-gnu.so
+2b02275b2000-2b02275b5000 rw-p 0001e000 00:31 37057797                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_pickle.cpython-37m-x86_64-linux-gnu.so
+2b02275b5000-2b02276f5000 rw-p 00000000 00:00 0 
+2b02276f5000-2b02276fe000 r--p 00000000 00:31 26784804                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/core/_multiarray_tests.cpython-37m-x86_64-linux-gnu.so
+2b02276fe000-2b0227711000 r-xp 00009000 00:31 26784804                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/core/_multiarray_tests.cpython-37m-x86_64-linux-gnu.so
+2b0227711000-2b0227716000 r--p 0001c000 00:31 26784804                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/core/_multiarray_tests.cpython-37m-x86_64-linux-gnu.so
+2b0227716000-2b0227717000 ---p 00021000 00:31 26784804                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/core/_multiarray_tests.cpython-37m-x86_64-linux-gnu.so
+2b0227717000-2b0227718000 r--p 00021000 00:31 26784804                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/core/_multiarray_tests.cpython-37m-x86_64-linux-gnu.so
+2b0227718000-2b0227719000 rw-p 00022000 00:31 26784804                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/core/_multiarray_tests.cpython-37m-x86_64-linux-gnu.so
+2b0227719000-2b0227759000 rw-p 00000000 00:00 0 
+2b0227759000-2b022775b000 r--p 00000000 00:31 37056599                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/linalg/lapack_lite.cpython-37m-x86_64-linux-gnu.so
+2b022775b000-2b022775d000 r-xp 00002000 00:31 37056599                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/linalg/lapack_lite.cpython-37m-x86_64-linux-gnu.so
+2b022775d000-2b022775e000 r--p 00004000 00:31 37056599                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/linalg/lapack_lite.cpython-37m-x86_64-linux-gnu.so
+2b022775e000-2b022775f000 r--p 00004000 00:31 37056599                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/linalg/lapack_lite.cpython-37m-x86_64-linux-gnu.so
+2b022775f000-2b0227760000 rw-p 00005000 00:31 37056599                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/linalg/lapack_lite.cpython-37m-x86_64-linux-gnu.so
+2b0227760000-2b0227769000 r--p 00000000 00:31 26784805                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/linalg/_umath_linalg.cpython-37m-x86_64-linux-gnu.so
+2b0227769000-2b0227784000 r-xp 00009000 00:31 26784805                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/linalg/_umath_linalg.cpython-37m-x86_64-linux-gnu.so
+2b0227784000-2b0227789000 r--p 00024000 00:31 26784805                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/linalg/_umath_linalg.cpython-37m-x86_64-linux-gnu.so
+2b0227789000-2b022778a000 ---p 00029000 00:31 26784805                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/linalg/_umath_linalg.cpython-37m-x86_64-linux-gnu.so
+2b022778a000-2b022778b000 r--p 00029000 00:31 26784805                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/linalg/_umath_linalg.cpython-37m-x86_64-linux-gnu.so
+2b022778b000-2b022778c000 rw-p 0002a000 00:31 26784805                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/linalg/_umath_linalg.cpython-37m-x86_64-linux-gnu.so
+2b022778c000-2b022784c000 rw-p 00000000 00:00 0 
+2b022784c000-2b022784e000 r--p 00000000 00:31 26793093                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/zlib.cpython-37m-x86_64-linux-gnu.so
+2b022784e000-2b0227852000 r-xp 00002000 00:31 26793093                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/zlib.cpython-37m-x86_64-linux-gnu.so
+2b0227852000-2b0227853000 r--p 00006000 00:31 26793093                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/zlib.cpython-37m-x86_64-linux-gnu.so
+2b0227853000-2b0227854000 ---p 00007000 00:31 26793093                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/zlib.cpython-37m-x86_64-linux-gnu.so
+2b0227854000-2b0227855000 r--p 00007000 00:31 26793093                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/zlib.cpython-37m-x86_64-linux-gnu.so
+2b0227855000-2b0227857000 rw-p 00008000 00:31 26793093                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/zlib.cpython-37m-x86_64-linux-gnu.so
+2b0227857000-2b022785a000 r--p 00000000 00:31 26786311                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libz.so.1.2.11
+2b022785a000-2b0227868000 r-xp 00003000 00:31 26786311                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libz.so.1.2.11
+2b0227868000-2b022786e000 r--p 00011000 00:31 26786311                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libz.so.1.2.11
+2b022786e000-2b022786f000 ---p 00017000 00:31 26786311                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libz.so.1.2.11
+2b022786f000-2b0227870000 r--p 00017000 00:31 26786311                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libz.so.1.2.11
+2b0227870000-2b0227871000 rw-p 00018000 00:31 26786311                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libz.so.1.2.11
+2b0227871000-2b0227874000 r--p 00000000 00:31 26793022                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_bz2.cpython-37m-x86_64-linux-gnu.so
+2b0227874000-2b0227883000 r-xp 00003000 00:31 26793022                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_bz2.cpython-37m-x86_64-linux-gnu.so
+2b0227883000-2b0227885000 r--p 00012000 00:31 26793022                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_bz2.cpython-37m-x86_64-linux-gnu.so
+2b0227885000-2b0227886000 ---p 00014000 00:31 26793022                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_bz2.cpython-37m-x86_64-linux-gnu.so
+2b0227886000-2b0227887000 r--p 00014000 00:31 26793022                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_bz2.cpython-37m-x86_64-linux-gnu.so
+2b0227887000-2b0227889000 rw-p 00015000 00:31 26793022                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_bz2.cpython-37m-x86_64-linux-gnu.so
+2b0227889000-2b02278c9000 rw-p 00000000 00:00 0 
+2b02278c9000-2b02278cc000 r--p 00000000 00:31 26793026                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_lzma.cpython-37m-x86_64-linux-gnu.so
+2b02278cc000-2b02278d0000 r-xp 00003000 00:31 26793026                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_lzma.cpython-37m-x86_64-linux-gnu.so
+2b02278d0000-2b02278d2000 r--p 00007000 00:31 26793026                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_lzma.cpython-37m-x86_64-linux-gnu.so
+2b02278d2000-2b02278d3000 r--p 00008000 00:31 26793026                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_lzma.cpython-37m-x86_64-linux-gnu.so
+2b02278d3000-2b02278d5000 rw-p 00009000 00:31 26793026                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_lzma.cpython-37m-x86_64-linux-gnu.so
+2b02278d5000-2b02278d9000 r--p 00000000 00:31 26782331                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/liblzma.so.5.2.5
+2b02278d9000-2b02278f0000 r-xp 00004000 00:31 26782331                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/liblzma.so.5.2.5
+2b02278f0000-2b02278fb000 r--p 0001b000 00:31 26782331                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/liblzma.so.5.2.5
+2b02278fb000-2b02278fc000 ---p 00026000 00:31 26782331                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/liblzma.so.5.2.5
+2b02278fc000-2b02278fd000 r--p 00026000 00:31 26782331                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/liblzma.so.5.2.5
+2b02278fd000-2b02278fe000 rw-p 00027000 00:31 26782331                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/liblzma.so.5.2.5
+2b02278fe000-2b0227900000 r--p 00000000 00:31 37058062                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/grp.cpython-37m-x86_64-linux-gnu.so
+2b0227900000-2b0227901000 r-xp 00002000 00:31 37058062                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/grp.cpython-37m-x86_64-linux-gnu.so
+2b0227901000-2b0227902000 r--p 00003000 00:31 37058062                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/grp.cpython-37m-x86_64-linux-gnu.so
+2b0227902000-2b0227903000 r--p 00003000 00:31 37058062                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/grp.cpython-37m-x86_64-linux-gnu.so
+2b0227903000-2b0227904000 rw-p 00004000 00:31 37058062                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/grp.cpython-37m-x86_64-linux-gnu.so
+2b0227904000-2b022790b000 r--p 00000000 00:31 37054107                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_decimal.cpython-37m-x86_64-linux-gnu.so
+2b022790b000-2b0227942000 r-xp 00007000 00:31 37054107                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_decimal.cpython-37m-x86_64-linux-gnu.so
+2b0227942000-2b022794c000 r--p 0003e000 00:31 37054107                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_decimal.cpython-37m-x86_64-linux-gnu.so
+2b022794c000-2b022794d000 ---p 00048000 00:31 37054107                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_decimal.cpython-37m-x86_64-linux-gnu.so
+2b022794d000-2b022794e000 r--p 00048000 00:31 37054107                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_decimal.cpython-37m-x86_64-linux-gnu.so
+2b022794e000-2b0227956000 rw-p 00049000 00:31 37054107                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_decimal.cpython-37m-x86_64-linux-gnu.so
+2b0227956000-2b0227996000 rw-p 00000000 00:00 0 
+2b0227996000-2b0227997000 r--p 00000000 00:31 26784801                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/fft/_pocketfft_internal.cpython-37m-x86_64-linux-gnu.so
+2b0227997000-2b02279a9000 r-xp 00001000 00:31 26784801                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/fft/_pocketfft_internal.cpython-37m-x86_64-linux-gnu.so
+2b02279a9000-2b02279ab000 r--p 00013000 00:31 26784801                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/fft/_pocketfft_internal.cpython-37m-x86_64-linux-gnu.so
+2b02279ab000-2b02279ac000 r--p 00014000 00:31 26784801                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/fft/_pocketfft_internal.cpython-37m-x86_64-linux-gnu.so
+2b02279ac000-2b02279ad000 rw-p 00015000 00:31 26784801                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/fft/_pocketfft_internal.cpython-37m-x86_64-linux-gnu.so
+2b02279ad000-2b02279ed000 rw-p 00000000 00:00 0 
+2b02279ed000-2b02279f9000 r--p 00000000 00:31 37056601                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/mtrand.cpython-37m-x86_64-linux-gnu.so
+2b02279f9000-2b0227a3a000 r-xp 0000c000 00:31 37056601                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/mtrand.cpython-37m-x86_64-linux-gnu.so
+2b0227a3a000-2b0227a66000 r--p 0004d000 00:31 37056601                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/mtrand.cpython-37m-x86_64-linux-gnu.so
+2b0227a66000-2b0227a67000 r--p 00078000 00:31 37056601                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/mtrand.cpython-37m-x86_64-linux-gnu.so
+2b0227a67000-2b0227a8d000 rw-p 00079000 00:31 37056601                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/mtrand.cpython-37m-x86_64-linux-gnu.so
+2b0227a8d000-2b0227a8e000 rw-p 00000000 00:00 0 
+2b0227a8e000-2b0227a95000 r--p 00000000 00:31 26784806                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/bit_generator.cpython-37m-x86_64-linux-gnu.so
+2b0227a95000-2b0227aad000 r-xp 00007000 00:31 26784806                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/bit_generator.cpython-37m-x86_64-linux-gnu.so
+2b0227aad000-2b0227ab4000 r--p 0001f000 00:31 26784806                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/bit_generator.cpython-37m-x86_64-linux-gnu.so
+2b0227ab4000-2b0227ab5000 ---p 00026000 00:31 26784806                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/bit_generator.cpython-37m-x86_64-linux-gnu.so
+2b0227ab5000-2b0227ab6000 r--p 00026000 00:31 26784806                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/bit_generator.cpython-37m-x86_64-linux-gnu.so
+2b0227ab6000-2b0227aba000 rw-p 00027000 00:31 26784806                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/bit_generator.cpython-37m-x86_64-linux-gnu.so
+2b0227aba000-2b0227abb000 rw-p 00000000 00:00 0 
+2b0227abb000-2b0227ac0000 r--p 00000000 00:31 26784807                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_common.cpython-37m-x86_64-linux-gnu.so
+2b0227ac0000-2b0227aed000 r-xp 00005000 00:31 26784807                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_common.cpython-37m-x86_64-linux-gnu.so
+2b0227aed000-2b0227af1000 r--p 00032000 00:31 26784807                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_common.cpython-37m-x86_64-linux-gnu.so
+2b0227af1000-2b0227af2000 ---p 00036000 00:31 26784807                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_common.cpython-37m-x86_64-linux-gnu.so
+2b0227af2000-2b0227af3000 r--p 00036000 00:31 26784807                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_common.cpython-37m-x86_64-linux-gnu.so
+2b0227af3000-2b0227af5000 rw-p 00037000 00:31 26784807                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_common.cpython-37m-x86_64-linux-gnu.so
+2b0227af5000-2b0227af6000 rw-p 00000000 00:00 0 
+2b0227af6000-2b0227af8000 r--p 00000000 00:31 26793030                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/binascii.cpython-37m-x86_64-linux-gnu.so
+2b0227af8000-2b0227afb000 r-xp 00002000 00:31 26793030                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/binascii.cpython-37m-x86_64-linux-gnu.so
+2b0227afb000-2b0227afd000 r--p 00005000 00:31 26793030                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/binascii.cpython-37m-x86_64-linux-gnu.so
+2b0227afd000-2b0227afe000 r--p 00006000 00:31 26793030                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/binascii.cpython-37m-x86_64-linux-gnu.so
+2b0227afe000-2b0227aff000 rw-p 00007000 00:31 26793030                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/binascii.cpython-37m-x86_64-linux-gnu.so
+2b0227aff000-2b0227b04000 r--p 00000000 00:31 26784818                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_bounded_integers.cpython-37m-x86_64-linux-gnu.so
+2b0227b04000-2b0227b48000 r-xp 00005000 00:31 26784818                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_bounded_integers.cpython-37m-x86_64-linux-gnu.so
+2b0227b48000-2b0227b50000 r--p 00049000 00:31 26784818                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_bounded_integers.cpython-37m-x86_64-linux-gnu.so
+2b0227b50000-2b0227b51000 ---p 00051000 00:31 26784818                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_bounded_integers.cpython-37m-x86_64-linux-gnu.so
+2b0227b51000-2b0227b52000 r--p 00051000 00:31 26784818                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_bounded_integers.cpython-37m-x86_64-linux-gnu.so
+2b0227b52000-2b0227b53000 rw-p 00052000 00:31 26784818                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_bounded_integers.cpython-37m-x86_64-linux-gnu.so
+2b0227b53000-2b0227b54000 rw-p 00000000 00:00 0 
+2b0227b54000-2b0227b58000 r--p 00000000 00:31 26784803                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_mt19937.cpython-37m-x86_64-linux-gnu.so
+2b0227b58000-2b0227b66000 r-xp 00004000 00:31 26784803                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_mt19937.cpython-37m-x86_64-linux-gnu.so
+2b0227b66000-2b0227b6a000 r--p 00012000 00:31 26784803                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_mt19937.cpython-37m-x86_64-linux-gnu.so
+2b0227b6a000-2b0227b6b000 ---p 00016000 00:31 26784803                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_mt19937.cpython-37m-x86_64-linux-gnu.so
+2b0227b6b000-2b0227b6c000 r--p 00016000 00:31 26784803                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_mt19937.cpython-37m-x86_64-linux-gnu.so
+2b0227b6c000-2b0227b6e000 rw-p 00017000 00:31 26784803                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_mt19937.cpython-37m-x86_64-linux-gnu.so
+2b0227b6e000-2b0227b72000 r--p 00000000 00:31 26784802                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_philox.cpython-37m-x86_64-linux-gnu.so
+2b0227b72000-2b0227b7e000 r-xp 00004000 00:31 26784802                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_philox.cpython-37m-x86_64-linux-gnu.so
+2b0227b7e000-2b0227b82000 r--p 00010000 00:31 26784802                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_philox.cpython-37m-x86_64-linux-gnu.so
+2b0227b82000-2b0227b83000 r--p 00013000 00:31 26784802                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_philox.cpython-37m-x86_64-linux-gnu.so
+2b0227b83000-2b0227b85000 rw-p 00014000 00:31 26784802                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_philox.cpython-37m-x86_64-linux-gnu.so
+2b0227b85000-2b0227b89000 r--p 00000000 00:31 26784800                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_pcg64.cpython-37m-x86_64-linux-gnu.so
+2b0227b89000-2b0227b92000 r-xp 00004000 00:31 26784800                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_pcg64.cpython-37m-x86_64-linux-gnu.so
+2b0227b92000-2b0227b95000 r--p 0000d000 00:31 26784800                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_pcg64.cpython-37m-x86_64-linux-gnu.so
+2b0227b95000-2b0227b96000 r--p 0000f000 00:31 26784800                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_pcg64.cpython-37m-x86_64-linux-gnu.so
+2b0227b96000-2b0227b98000 rw-p 00010000 00:31 26784800                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_pcg64.cpython-37m-x86_64-linux-gnu.so
+2b0227b98000-2b0227b9c000 r--p 00000000 00:31 26784799                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_sfc64.cpython-37m-x86_64-linux-gnu.so
+2b0227b9c000-2b0227ba3000 r-xp 00004000 00:31 26784799                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_sfc64.cpython-37m-x86_64-linux-gnu.so
+2b0227ba3000-2b0227ba5000 r--p 0000b000 00:31 26784799                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_sfc64.cpython-37m-x86_64-linux-gnu.so
+2b0227ba5000-2b0227ba6000 ---p 0000d000 00:31 26784799                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_sfc64.cpython-37m-x86_64-linux-gnu.so
+2b0227ba6000-2b0227ba7000 r--p 0000d000 00:31 26784799                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_sfc64.cpython-37m-x86_64-linux-gnu.so
+2b0227ba7000-2b0227ba8000 rw-p 0000e000 00:31 26784799                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_sfc64.cpython-37m-x86_64-linux-gnu.so
+2b0227ba8000-2b0227bb5000 r--p 00000000 00:31 26784819                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_generator.cpython-37m-x86_64-linux-gnu.so
+2b0227bb5000-2b0227c10000 r-xp 0000d000 00:31 26784819                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_generator.cpython-37m-x86_64-linux-gnu.so
+2b0227c10000-2b0227c3e000 r--p 00068000 00:31 26784819                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_generator.cpython-37m-x86_64-linux-gnu.so
+2b0227c3e000-2b0227c3f000 r--p 00095000 00:31 26784819                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_generator.cpython-37m-x86_64-linux-gnu.so
+2b0227c3f000-2b0227c63000 rw-p 00096000 00:31 26784819                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/numpy/random/_generator.cpython-37m-x86_64-linux-gnu.so
+2b0227c63000-2b0227d24000 rw-p 00000000 00:00 0 
+2b0227d24000-2b022c08a000 r-xp 00000000 00:31 36634060                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libmkl_core.so
+2b022c08a000-2b022c28a000 ---p 04366000 00:31 36634060                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libmkl_core.so
+2b022c28a000-2b022c291000 r--p 04366000 00:31 36634060                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libmkl_core.so
+2b022c291000-2b022c2c1000 rw-p 0436d000 00:31 36634060                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libmkl_core.so
+2b022c2c1000-2b022c2ea000 rw-p 00000000 00:00 0 
+2b022c2ea000-2b022f073000 r-xp 00000000 00:31 36639771                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libmkl_intel_thread.so
+2b022f073000-2b022f273000 ---p 02d89000 00:31 36639771                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libmkl_intel_thread.so
+2b022f273000-2b022f27a000 r--p 02d89000 00:31 36639771                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libmkl_intel_thread.so
+2b022f27a000-2b022f7b3000 rw-p 02d90000 00:31 36639771                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libmkl_intel_thread.so
+2b022f7b3000-2b022f7d1000 rw-p 00000000 00:00 0 
+2b022f7d1000-2b02302bf000 r-xp 00000000 00:31 36644364                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libmkl_intel_lp64.so
+2b02302bf000-2b02304be000 ---p 00aee000 00:31 36644364                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libmkl_intel_lp64.so
+2b02304be000-2b02304c4000 r--p 00aed000 00:31 36644364                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libmkl_intel_lp64.so
+2b02304c4000-2b02304d7000 rw-p 00af3000 00:31 36644364                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libmkl_intel_lp64.so
+2b02304d7000-2b02304e2000 rw-p 00000000 00:00 0 
+2b02304e2000-2b0233225000 r-xp 00000000 00:31 36643049                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libmkl_avx2.so
+2b0233225000-2b0233424000 ---p 02d43000 00:31 36643049                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libmkl_avx2.so
+2b0233424000-2b023342b000 r--p 02d42000 00:31 36643049                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libmkl_avx2.so
+2b023342b000-2b0233439000 rw-p 02d49000 00:31 36643049                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libmkl_avx2.so
+2b0233439000-2b023343b000 rw-p 00000000 00:00 0 
+2b023343b000-2b02341d9000 r-xp 00000000 00:31 36644365                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libmkl_vml_avx2.so
+2b02341d9000-2b02343d8000 ---p 00d9e000 00:31 36644365                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libmkl_vml_avx2.so
+2b02343d8000-2b02343dc000 r--p 00d9d000 00:31 36644365                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libmkl_vml_avx2.so
+2b02343dc000-2b02343f5000 rw-p 00da1000 00:31 36644365                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libmkl_vml_avx2.so
+2b02343f5000-2b0234476000 rw-p 00000000 00:00 0 
+2b0234476000-2b023447a000 r--p 00000000 00:31 26781570                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/_lib/_ccallback_c.cpython-37m-x86_64-linux-gnu.so
+2b023447a000-2b0234483000 r-xp 00004000 00:31 26781570                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/_lib/_ccallback_c.cpython-37m-x86_64-linux-gnu.so
+2b0234483000-2b0234485000 r--p 0000d000 00:31 26781570                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/_lib/_ccallback_c.cpython-37m-x86_64-linux-gnu.so
+2b0234485000-2b0234486000 r--p 0000e000 00:31 26781570                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/_lib/_ccallback_c.cpython-37m-x86_64-linux-gnu.so
+2b0234486000-2b0234487000 rw-p 0000f000 00:31 26781570                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/_lib/_ccallback_c.cpython-37m-x86_64-linux-gnu.so
+2b0234487000-2b02344c8000 rw-p 00000000 00:00 0 
+2b02344c8000-2b02344cb000 r--p 00000000 00:31 26781308                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/_lib/_uarray/_uarray.cpython-37m-x86_64-linux-gnu.so
+2b02344cb000-2b02344d0000 r-xp 00003000 00:31 26781308                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/_lib/_uarray/_uarray.cpython-37m-x86_64-linux-gnu.so
+2b02344d0000-2b02344d2000 r--p 00008000 00:31 26781308                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/_lib/_uarray/_uarray.cpython-37m-x86_64-linux-gnu.so
+2b02344d2000-2b02344d3000 r--p 00009000 00:31 26781308                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/_lib/_uarray/_uarray.cpython-37m-x86_64-linux-gnu.so
+2b02344d3000-2b02344d4000 rw-p 0000a000 00:31 26781308                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/_lib/_uarray/_uarray.cpython-37m-x86_64-linux-gnu.so
+2b02344d4000-2b0234577000 r--p 00000000 00:31 26792455                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libstdc++.so.6.0.28
+2b0234577000-2b02345f6000 r-xp 000a3000 00:31 26792455                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libstdc++.so.6.0.28
+2b02345f6000-2b0234637000 r--p 00122000 00:31 26792455                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libstdc++.so.6.0.28
+2b0234637000-2b0234642000 r--p 00162000 00:31 26792455                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libstdc++.so.6.0.28
+2b0234642000-2b0234646000 rw-p 0016d000 00:31 26792455                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libstdc++.so.6.0.28
+2b0234646000-2b0234689000 rw-p 00000000 00:00 0 
+2b0234689000-2b0234690000 r--p 00000000 00:31 26781702                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/fft/_pocketfft/pypocketfft.cpython-37m-x86_64-linux-gnu.so
+2b0234690000-2b0234741000 r-xp 00007000 00:31 26781702                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/fft/_pocketfft/pypocketfft.cpython-37m-x86_64-linux-gnu.so
+2b0234741000-2b0234756000 r--p 000b8000 00:31 26781702                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/fft/_pocketfft/pypocketfft.cpython-37m-x86_64-linux-gnu.so
+2b0234756000-2b0234757000 ---p 000cd000 00:31 26781702                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/fft/_pocketfft/pypocketfft.cpython-37m-x86_64-linux-gnu.so
+2b0234757000-2b0234759000 r--p 000cd000 00:31 26781702                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/fft/_pocketfft/pypocketfft.cpython-37m-x86_64-linux-gnu.so
+2b0234759000-2b023475a000 rw-p 000cf000 00:31 26781702                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/fft/_pocketfft/pypocketfft.cpython-37m-x86_64-linux-gnu.so
+2b023475a000-2b023479c000 rw-p 00000000 00:00 0 
+2b023479c000-2b02347a1000 r--p 00000000 00:31 37057794                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_socket.cpython-37m-x86_64-linux-gnu.so
+2b02347a1000-2b02347af000 r-xp 00005000 00:31 37057794                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_socket.cpython-37m-x86_64-linux-gnu.so
+2b02347af000-2b02347b4000 r--p 00013000 00:31 37057794                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_socket.cpython-37m-x86_64-linux-gnu.so
+2b02347b4000-2b02347b5000 r--p 00017000 00:31 37057794                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_socket.cpython-37m-x86_64-linux-gnu.so
+2b02347b5000-2b02347ba000 rw-p 00018000 00:31 37057794                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_socket.cpython-37m-x86_64-linux-gnu.so
+2b02347ba000-2b02347be000 r--p 00000000 00:31 37057995                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/array.cpython-37m-x86_64-linux-gnu.so
+2b02347be000-2b02347c5000 r-xp 00004000 00:31 37057995                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/array.cpython-37m-x86_64-linux-gnu.so
+2b02347c5000-2b02347c8000 r--p 0000b000 00:31 37057995                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/array.cpython-37m-x86_64-linux-gnu.so
+2b02347c8000-2b02347c9000 ---p 0000e000 00:31 37057995                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/array.cpython-37m-x86_64-linux-gnu.so
+2b02347c9000-2b02347ca000 r--p 0000e000 00:31 37057995                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/array.cpython-37m-x86_64-linux-gnu.so
+2b02347ca000-2b02347cd000 rw-p 0000f000 00:31 37057995                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/array.cpython-37m-x86_64-linux-gnu.so
+2b02347cd000-2b02347d0000 r--p 00000000 00:31 37053660                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/_sparsetools.cpython-37m-x86_64-linux-gnu.so
+2b02347d0000-2b0234a58000 r-xp 00003000 00:31 37053660                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/_sparsetools.cpython-37m-x86_64-linux-gnu.so
+2b0234a58000-2b0234ab4000 r--p 0028b000 00:31 37053660                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/_sparsetools.cpython-37m-x86_64-linux-gnu.so
+2b0234ab4000-2b0234ab5000 r--p 002e6000 00:31 37053660                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/_sparsetools.cpython-37m-x86_64-linux-gnu.so
+2b0234ab5000-2b0234ab6000 rw-p 002e7000 00:31 37053660                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/_sparsetools.cpython-37m-x86_64-linux-gnu.so
+2b0234ab6000-2b0234af6000 rw-p 00000000 00:00 0 
+2b0234af6000-2b0234b00000 r--p 00000000 00:31 26781696                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/_csparsetools.cpython-37m-x86_64-linux-gnu.so
+2b0234b00000-2b0234b63000 r-xp 0000a000 00:31 26781696                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/_csparsetools.cpython-37m-x86_64-linux-gnu.so
+2b0234b63000-2b0234b70000 r--p 0006d000 00:31 26781696                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/_csparsetools.cpython-37m-x86_64-linux-gnu.so
+2b0234b70000-2b0234b71000 r--p 00079000 00:31 26781696                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/_csparsetools.cpython-37m-x86_64-linux-gnu.so
+2b0234b71000-2b0234b77000 rw-p 0007a000 00:31 26781696                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/_csparsetools.cpython-37m-x86_64-linux-gnu.so
+2b0234b77000-2b0234bb8000 rw-p 00000000 00:00 0 
+2b0234bb8000-2b0234bc0000 r--p 00000000 00:31 26780540                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_shortest_path.cpython-37m-x86_64-linux-gnu.so
+2b0234bc0000-2b0234bfa000 r-xp 00008000 00:31 26780540                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_shortest_path.cpython-37m-x86_64-linux-gnu.so
+2b0234bfa000-2b0234c07000 r--p 00042000 00:31 26780540                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_shortest_path.cpython-37m-x86_64-linux-gnu.so
+2b0234c07000-2b0234c08000 r--p 0004e000 00:31 26780540                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_shortest_path.cpython-37m-x86_64-linux-gnu.so
+2b0234c08000-2b0234c11000 rw-p 0004f000 00:31 26780540                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_shortest_path.cpython-37m-x86_64-linux-gnu.so
+2b0234c11000-2b0234c12000 rw-p 00000000 00:00 0 
+2b0234c12000-2b0234c16000 r--p 00000000 00:31 26781399                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_tools.cpython-37m-x86_64-linux-gnu.so
+2b0234c16000-2b0234c2b000 r-xp 00004000 00:31 26781399                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_tools.cpython-37m-x86_64-linux-gnu.so
+2b0234c2b000-2b0234c31000 r--p 00019000 00:31 26781399                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_tools.cpython-37m-x86_64-linux-gnu.so
+2b0234c31000-2b0234c32000 ---p 0001f000 00:31 26781399                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_tools.cpython-37m-x86_64-linux-gnu.so
+2b0234c32000-2b0234c33000 r--p 0001f000 00:31 26781399                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_tools.cpython-37m-x86_64-linux-gnu.so
+2b0234c33000-2b0234c38000 rw-p 00020000 00:31 26781399                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_tools.cpython-37m-x86_64-linux-gnu.so
+2b0234c38000-2b0234c3c000 r--p 00000000 00:31 26781398                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_traversal.cpython-37m-x86_64-linux-gnu.so
+2b0234c3c000-2b0234c50000 r-xp 00004000 00:31 26781398                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_traversal.cpython-37m-x86_64-linux-gnu.so
+2b0234c50000-2b0234c56000 r--p 00018000 00:31 26781398                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_traversal.cpython-37m-x86_64-linux-gnu.so
+2b0234c56000-2b0234c57000 r--p 0001d000 00:31 26781398                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_traversal.cpython-37m-x86_64-linux-gnu.so
+2b0234c57000-2b0234c5b000 rw-p 0001e000 00:31 26781398                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_traversal.cpython-37m-x86_64-linux-gnu.so
+2b0234c5b000-2b0234c5c000 rw-p 00000000 00:00 0 
+2b0234c5c000-2b0234c62000 r--p 00000000 00:31 26781409                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_min_spanning_tree.cpython-37m-x86_64-linux-gnu.so
+2b0234c62000-2b0234c7c000 r-xp 00006000 00:31 26781409                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_min_spanning_tree.cpython-37m-x86_64-linux-gnu.so
+2b0234c7c000-2b0234c83000 r--p 00020000 00:31 26781409                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_min_spanning_tree.cpython-37m-x86_64-linux-gnu.so
+2b0234c83000-2b0234c84000 r--p 00026000 00:31 26781409                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_min_spanning_tree.cpython-37m-x86_64-linux-gnu.so
+2b0234c84000-2b0234c87000 rw-p 00027000 00:31 26781409                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_min_spanning_tree.cpython-37m-x86_64-linux-gnu.so
+2b0234c87000-2b0234c88000 rw-p 00000000 00:00 0 
+2b0234c88000-2b0234c8f000 r--p 00000000 00:31 26780525                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_flow.cpython-37m-x86_64-linux-gnu.so
+2b0234c8f000-2b0234cb1000 r-xp 00007000 00:31 26780525                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_flow.cpython-37m-x86_64-linux-gnu.so
+2b0234cb1000-2b0234cba000 r--p 00029000 00:31 26780525                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_flow.cpython-37m-x86_64-linux-gnu.so
+2b0234cba000-2b0234cbb000 r--p 00031000 00:31 26780525                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_flow.cpython-37m-x86_64-linux-gnu.so
+2b0234cbb000-2b0234cc0000 rw-p 00032000 00:31 26780525                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_flow.cpython-37m-x86_64-linux-gnu.so
+2b0234cc0000-2b0234cc1000 rw-p 00000000 00:00 0 
+2b0234cc1000-2b0234cc7000 r--p 00000000 00:31 26781411                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_matching.cpython-37m-x86_64-linux-gnu.so
+2b0234cc7000-2b0234ce2000 r-xp 00006000 00:31 26781411                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_matching.cpython-37m-x86_64-linux-gnu.so
+2b0234ce2000-2b0234ce9000 r--p 00021000 00:31 26781411                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_matching.cpython-37m-x86_64-linux-gnu.so
+2b0234ce9000-2b0234cea000 ---p 00028000 00:31 26781411                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_matching.cpython-37m-x86_64-linux-gnu.so
+2b0234cea000-2b0234ceb000 r--p 00028000 00:31 26781411                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_matching.cpython-37m-x86_64-linux-gnu.so
+2b0234ceb000-2b0234cef000 rw-p 00029000 00:31 26781411                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_matching.cpython-37m-x86_64-linux-gnu.so
+2b0234cef000-2b0234cf6000 r--p 00000000 00:31 26780526                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_reordering.cpython-37m-x86_64-linux-gnu.so
+2b0234cf6000-2b0234d1b000 r-xp 00007000 00:31 26780526                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_reordering.cpython-37m-x86_64-linux-gnu.so
+2b0234d1b000-2b0234d23000 r--p 0002c000 00:31 26780526                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_reordering.cpython-37m-x86_64-linux-gnu.so
+2b0234d23000-2b0234d24000 ---p 00034000 00:31 26780526                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_reordering.cpython-37m-x86_64-linux-gnu.so
+2b0234d24000-2b0234d25000 r--p 00034000 00:31 26780526                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_reordering.cpython-37m-x86_64-linux-gnu.so
+2b0234d25000-2b0234d2a000 rw-p 00035000 00:31 26780526                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/csgraph/_reordering.cpython-37m-x86_64-linux-gnu.so
+2b0234d2a000-2b0234d3d000 r-xp 00000000 00:31 38302465                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/murmurhash.cpython-37m-x86_64-linux-gnu.so
+2b0234d3d000-2b0234f3d000 ---p 00013000 00:31 38302465                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/murmurhash.cpython-37m-x86_64-linux-gnu.so
+2b0234f3d000-2b0234f3e000 r--p 00013000 00:31 38302465                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/murmurhash.cpython-37m-x86_64-linux-gnu.so
+2b0234f3e000-2b0234f40000 rw-p 00014000 00:31 38302465                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/murmurhash.cpython-37m-x86_64-linux-gnu.so
+2b0234f40000-2b0234f43000 rw-p 00080000 00:31 38302465                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/murmurhash.cpython-37m-x86_64-linux-gnu.so
+2b0234f43000-2b0235003000 rw-p 00000000 00:00 0 
+2b0235003000-2b0235005000 r--p 00000000 00:31 37058002                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_json.cpython-37m-x86_64-linux-gnu.so
+2b0235005000-2b0235012000 r-xp 00002000 00:31 37058002                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_json.cpython-37m-x86_64-linux-gnu.so
+2b0235012000-2b0235014000 r--p 0000f000 00:31 37058002                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_json.cpython-37m-x86_64-linux-gnu.so
+2b0235014000-2b0235015000 r--p 00010000 00:31 37058002                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_json.cpython-37m-x86_64-linux-gnu.so
+2b0235015000-2b0235016000 rw-p 00011000 00:31 37058002                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_json.cpython-37m-x86_64-linux-gnu.so
+2b0235016000-2b0235056000 rw-p 00000000 00:00 0 
+2b0235056000-2b0235058000 r--p 00000000 00:31 37058067                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_queue.cpython-37m-x86_64-linux-gnu.so
+2b0235058000-2b0235059000 r-xp 00002000 00:31 37058067                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_queue.cpython-37m-x86_64-linux-gnu.so
+2b0235059000-2b023505a000 r--p 00003000 00:31 37058067                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_queue.cpython-37m-x86_64-linux-gnu.so
+2b023505a000-2b023505b000 r--p 00003000 00:31 37058067                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_queue.cpython-37m-x86_64-linux-gnu.so
+2b023505b000-2b023505c000 rw-p 00004000 00:31 37058067                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_queue.cpython-37m-x86_64-linux-gnu.so
+2b023505c000-2b023509c000 rw-p 00000000 00:00 0 
+2b023509c000-2b023509e000 r--p 00000000 00:31 37058071                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_multiprocessing.cpython-37m-x86_64-linux-gnu.so
+2b023509e000-2b023509f000 r-xp 00002000 00:31 37058071                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_multiprocessing.cpython-37m-x86_64-linux-gnu.so
+2b023509f000-2b02350a0000 r--p 00003000 00:31 37058071                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_multiprocessing.cpython-37m-x86_64-linux-gnu.so
+2b02350a0000-2b02350a1000 r--p 00003000 00:31 37058071                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_multiprocessing.cpython-37m-x86_64-linux-gnu.so
+2b02350a1000-2b02350a2000 rw-p 00004000 00:31 37058071                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_multiprocessing.cpython-37m-x86_64-linux-gnu.so
+2b02350a2000-2b02350a4000 r--p 00000000 00:31 37058079                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/mmap.cpython-37m-x86_64-linux-gnu.so
+2b02350a4000-2b02350a7000 r-xp 00002000 00:31 37058079                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/mmap.cpython-37m-x86_64-linux-gnu.so
+2b02350a7000-2b02350a8000 r--p 00005000 00:31 37058079                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/mmap.cpython-37m-x86_64-linux-gnu.so
+2b02350a8000-2b02350a9000 ---p 00006000 00:31 37058079                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/mmap.cpython-37m-x86_64-linux-gnu.so
+2b02350a9000-2b02350aa000 r--p 00006000 00:31 37058079                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/mmap.cpython-37m-x86_64-linux-gnu.so
+2b02350aa000-2b02350ab000 rw-p 00007000 00:31 37058079                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/mmap.cpython-37m-x86_64-linux-gnu.so
+2b02350ab000-2b02351ab000 rw-p 00000000 00:00 0 
+2b02351ab000-2b02351b5000 r--p 00000000 00:31 37053659                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/spatial/ckdtree.cpython-37m-x86_64-linux-gnu.so
+2b02351b5000-2b0235244000 r-xp 0000a000 00:31 37053659                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/spatial/ckdtree.cpython-37m-x86_64-linux-gnu.so
+2b0235244000-2b0235255000 r--p 00099000 00:31 37053659                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/spatial/ckdtree.cpython-37m-x86_64-linux-gnu.so
+2b0235255000-2b0235256000 ---p 000aa000 00:31 37053659                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/spatial/ckdtree.cpython-37m-x86_64-linux-gnu.so
+2b0235256000-2b0235257000 r--p 000aa000 00:31 37053659                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/spatial/ckdtree.cpython-37m-x86_64-linux-gnu.so
+2b0235257000-2b0235260000 rw-p 000ab000 00:31 37053659                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/spatial/ckdtree.cpython-37m-x86_64-linux-gnu.so
+2b0235260000-2b0235262000 rw-p 00000000 00:00 0 
+2b0235262000-2b023526e000 r--p 00000000 00:31 26781824                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/spatial/qhull.cpython-37m-x86_64-linux-gnu.so
+2b023526e000-2b0235304000 r-xp 0000c000 00:31 26781824                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/spatial/qhull.cpython-37m-x86_64-linux-gnu.so
+2b0235304000-2b0235336000 r--p 000a2000 00:31 26781824                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/spatial/qhull.cpython-37m-x86_64-linux-gnu.so
+2b0235336000-2b0235337000 r--p 000d3000 00:31 26781824                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/spatial/qhull.cpython-37m-x86_64-linux-gnu.so
+2b0235337000-2b0235340000 rw-p 000d4000 00:31 26781824                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/spatial/qhull.cpython-37m-x86_64-linux-gnu.so
+2b0235340000-2b0235381000 rw-p 00000000 00:00 0 
+2b0235381000-2b0235384000 r--p 00000000 00:31 26781310                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/_lib/messagestream.cpython-37m-x86_64-linux-gnu.so
+2b0235384000-2b023538a000 r-xp 00003000 00:31 26781310                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/_lib/messagestream.cpython-37m-x86_64-linux-gnu.so
+2b023538a000-2b023538c000 r--p 00009000 00:31 26781310                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/_lib/messagestream.cpython-37m-x86_64-linux-gnu.so
+2b023538c000-2b023538d000 r--p 0000a000 00:31 26781310                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/_lib/messagestream.cpython-37m-x86_64-linux-gnu.so
+2b023538d000-2b023538e000 rw-p 0000b000 00:31 26781310                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/_lib/messagestream.cpython-37m-x86_64-linux-gnu.so
+2b023538e000-2b0235394000 r--p 00000000 00:31 26781403                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/spatial/_voronoi.cpython-37m-x86_64-linux-gnu.so
+2b0235394000-2b02353ac000 r-xp 00006000 00:31 26781403                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/spatial/_voronoi.cpython-37m-x86_64-linux-gnu.so
+2b02353ac000-2b02353b2000 r--p 0001e000 00:31 26781403                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/spatial/_voronoi.cpython-37m-x86_64-linux-gnu.so
+2b02353b2000-2b02353b3000 r--p 00023000 00:31 26781403                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/spatial/_voronoi.cpython-37m-x86_64-linux-gnu.so
+2b02353b3000-2b02353b6000 rw-p 00024000 00:31 26781403                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/spatial/_voronoi.cpython-37m-x86_64-linux-gnu.so
+2b02353b6000-2b02353c5000 r--p 00000000 00:31 26781697                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/_fblas.cpython-37m-x86_64-linux-gnu.so
+2b02353c5000-2b02353fe000 r-xp 0000f000 00:31 26781697                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/_fblas.cpython-37m-x86_64-linux-gnu.so
+2b02353fe000-2b023541e000 r--p 00048000 00:31 26781697                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/_fblas.cpython-37m-x86_64-linux-gnu.so
+2b023541e000-2b023541f000 r--p 00067000 00:31 26781697                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/_fblas.cpython-37m-x86_64-linux-gnu.so
+2b023541f000-2b0235445000 rw-p 00068000 00:31 26781697                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/_fblas.cpython-37m-x86_64-linux-gnu.so
+2b0235445000-2b0235485000 rw-p 00000000 00:00 0 
+2b0235485000-2b02354ab000 r--p 00000000 00:31 26781826                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/_flapack.cpython-37m-x86_64-linux-gnu.so
+2b02354ab000-2b0235567000 r-xp 00026000 00:31 26781826                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/_flapack.cpython-37m-x86_64-linux-gnu.so
+2b0235567000-2b02355ce000 r--p 000e2000 00:31 26781826                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/_flapack.cpython-37m-x86_64-linux-gnu.so
+2b02355ce000-2b02355cf000 r--p 00148000 00:31 26781826                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/_flapack.cpython-37m-x86_64-linux-gnu.so
+2b02355cf000-2b023564f000 rw-p 00149000 00:31 26781826                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/_flapack.cpython-37m-x86_64-linux-gnu.so
+2b023564f000-2b0235651000 r--p 00000000 00:31 26781572                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/_flinalg.cpython-37m-x86_64-linux-gnu.so
+2b0235651000-2b0235659000 r-xp 00002000 00:31 26781572                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/_flinalg.cpython-37m-x86_64-linux-gnu.so
+2b0235659000-2b023565c000 r--p 0000a000 00:31 26781572                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/_flinalg.cpython-37m-x86_64-linux-gnu.so
+2b023565c000-2b023565d000 r--p 0000c000 00:31 26781572                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/_flinalg.cpython-37m-x86_64-linux-gnu.so
+2b023565d000-2b0235660000 rw-p 0000d000 00:31 26781572                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/_flinalg.cpython-37m-x86_64-linux-gnu.so
+2b0235660000-2b02356a0000 rw-p 00000000 00:00 0 
+2b02356a0000-2b02356a7000 r--p 00000000 00:31 26780523                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/_solve_toeplitz.cpython-37m-x86_64-linux-gnu.so
+2b02356a7000-2b02356c8000 r-xp 00007000 00:31 26780523                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/_solve_toeplitz.cpython-37m-x86_64-linux-gnu.so
+2b02356c8000-2b02356cf000 r--p 00028000 00:31 26780523                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/_solve_toeplitz.cpython-37m-x86_64-linux-gnu.so
+2b02356cf000-2b02356d0000 ---p 0002f000 00:31 26780523                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/_solve_toeplitz.cpython-37m-x86_64-linux-gnu.so
+2b02356d0000-2b02356d1000 r--p 0002f000 00:31 26780523                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/_solve_toeplitz.cpython-37m-x86_64-linux-gnu.so
+2b02356d1000-2b02356d5000 rw-p 00030000 00:31 26780523                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/_solve_toeplitz.cpython-37m-x86_64-linux-gnu.so
+2b02356d5000-2b02356da000 r--p 00000000 00:31 26780533                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/_decomp_update.cpython-37m-x86_64-linux-gnu.so
+2b02356da000-2b023570d000 r-xp 00005000 00:31 26780533                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/_decomp_update.cpython-37m-x86_64-linux-gnu.so
+2b023570d000-2b0235719000 r--p 00038000 00:31 26780533                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/_decomp_update.cpython-37m-x86_64-linux-gnu.so
+2b0235719000-2b023571a000 r--p 00043000 00:31 26780533                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/_decomp_update.cpython-37m-x86_64-linux-gnu.so
+2b023571a000-2b0235720000 rw-p 00044000 00:31 26780533                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/_decomp_update.cpython-37m-x86_64-linux-gnu.so
+2b0235720000-2b0235729000 r--p 00000000 00:31 26780528                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/cython_blas.cpython-37m-x86_64-linux-gnu.so
+2b0235729000-2b0235747000 r-xp 00009000 00:31 26780528                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/cython_blas.cpython-37m-x86_64-linux-gnu.so
+2b0235747000-2b0235754000 r--p 00027000 00:31 26780528                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/cython_blas.cpython-37m-x86_64-linux-gnu.so
+2b0235754000-2b0235755000 r--p 00033000 00:31 26780528                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/cython_blas.cpython-37m-x86_64-linux-gnu.so
+2b0235755000-2b0235758000 rw-p 00034000 00:31 26780528                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/cython_blas.cpython-37m-x86_64-linux-gnu.so
+2b0235758000-2b0235772000 r--p 00000000 00:31 26781698                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/cython_lapack.cpython-37m-x86_64-linux-gnu.so
+2b0235772000-2b0235789000 r-xp 0001a000 00:31 26781698                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/cython_lapack.cpython-37m-x86_64-linux-gnu.so
+2b0235789000-2b02357e2000 r--p 00031000 00:31 26781698                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/cython_lapack.cpython-37m-x86_64-linux-gnu.so
+2b02357e2000-2b02357e6000 r--p 00089000 00:31 26781698                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/cython_lapack.cpython-37m-x86_64-linux-gnu.so
+2b02357e6000-2b02357e7000 rw-p 0008d000 00:31 26781698                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/linalg/cython_lapack.cpython-37m-x86_64-linux-gnu.so
+2b02357e7000-2b0235827000 rw-p 00000000 00:00 0 
+2b0235827000-2b0235829000 r--p 00000000 00:31 26781573                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/spatial/_distance_wrap.cpython-37m-x86_64-linux-gnu.so
+2b0235829000-2b023583b000 r-xp 00002000 00:31 26781573                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/spatial/_distance_wrap.cpython-37m-x86_64-linux-gnu.so
+2b023583b000-2b023583d000 r--p 00014000 00:31 26781573                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/spatial/_distance_wrap.cpython-37m-x86_64-linux-gnu.so
+2b023583d000-2b023583e000 r--p 00015000 00:31 26781573                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/spatial/_distance_wrap.cpython-37m-x86_64-linux-gnu.so
+2b023583e000-2b023583f000 rw-p 00016000 00:31 26781573                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/spatial/_distance_wrap.cpython-37m-x86_64-linux-gnu.so
+2b023583f000-2b0235845000 r--p 00000000 00:31 37055103                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/spatial/_hausdorff.cpython-37m-x86_64-linux-gnu.so
+2b0235845000-2b023585e000 r-xp 00006000 00:31 37055103                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/spatial/_hausdorff.cpython-37m-x86_64-linux-gnu.so
+2b023585e000-2b0235864000 r--p 0001f000 00:31 37055103                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/spatial/_hausdorff.cpython-37m-x86_64-linux-gnu.so
+2b0235864000-2b0235865000 ---p 00025000 00:31 37055103                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/spatial/_hausdorff.cpython-37m-x86_64-linux-gnu.so
+2b0235865000-2b0235866000 r--p 00025000 00:31 37055103                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/spatial/_hausdorff.cpython-37m-x86_64-linux-gnu.so
+2b0235866000-2b0235869000 rw-p 00026000 00:31 37055103                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/spatial/_hausdorff.cpython-37m-x86_64-linux-gnu.so
+2b0235869000-2b0235874000 r--p 00000000 00:31 26781827                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/_ufuncs.cpython-37m-x86_64-linux-gnu.so
+2b0235874000-2b0235943000 r-xp 0000b000 00:31 26781827                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/_ufuncs.cpython-37m-x86_64-linux-gnu.so
+2b0235943000-2b023598f000 r--p 000da000 00:31 26781827                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/_ufuncs.cpython-37m-x86_64-linux-gnu.so
+2b023598f000-2b0235990000 ---p 00126000 00:31 26781827                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/_ufuncs.cpython-37m-x86_64-linux-gnu.so
+2b0235990000-2b0235991000 r--p 00126000 00:31 26781827                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/_ufuncs.cpython-37m-x86_64-linux-gnu.so
+2b0235991000-2b023599b000 rw-p 00127000 00:31 26781827                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/_ufuncs.cpython-37m-x86_64-linux-gnu.so
+2b023599b000-2b02359a3000 rw-p 00000000 00:00 0 
+2b02359a3000-2b02359be000 r--p 00000000 00:31 26790854                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libgfortran.so.4.0.0
+2b02359be000-2b0235aad000 r-xp 0001b000 00:31 26790854                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libgfortran.so.4.0.0
+2b0235aad000-2b0235ace000 r--p 0010a000 00:31 26790854                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libgfortran.so.4.0.0
+2b0235ace000-2b0235acf000 ---p 0012b000 00:31 26790854                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libgfortran.so.4.0.0
+2b0235acf000-2b0235ad0000 r--p 0012b000 00:31 26790854                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libgfortran.so.4.0.0
+2b0235ad0000-2b0235ad1000 rw-p 0012c000 00:31 26790854                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libgfortran.so.4.0.0
+2b0235ad1000-2b0235ad2000 rw-p 00000000 00:00 0 
+2b0235ad2000-2b0235ad5000 r--p 00000000 00:31 37051636                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libquadmath.so.0.0.0
+2b0235ad5000-2b0235af3000 r-xp 00003000 00:31 37051636                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libquadmath.so.0.0.0
+2b0235af3000-2b0235b09000 r--p 00021000 00:31 37051636                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libquadmath.so.0.0.0
+2b0235b09000-2b0235b0a000 ---p 00037000 00:31 37051636                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libquadmath.so.0.0.0
+2b0235b0a000-2b0235b0b000 r--p 00037000 00:31 37051636                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libquadmath.so.0.0.0
+2b0235b0b000-2b0235b0c000 rw-p 00038000 00:31 37051636                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libquadmath.so.0.0.0
+2b0235b0c000-2b0235b4c000 rw-p 00000000 00:00 0 
+2b0235b4c000-2b0235b4f000 r--p 00000000 00:31 26781575                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/_ufuncs_cxx.cpython-37m-x86_64-linux-gnu.so
+2b0235b4f000-2b0235b5c000 r-xp 00003000 00:31 26781575                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/_ufuncs_cxx.cpython-37m-x86_64-linux-gnu.so
+2b0235b5c000-2b0235b62000 r--p 00010000 00:31 26781575                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/_ufuncs_cxx.cpython-37m-x86_64-linux-gnu.so
+2b0235b62000-2b0235b63000 r--p 00015000 00:31 26781575                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/_ufuncs_cxx.cpython-37m-x86_64-linux-gnu.so
+2b0235b63000-2b0235b64000 rw-p 00016000 00:31 26781575                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/_ufuncs_cxx.cpython-37m-x86_64-linux-gnu.so
+2b0235b64000-2b0235b67000 r--p 00000000 00:31 26781700                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/specfun.cpython-37m-x86_64-linux-gnu.so
+2b0235b67000-2b0235b97000 r-xp 00003000 00:31 26781700                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/specfun.cpython-37m-x86_64-linux-gnu.so
+2b0235b97000-2b0235b9f000 r--p 00033000 00:31 26781700                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/specfun.cpython-37m-x86_64-linux-gnu.so
+2b0235b9f000-2b0235ba0000 r--p 0003a000 00:31 26781700                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/specfun.cpython-37m-x86_64-linux-gnu.so
+2b0235ba0000-2b0235ba5000 rw-p 0003b000 00:31 26781700                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/specfun.cpython-37m-x86_64-linux-gnu.so
+2b0235ba5000-2b0235ba8000 r--p 00000000 00:31 26781304                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/_comb.cpython-37m-x86_64-linux-gnu.so
+2b0235ba8000-2b0235bac000 r-xp 00003000 00:31 26781304                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/_comb.cpython-37m-x86_64-linux-gnu.so
+2b0235bac000-2b0235bad000 r--p 00007000 00:31 26781304                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/_comb.cpython-37m-x86_64-linux-gnu.so
+2b0235bad000-2b0235bae000 r--p 00007000 00:31 26781304                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/_comb.cpython-37m-x86_64-linux-gnu.so
+2b0235bae000-2b0235baf000 rw-p 00008000 00:31 26781304                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/_comb.cpython-37m-x86_64-linux-gnu.so
+2b0235baf000-2b0235bef000 rw-p 00000000 00:00 0 
+2b0235bef000-2b0235bf3000 r--p 00000000 00:31 26781574                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/_ellip_harm_2.cpython-37m-x86_64-linux-gnu.so
+2b0235bf3000-2b0235c00000 r-xp 00004000 00:31 26781574                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/_ellip_harm_2.cpython-37m-x86_64-linux-gnu.so
+2b0235c00000-2b0235c02000 r--p 00011000 00:31 26781574                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/_ellip_harm_2.cpython-37m-x86_64-linux-gnu.so
+2b0235c02000-2b0235c03000 ---p 00013000 00:31 26781574                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/_ellip_harm_2.cpython-37m-x86_64-linux-gnu.so
+2b0235c03000-2b0235c04000 r--p 00013000 00:31 26781574                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/_ellip_harm_2.cpython-37m-x86_64-linux-gnu.so
+2b0235c04000-2b0235c05000 rw-p 00014000 00:31 26781574                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/_ellip_harm_2.cpython-37m-x86_64-linux-gnu.so
+2b0235c05000-2b0235c85000 rw-p 00000000 00:00 0 
+2b0235c85000-2b0235c87000 r--p 00000000 00:31 37055100                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/ndimage/_nd_image.cpython-37m-x86_64-linux-gnu.so
+2b0235c87000-2b0235c9f000 r-xp 00002000 00:31 37055100                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/ndimage/_nd_image.cpython-37m-x86_64-linux-gnu.so
+2b0235c9f000-2b0235ca2000 r--p 0001a000 00:31 37055100                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/ndimage/_nd_image.cpython-37m-x86_64-linux-gnu.so
+2b0235ca2000-2b0235ca3000 ---p 0001d000 00:31 37055100                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/ndimage/_nd_image.cpython-37m-x86_64-linux-gnu.so
+2b0235ca3000-2b0235ca4000 r--p 0001d000 00:31 37055100                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/ndimage/_nd_image.cpython-37m-x86_64-linux-gnu.so
+2b0235ca4000-2b0235ca5000 rw-p 0001e000 00:31 37055100                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/ndimage/_nd_image.cpython-37m-x86_64-linux-gnu.so
+2b0235ca5000-2b0235cad000 r--p 00000000 00:31 26780535                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/ndimage/_ni_label.cpython-37m-x86_64-linux-gnu.so
+2b0235cad000-2b0235cdf000 r-xp 00008000 00:31 26780535                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/ndimage/_ni_label.cpython-37m-x86_64-linux-gnu.so
+2b0235cdf000-2b0235ce8000 r--p 0003a000 00:31 26780535                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/ndimage/_ni_label.cpython-37m-x86_64-linux-gnu.so
+2b0235ce8000-2b0235ce9000 r--p 00042000 00:31 26780535                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/ndimage/_ni_label.cpython-37m-x86_64-linux-gnu.so
+2b0235ce9000-2b0235ced000 rw-p 00043000 00:31 26780535                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/ndimage/_ni_label.cpython-37m-x86_64-linux-gnu.so
+2b0235ced000-2b0235d6e000 rw-p 00000000 00:00 0 
+2b0235d6e000-2b0235d70000 r--p 00000000 00:31 26781569                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/minpack2.cpython-37m-x86_64-linux-gnu.so
+2b0235d70000-2b0235d78000 r-xp 00002000 00:31 26781569                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/minpack2.cpython-37m-x86_64-linux-gnu.so
+2b0235d78000-2b0235d7a000 r--p 0000a000 00:31 26781569                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/minpack2.cpython-37m-x86_64-linux-gnu.so
+2b0235d7a000-2b0235d7b000 r--p 0000b000 00:31 26781569                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/minpack2.cpython-37m-x86_64-linux-gnu.so
+2b0235d7b000-2b0235d7c000 rw-p 0000c000 00:31 26781569                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/minpack2.cpython-37m-x86_64-linux-gnu.so
+2b0235d7c000-2b0235ebd000 rw-p 00000000 00:00 0 
+2b0235ebd000-2b0235ec1000 r--p 00000000 00:31 26780541                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/linalg/isolve/_iterative.cpython-37m-x86_64-linux-gnu.so
+2b0235ec1000-2b0235ee5000 r-xp 00004000 00:31 26780541                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/linalg/isolve/_iterative.cpython-37m-x86_64-linux-gnu.so
+2b0235ee5000-2b0235eee000 r--p 00028000 00:31 26780541                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/linalg/isolve/_iterative.cpython-37m-x86_64-linux-gnu.so
+2b0235eee000-2b0235eef000 r--p 00030000 00:31 26780541                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/linalg/isolve/_iterative.cpython-37m-x86_64-linux-gnu.so
+2b0235eef000-2b0235ef6000 rw-p 00031000 00:31 26780541                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/linalg/isolve/_iterative.cpython-37m-x86_64-linux-gnu.so
+2b0235ef6000-2b0235f37000 rw-p 00000000 00:00 0 
+2b0235f37000-2b0235f3a000 r--p 00000000 00:31 26780531                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/linalg/dsolve/_superlu.cpython-37m-x86_64-linux-gnu.so
+2b0235f3a000-2b0235f73000 r-xp 00003000 00:31 26780531                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/linalg/dsolve/_superlu.cpython-37m-x86_64-linux-gnu.so
+2b0235f73000-2b0235f7c000 r--p 0003c000 00:31 26780531                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/linalg/dsolve/_superlu.cpython-37m-x86_64-linux-gnu.so
+2b0235f7c000-2b0235f7d000 r--p 00044000 00:31 26780531                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/linalg/dsolve/_superlu.cpython-37m-x86_64-linux-gnu.so
+2b0235f7d000-2b0235f7e000 rw-p 00045000 00:31 26780531                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/linalg/dsolve/_superlu.cpython-37m-x86_64-linux-gnu.so
+2b0235f7e000-2b0235f84000 r--p 00000000 00:31 26781825                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/linalg/eigen/arpack/_arpack.cpython-37m-x86_64-linux-gnu.so
+2b0235f84000-2b0235fec000 r-xp 00006000 00:31 26781825                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/linalg/eigen/arpack/_arpack.cpython-37m-x86_64-linux-gnu.so
+2b0235fec000-2b0236001000 r--p 0006e000 00:31 26781825                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/linalg/eigen/arpack/_arpack.cpython-37m-x86_64-linux-gnu.so
+2b0236001000-2b0236002000 r--p 00082000 00:31 26781825                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/linalg/eigen/arpack/_arpack.cpython-37m-x86_64-linux-gnu.so
+2b0236002000-2b023600d000 rw-p 00083000 00:31 26781825                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/sparse/linalg/eigen/arpack/_arpack.cpython-37m-x86_64-linux-gnu.so
+2b023600d000-2b023604d000 rw-p 00000000 00:00 0 
+2b023604d000-2b0236053000 r--p 00000000 00:31 26781405                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_group_columns.cpython-37m-x86_64-linux-gnu.so
+2b0236053000-2b023606d000 r-xp 00006000 00:31 26781405                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_group_columns.cpython-37m-x86_64-linux-gnu.so
+2b023606d000-2b0236073000 r--p 00020000 00:31 26781405                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_group_columns.cpython-37m-x86_64-linux-gnu.so
+2b0236073000-2b0236074000 ---p 00026000 00:31 26781405                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_group_columns.cpython-37m-x86_64-linux-gnu.so
+2b0236074000-2b0236075000 r--p 00026000 00:31 26781405                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_group_columns.cpython-37m-x86_64-linux-gnu.so
+2b0236075000-2b0236078000 rw-p 00027000 00:31 26781405                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_group_columns.cpython-37m-x86_64-linux-gnu.so
+2b0236078000-2b0236080000 r--p 00000000 00:31 26780534                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_trlib/_trlib.cpython-37m-x86_64-linux-gnu.so
+2b0236080000-2b02360b2000 r-xp 00008000 00:31 26780534                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_trlib/_trlib.cpython-37m-x86_64-linux-gnu.so
+2b02360b2000-2b02360bb000 r--p 0003a000 00:31 26780534                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_trlib/_trlib.cpython-37m-x86_64-linux-gnu.so
+2b02360bb000-2b02360bc000 ---p 00043000 00:31 26780534                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_trlib/_trlib.cpython-37m-x86_64-linux-gnu.so
+2b02360bc000-2b02360bd000 r--p 00043000 00:31 26780534                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_trlib/_trlib.cpython-37m-x86_64-linux-gnu.so
+2b02360bd000-2b02360c1000 rw-p 00044000 00:31 26780534                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_trlib/_trlib.cpython-37m-x86_64-linux-gnu.so
+2b02360c1000-2b0236201000 rw-p 00000000 00:00 0 
+2b0236201000-2b0236203000 r--p 00000000 00:31 26780521                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_lbfgsb.cpython-37m-x86_64-linux-gnu.so
+2b0236203000-2b023621c000 r-xp 00002000 00:31 26780521                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_lbfgsb.cpython-37m-x86_64-linux-gnu.so
+2b023621c000-2b0236220000 r--p 0001b000 00:31 26780521                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_lbfgsb.cpython-37m-x86_64-linux-gnu.so
+2b0236220000-2b0236221000 r--p 0001e000 00:31 26780521                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_lbfgsb.cpython-37m-x86_64-linux-gnu.so
+2b0236221000-2b0236222000 rw-p 0001f000 00:31 26780521                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_lbfgsb.cpython-37m-x86_64-linux-gnu.so
+2b0236222000-2b0236223000 r--p 00000000 00:31 26781303                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/moduleTNC.cpython-37m-x86_64-linux-gnu.so
+2b0236223000-2b023622a000 r-xp 00001000 00:31 26781303                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/moduleTNC.cpython-37m-x86_64-linux-gnu.so
+2b023622a000-2b023622b000 r--p 00008000 00:31 26781303                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/moduleTNC.cpython-37m-x86_64-linux-gnu.so
+2b023622b000-2b023622c000 r--p 00008000 00:31 26781303                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/moduleTNC.cpython-37m-x86_64-linux-gnu.so
+2b023622c000-2b023622d000 rw-p 00009000 00:31 26781303                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/moduleTNC.cpython-37m-x86_64-linux-gnu.so
+2b023622d000-2b023622f000 r--p 00000000 00:31 26781408                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_cobyla.cpython-37m-x86_64-linux-gnu.so
+2b023622f000-2b0236249000 r-xp 00002000 00:31 26781408                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_cobyla.cpython-37m-x86_64-linux-gnu.so
+2b0236249000-2b023624b000 r--p 0001c000 00:31 26781408                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_cobyla.cpython-37m-x86_64-linux-gnu.so
+2b023624b000-2b023624c000 ---p 0001e000 00:31 26781408                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_cobyla.cpython-37m-x86_64-linux-gnu.so
+2b023624c000-2b023624d000 r--p 0001e000 00:31 26781408                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_cobyla.cpython-37m-x86_64-linux-gnu.so
+2b023624d000-2b023624e000 rw-p 0001f000 00:31 26781408                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_cobyla.cpython-37m-x86_64-linux-gnu.so
+2b023624e000-2b0236250000 r--p 00000000 00:31 26781402                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_slsqp.cpython-37m-x86_64-linux-gnu.so
+2b0236250000-2b0236262000 r-xp 00002000 00:31 26781402                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_slsqp.cpython-37m-x86_64-linux-gnu.so
+2b0236262000-2b0236265000 r--p 00014000 00:31 26781402                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_slsqp.cpython-37m-x86_64-linux-gnu.so
+2b0236265000-2b0236266000 r--p 00016000 00:31 26781402                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_slsqp.cpython-37m-x86_64-linux-gnu.so
+2b0236266000-2b0236267000 rw-p 00017000 00:31 26781402                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_slsqp.cpython-37m-x86_64-linux-gnu.so
+2b0236267000-2b0236269000 r--p 00000000 00:31 26780519                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_minpack.cpython-37m-x86_64-linux-gnu.so
+2b0236269000-2b0236285000 r-xp 00002000 00:31 26780519                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_minpack.cpython-37m-x86_64-linux-gnu.so
+2b0236285000-2b0236287000 r--p 0001e000 00:31 26780519                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_minpack.cpython-37m-x86_64-linux-gnu.so
+2b0236287000-2b0236288000 r--p 0001f000 00:31 26780519                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_minpack.cpython-37m-x86_64-linux-gnu.so
+2b0236288000-2b0236289000 rw-p 00020000 00:31 26780519                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_minpack.cpython-37m-x86_64-linux-gnu.so
+2b0236289000-2b023628f000 r--p 00000000 00:31 26781400                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_lsq/givens_elimination.cpython-37m-x86_64-linux-gnu.so
+2b023628f000-2b02362a6000 r-xp 00006000 00:31 26781400                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_lsq/givens_elimination.cpython-37m-x86_64-linux-gnu.so
+2b02362a6000-2b02362ac000 r--p 0001d000 00:31 26781400                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_lsq/givens_elimination.cpython-37m-x86_64-linux-gnu.so
+2b02362ac000-2b02362ad000 r--p 00022000 00:31 26781400                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_lsq/givens_elimination.cpython-37m-x86_64-linux-gnu.so
+2b02362ad000-2b02362b0000 rw-p 00023000 00:31 26781400                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_lsq/givens_elimination.cpython-37m-x86_64-linux-gnu.so
+2b02362b0000-2b02362f0000 rw-p 00000000 00:00 0 
+2b02362f0000-2b02362f1000 r--p 00000000 00:31 26781392                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_zeros.cpython-37m-x86_64-linux-gnu.so
+2b02362f1000-2b02362f3000 r-xp 00001000 00:31 26781392                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_zeros.cpython-37m-x86_64-linux-gnu.so
+2b02362f3000-2b02362f4000 r--p 00003000 00:31 26781392                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_zeros.cpython-37m-x86_64-linux-gnu.so
+2b02362f4000-2b02362f5000 r--p 00003000 00:31 26781392                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_zeros.cpython-37m-x86_64-linux-gnu.so
+2b02362f5000-2b02362f6000 rw-p 00004000 00:31 26781392                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_zeros.cpython-37m-x86_64-linux-gnu.so
+2b02362f6000-2b02362f8000 r--p 00000000 00:31 26781311                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/__nnls.cpython-37m-x86_64-linux-gnu.so
+2b02362f8000-2b02362fe000 r-xp 00002000 00:31 26781311                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/__nnls.cpython-37m-x86_64-linux-gnu.so
+2b02362fe000-2b0236300000 r--p 00008000 00:31 26781311                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/__nnls.cpython-37m-x86_64-linux-gnu.so
+2b0236300000-2b0236301000 r--p 00009000 00:31 26781311                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/__nnls.cpython-37m-x86_64-linux-gnu.so
+2b0236301000-2b0236302000 rw-p 0000a000 00:31 26781311                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/__nnls.cpython-37m-x86_64-linux-gnu.so
+2b0236302000-2b0236342000 rw-p 00000000 00:00 0 
+2b0236342000-2b023634a000 r--p 00000000 00:31 26780529                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_bglu_dense.cpython-37m-x86_64-linux-gnu.so
+2b023634a000-2b0236372000 r-xp 00008000 00:31 26780529                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_bglu_dense.cpython-37m-x86_64-linux-gnu.so
+2b0236372000-2b023637b000 r--p 00030000 00:31 26780529                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_bglu_dense.cpython-37m-x86_64-linux-gnu.so
+2b023637b000-2b023637c000 r--p 00038000 00:31 26780529                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_bglu_dense.cpython-37m-x86_64-linux-gnu.so
+2b023637c000-2b0236380000 rw-p 00039000 00:31 26780529                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_bglu_dense.cpython-37m-x86_64-linux-gnu.so
+2b0236380000-2b0236381000 rw-p 00000000 00:00 0 
+2b0236381000-2b0236382000 r--p 00000000 00:31 26781393                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_lsap_module.cpython-37m-x86_64-linux-gnu.so
+2b0236382000-2b0236384000 r-xp 00001000 00:31 26781393                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_lsap_module.cpython-37m-x86_64-linux-gnu.so
+2b0236384000-2b0236385000 r--p 00003000 00:31 26781393                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_lsap_module.cpython-37m-x86_64-linux-gnu.so
+2b0236385000-2b0236386000 r--p 00003000 00:31 26781393                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_lsap_module.cpython-37m-x86_64-linux-gnu.so
+2b0236386000-2b0236387000 rw-p 00004000 00:31 26781393                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/optimize/_lsap_module.cpython-37m-x86_64-linux-gnu.so
+2b0236387000-2b02363c7000 rw-p 00000000 00:00 0 
+2b02363c7000-2b02363c9000 r--p 00000000 00:31 37055101                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/integrate/_odepack.cpython-37m-x86_64-linux-gnu.so
+2b02363c9000-2b02363db000 r-xp 00002000 00:31 37055101                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/integrate/_odepack.cpython-37m-x86_64-linux-gnu.so
+2b02363db000-2b02363de000 r--p 00014000 00:31 37055101                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/integrate/_odepack.cpython-37m-x86_64-linux-gnu.so
+2b02363de000-2b02363df000 r--p 00016000 00:31 37055101                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/integrate/_odepack.cpython-37m-x86_64-linux-gnu.so
+2b02363df000-2b02363e0000 rw-p 00017000 00:31 37055101                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/integrate/_odepack.cpython-37m-x86_64-linux-gnu.so
+2b02363e0000-2b02363e2000 r--p 00000000 00:31 26780522                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/integrate/_quadpack.cpython-37m-x86_64-linux-gnu.so
+2b02363e2000-2b02363f9000 r-xp 00002000 00:31 26780522                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/integrate/_quadpack.cpython-37m-x86_64-linux-gnu.so
+2b02363f9000-2b02363fc000 r--p 00019000 00:31 26780522                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/integrate/_quadpack.cpython-37m-x86_64-linux-gnu.so
+2b02363fc000-2b02363fd000 r--p 0001b000 00:31 26780522                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/integrate/_quadpack.cpython-37m-x86_64-linux-gnu.so
+2b02363fd000-2b02363fe000 rw-p 0001c000 00:31 26780522                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/integrate/_quadpack.cpython-37m-x86_64-linux-gnu.so
+2b02363fe000-2b0236401000 r--p 00000000 00:31 26780539                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/integrate/vode.cpython-37m-x86_64-linux-gnu.so
+2b0236401000-2b023642a000 r-xp 00003000 00:31 26780539                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/integrate/vode.cpython-37m-x86_64-linux-gnu.so
+2b023642a000-2b023642f000 r--p 0002c000 00:31 26780539                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/integrate/vode.cpython-37m-x86_64-linux-gnu.so
+2b023642f000-2b0236430000 ---p 00031000 00:31 26780539                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/integrate/vode.cpython-37m-x86_64-linux-gnu.so
+2b0236430000-2b0236431000 r--p 00031000 00:31 26780539                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/integrate/vode.cpython-37m-x86_64-linux-gnu.so
+2b0236431000-2b0236433000 rw-p 00032000 00:31 26780539                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/integrate/vode.cpython-37m-x86_64-linux-gnu.so
+2b0236433000-2b0236436000 r--p 00000000 00:31 37055102                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/integrate/_dop.cpython-37m-x86_64-linux-gnu.so
+2b0236436000-2b023644a000 r-xp 00003000 00:31 37055102                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/integrate/_dop.cpython-37m-x86_64-linux-gnu.so
+2b023644a000-2b023644e000 r--p 00017000 00:31 37055102                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/integrate/_dop.cpython-37m-x86_64-linux-gnu.so
+2b023644e000-2b023644f000 r--p 0001a000 00:31 37055102                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/integrate/_dop.cpython-37m-x86_64-linux-gnu.so
+2b023644f000-2b0236451000 rw-p 0001b000 00:31 37055102                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/integrate/_dop.cpython-37m-x86_64-linux-gnu.so
+2b0236451000-2b0236454000 r--p 00000000 00:31 26781407                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/integrate/lsoda.cpython-37m-x86_64-linux-gnu.so
+2b0236454000-2b0236468000 r-xp 00003000 00:31 26781407                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/integrate/lsoda.cpython-37m-x86_64-linux-gnu.so
+2b0236468000-2b023646c000 r--p 00017000 00:31 26781407                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/integrate/lsoda.cpython-37m-x86_64-linux-gnu.so
+2b023646c000-2b023646d000 r--p 0001a000 00:31 26781407                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/integrate/lsoda.cpython-37m-x86_64-linux-gnu.so
+2b023646d000-2b023646e000 rw-p 0001b000 00:31 26781407                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/integrate/lsoda.cpython-37m-x86_64-linux-gnu.so
+2b023646e000-2b02365af000 rw-p 00000000 00:00 0 
+2b02365af000-2b02365b1000 r--p 00000000 00:31 37053658                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/interpolate/_fitpack.cpython-37m-x86_64-linux-gnu.so
+2b02365b1000-2b02365e2000 r-xp 00002000 00:31 37053658                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/interpolate/_fitpack.cpython-37m-x86_64-linux-gnu.so
+2b02365e2000-2b02365e4000 r--p 00033000 00:31 37053658                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/interpolate/_fitpack.cpython-37m-x86_64-linux-gnu.so
+2b02365e4000-2b02365e5000 ---p 00035000 00:31 37053658                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/interpolate/_fitpack.cpython-37m-x86_64-linux-gnu.so
+2b02365e5000-2b02365e6000 r--p 00035000 00:31 37053658                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/interpolate/_fitpack.cpython-37m-x86_64-linux-gnu.so
+2b02365e6000-2b02365e7000 rw-p 00036000 00:31 37053658                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/interpolate/_fitpack.cpython-37m-x86_64-linux-gnu.so
+2b02365e7000-2b02365eb000 r--p 00000000 00:31 26781699                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/interpolate/dfitpack.cpython-37m-x86_64-linux-gnu.so
+2b02365eb000-2b023663d000 r-xp 00004000 00:31 26781699                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/interpolate/dfitpack.cpython-37m-x86_64-linux-gnu.so
+2b023663d000-2b0236648000 r--p 00056000 00:31 26781699                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/interpolate/dfitpack.cpython-37m-x86_64-linux-gnu.so
+2b0236648000-2b0236649000 r--p 00060000 00:31 26781699                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/interpolate/dfitpack.cpython-37m-x86_64-linux-gnu.so
+2b0236649000-2b0236650000 rw-p 00061000 00:31 26781699                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/interpolate/dfitpack.cpython-37m-x86_64-linux-gnu.so
+2b0236650000-2b0236658000 r--p 00000000 00:31 26780527                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/interpolate/_bspl.cpython-37m-x86_64-linux-gnu.so
+2b0236658000-2b023667e000 r-xp 00008000 00:31 26780527                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/interpolate/_bspl.cpython-37m-x86_64-linux-gnu.so
+2b023667e000-2b0236686000 r--p 0002e000 00:31 26780527                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/interpolate/_bspl.cpython-37m-x86_64-linux-gnu.so
+2b0236686000-2b0236687000 ---p 00036000 00:31 26780527                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/interpolate/_bspl.cpython-37m-x86_64-linux-gnu.so
+2b0236687000-2b0236688000 r--p 00036000 00:31 26780527                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/interpolate/_bspl.cpython-37m-x86_64-linux-gnu.so
+2b0236688000-2b023668d000 rw-p 00037000 00:31 26780527                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/interpolate/_bspl.cpython-37m-x86_64-linux-gnu.so
+2b023668d000-2b023668e000 rw-p 00000000 00:00 0 
+2b023668e000-2b0236696000 r--p 00000000 00:31 26780536                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/interpolate/_ppoly.cpython-37m-x86_64-linux-gnu.so
+2b0236696000-2b02366cd000 r-xp 00008000 00:31 26780536                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/interpolate/_ppoly.cpython-37m-x86_64-linux-gnu.so
+2b02366cd000-2b02366d6000 r--p 0003f000 00:31 26780536                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/interpolate/_ppoly.cpython-37m-x86_64-linux-gnu.so
+2b02366d6000-2b02366d7000 r--p 00047000 00:31 26780536                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/interpolate/_ppoly.cpython-37m-x86_64-linux-gnu.so
+2b02366d7000-2b02366dc000 rw-p 00048000 00:31 26780536                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/interpolate/_ppoly.cpython-37m-x86_64-linux-gnu.so
+2b02366dc000-2b02366dd000 rw-p 00000000 00:00 0 
+2b02366dd000-2b02366e5000 r--p 00000000 00:31 26780537                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/interpolate/interpnd.cpython-37m-x86_64-linux-gnu.so
+2b02366e5000-2b023671b000 r-xp 00008000 00:31 26780537                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/interpolate/interpnd.cpython-37m-x86_64-linux-gnu.so
+2b023671b000-2b0236725000 r--p 0003e000 00:31 26780537                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/interpolate/interpnd.cpython-37m-x86_64-linux-gnu.so
+2b0236725000-2b0236726000 r--p 00047000 00:31 26780537                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/interpolate/interpnd.cpython-37m-x86_64-linux-gnu.so
+2b0236726000-2b023672a000 rw-p 00048000 00:31 26780537                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/interpolate/interpnd.cpython-37m-x86_64-linux-gnu.so
+2b023672a000-2b023676b000 rw-p 00000000 00:00 0 
+2b023676b000-2b0236775000 r--p 00000000 00:31 26780542                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/stats/_stats.cpython-37m-x86_64-linux-gnu.so
+2b0236775000-2b02367d2000 r-xp 0000a000 00:31 26780542                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/stats/_stats.cpython-37m-x86_64-linux-gnu.so
+2b02367d2000-2b02367de000 r--p 00067000 00:31 26780542                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/stats/_stats.cpython-37m-x86_64-linux-gnu.so
+2b02367de000-2b02367df000 r--p 00072000 00:31 26780542                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/stats/_stats.cpython-37m-x86_64-linux-gnu.so
+2b02367df000-2b02367e5000 rw-p 00073000 00:31 26780542                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/stats/_stats.cpython-37m-x86_64-linux-gnu.so
+2b02367e5000-2b02367e6000 rw-p 00000000 00:00 0 
+2b02367e6000-2b02367fb000 r--p 00000000 00:31 26780708                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/cython_special.cpython-37m-x86_64-linux-gnu.so
+2b02367fb000-2b0236975000 r-xp 00015000 00:31 26780708                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/cython_special.cpython-37m-x86_64-linux-gnu.so
+2b0236975000-2b02369a8000 r--p 0018f000 00:31 26780708                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/cython_special.cpython-37m-x86_64-linux-gnu.so
+2b02369a8000-2b02369a9000 r--p 001c1000 00:31 26780708                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/cython_special.cpython-37m-x86_64-linux-gnu.so
+2b02369a9000-2b02369b9000 rw-p 001c2000 00:31 26780708                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/special/cython_special.cpython-37m-x86_64-linux-gnu.so
+2b02369b9000-2b0236b7a000 rw-p 00000000 00:00 0 
+2b0236b7a000-2b0236b7c000 r--p 00000000 00:31 37055099                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/stats/statlib.cpython-37m-x86_64-linux-gnu.so
+2b0236b7c000-2b0236b83000 r-xp 00002000 00:31 37055099                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/stats/statlib.cpython-37m-x86_64-linux-gnu.so
+2b0236b83000-2b0236b85000 r--p 00009000 00:31 37055099                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/stats/statlib.cpython-37m-x86_64-linux-gnu.so
+2b0236b85000-2b0236b86000 r--p 0000a000 00:31 37055099                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/stats/statlib.cpython-37m-x86_64-linux-gnu.so
+2b0236b86000-2b0236b87000 rw-p 0000b000 00:31 37055099                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/stats/statlib.cpython-37m-x86_64-linux-gnu.so
+2b0236b87000-2b0236b89000 r--p 00000000 00:31 26781397                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/stats/mvn.cpython-37m-x86_64-linux-gnu.so
+2b0236b89000-2b0236b95000 r-xp 00002000 00:31 26781397                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/stats/mvn.cpython-37m-x86_64-linux-gnu.so
+2b0236b95000-2b0236b9a000 r--p 0000e000 00:31 26781397                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/stats/mvn.cpython-37m-x86_64-linux-gnu.so
+2b0236b9a000-2b0236b9b000 ---p 00013000 00:31 26781397                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/stats/mvn.cpython-37m-x86_64-linux-gnu.so
+2b0236b9b000-2b0236b9c000 r--p 00013000 00:31 26781397                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/stats/mvn.cpython-37m-x86_64-linux-gnu.so
+2b0236b9c000-2b0236b9e000 rw-p 00014000 00:31 26781397                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/stats/mvn.cpython-37m-x86_64-linux-gnu.so
+2b0236b9e000-2b0236d55000 rw-p 00000000 00:00 0 
+2b0236d55000-2b0236d5c000 r--p 00000000 00:31 37054430                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/pyexpat.cpython-37m-x86_64-linux-gnu.so
+2b0236d5c000-2b0236d8c000 r-xp 00007000 00:31 37054430                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/pyexpat.cpython-37m-x86_64-linux-gnu.so
+2b0236d8c000-2b0236d99000 r--p 00037000 00:31 37054430                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/pyexpat.cpython-37m-x86_64-linux-gnu.so
+2b0236d99000-2b0236d9c000 r--p 00043000 00:31 37054430                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/pyexpat.cpython-37m-x86_64-linux-gnu.so
+2b0236d9c000-2b0236d9e000 rw-p 00046000 00:31 37054430                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/pyexpat.cpython-37m-x86_64-linux-gnu.so
+2b0236d9e000-2b023705e000 rw-p 00000000 00:00 0 
+2b023705e000-2b0237064000 r-xp 00000000 00:31 38301368                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_openmp_helpers.cpython-37m-x86_64-linux-gnu.so
+2b0237064000-2b0237263000 ---p 00006000 00:31 38301368                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_openmp_helpers.cpython-37m-x86_64-linux-gnu.so
+2b0237263000-2b0237264000 r--p 00005000 00:31 38301368                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_openmp_helpers.cpython-37m-x86_64-linux-gnu.so
+2b0237264000-2b0237265000 rw-p 00006000 00:31 38301368                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_openmp_helpers.cpython-37m-x86_64-linux-gnu.so
+2b0237265000-2b0237267000 rw-p 00028000 00:31 38301368                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_openmp_helpers.cpython-37m-x86_64-linux-gnu.so
+2b0237267000-2b0237269000 r--p 00000000 00:31 37058090                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_csv.cpython-37m-x86_64-linux-gnu.so
+2b0237269000-2b023726d000 r-xp 00002000 00:31 37058090                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_csv.cpython-37m-x86_64-linux-gnu.so
+2b023726d000-2b023726e000 r--p 00006000 00:31 37058090                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_csv.cpython-37m-x86_64-linux-gnu.so
+2b023726e000-2b023726f000 ---p 00007000 00:31 37058090                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_csv.cpython-37m-x86_64-linux-gnu.so
+2b023726f000-2b0237270000 r--p 00007000 00:31 37058090                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_csv.cpython-37m-x86_64-linux-gnu.so
+2b0237270000-2b0237272000 rw-p 00008000 00:31 37058090                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_csv.cpython-37m-x86_64-linux-gnu.so
+2b0237272000-2b02372f2000 rw-p 00000000 00:00 0 
+2b02372f2000-2b02372fc000 r--p 00000000 00:31 26793028                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_ssl.cpython-37m-x86_64-linux-gnu.so
+2b02372fc000-2b0237307000 r-xp 0000a000 00:31 26793028                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_ssl.cpython-37m-x86_64-linux-gnu.so
+2b0237307000-2b023730d000 r--p 00015000 00:31 26793028                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_ssl.cpython-37m-x86_64-linux-gnu.so
+2b023730d000-2b023730e000 ---p 0001b000 00:31 26793028                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_ssl.cpython-37m-x86_64-linux-gnu.so
+2b023730e000-2b023730f000 r--p 0001b000 00:31 26793028                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_ssl.cpython-37m-x86_64-linux-gnu.so
+2b023730f000-2b0237314000 rw-p 0001c000 00:31 26793028                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/_ssl.cpython-37m-x86_64-linux-gnu.so
+2b0237314000-2b0237333000 r--p 00000000 00:31 35676443                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libssl.so.1.1
+2b0237333000-2b023737d000 r-xp 0001f000 00:31 35676443                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libssl.so.1.1
+2b023737d000-2b0237396000 r--p 00069000 00:31 35676443                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libssl.so.1.1
+2b0237396000-2b0237397000 ---p 00082000 00:31 35676443                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libssl.so.1.1
+2b0237397000-2b02373a0000 r--p 00082000 00:31 35676443                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libssl.so.1.1
+2b02373a0000-2b02373a4000 rw-p 0008b000 00:31 35676443                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libssl.so.1.1
+2b02373a4000-2b0237424000 rw-p 00000000 00:00 0 
+2b0237424000-2b0237432000 r-xp 00000000 00:31 38302112                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/feature_extraction/_hashing_fast.cpython-37m-x86_64-linux-gnu.so
+2b0237432000-2b0237632000 ---p 0000e000 00:31 38302112                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/feature_extraction/_hashing_fast.cpython-37m-x86_64-linux-gnu.so
+2b0237632000-2b0237633000 r--p 0000e000 00:31 38302112                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/feature_extraction/_hashing_fast.cpython-37m-x86_64-linux-gnu.so
+2b0237633000-2b0237634000 rw-p 0000f000 00:31 38302112                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/feature_extraction/_hashing_fast.cpython-37m-x86_64-linux-gnu.so
+2b0237634000-2b0237635000 rw-p 00000000 00:00 0 
+2b0237635000-2b0237638000 rw-p 00056000 00:31 38302112                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/feature_extraction/_hashing_fast.cpython-37m-x86_64-linux-gnu.so
+2b0237638000-2b023763b000 r--p 00000000 00:31 37058096                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/unicodedata.cpython-37m-x86_64-linux-gnu.so
+2b023763b000-2b023763f000 r-xp 00003000 00:31 37058096                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/unicodedata.cpython-37m-x86_64-linux-gnu.so
+2b023763f000-2b0237720000 r--p 00007000 00:31 37058096                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/unicodedata.cpython-37m-x86_64-linux-gnu.so
+2b0237720000-2b0237721000 r--p 000e7000 00:31 37058096                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/unicodedata.cpython-37m-x86_64-linux-gnu.so
+2b0237721000-2b023773e000 rw-p 000e8000 00:31 37058096                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/lib-dynload/unicodedata.cpython-37m-x86_64-linux-gnu.so
+2b023773e000-2b023777e000 rw-p 00000000 00:00 0 
+2b023777e000-2b02377a3000 r-xp 00000000 00:31 38300595                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_logistic_sigmoid.cpython-37m-x86_64-linux-gnu.so
+2b02377a3000-2b02379a2000 ---p 00025000 00:31 38300595                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_logistic_sigmoid.cpython-37m-x86_64-linux-gnu.so
+2b02379a2000-2b02379a3000 r--p 00024000 00:31 38300595                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_logistic_sigmoid.cpython-37m-x86_64-linux-gnu.so
+2b02379a3000-2b02379a6000 rw-p 00025000 00:31 38300595                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_logistic_sigmoid.cpython-37m-x86_64-linux-gnu.so
+2b02379a6000-2b02379a9000 rw-p 000f1000 00:31 38300595                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_logistic_sigmoid.cpython-37m-x86_64-linux-gnu.so
+2b02379a9000-2b0237a40000 r-xp 00000000 00:31 38302096                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/sparsefuncs_fast.cpython-37m-x86_64-linux-gnu.so
+2b0237a40000-2b0237c3f000 ---p 00097000 00:31 38302096                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/sparsefuncs_fast.cpython-37m-x86_64-linux-gnu.so
+2b0237c3f000-2b0237c40000 r--p 00096000 00:31 38302096                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/sparsefuncs_fast.cpython-37m-x86_64-linux-gnu.so
+2b0237c40000-2b0237c46000 rw-p 00097000 00:31 38302096                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/sparsefuncs_fast.cpython-37m-x86_64-linux-gnu.so
+2b0237c46000-2b0237c47000 rw-p 00000000 00:00 0 
+2b0237c47000-2b0237c4a000 rw-p 003be000 00:31 38302096                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/sparsefuncs_fast.cpython-37m-x86_64-linux-gnu.so
+2b0237c4a000-2b0237c81000 r-xp 00000000 00:31 38302485                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/preprocessing/_csr_polynomial_expansion.cpython-37m-x86_64-linux-gnu.so
+2b0237c81000-2b0237e80000 ---p 00037000 00:31 38302485                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/preprocessing/_csr_polynomial_expansion.cpython-37m-x86_64-linux-gnu.so
+2b0237e80000-2b0237e81000 r--p 00036000 00:31 38302485                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/preprocessing/_csr_polynomial_expansion.cpython-37m-x86_64-linux-gnu.so
+2b0237e81000-2b0237e85000 rw-p 00037000 00:31 38302485                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/preprocessing/_csr_polynomial_expansion.cpython-37m-x86_64-linux-gnu.so
+2b0237e85000-2b0237e86000 rw-p 00000000 00:00 0 
+2b0237e86000-2b0237e89000 rw-p 00163000 00:31 38302485                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/preprocessing/_csr_polynomial_expansion.cpython-37m-x86_64-linux-gnu.so
+2b0237e89000-2b0237f09000 rw-p 00000000 00:00 0 
+2b0237f09000-2b0237f1e000 r-xp 00000000 00:31 38300594                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_random.cpython-37m-x86_64-linux-gnu.so
+2b0237f1e000-2b023811d000 ---p 00015000 00:31 38300594                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_random.cpython-37m-x86_64-linux-gnu.so
+2b023811d000-2b023811e000 r--p 00014000 00:31 38300594                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_random.cpython-37m-x86_64-linux-gnu.so
+2b023811e000-2b0238121000 rw-p 00015000 00:31 38300594                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_random.cpython-37m-x86_64-linux-gnu.so
+2b0238121000-2b0238124000 rw-p 0008d000 00:31 38300594                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_random.cpython-37m-x86_64-linux-gnu.so
+2b0238124000-2b0238164000 rw-p 00000000 00:00 0 
+2b0238164000-2b0238177000 r-xp 00000000 00:31 38301987                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/datasets/_svmlight_format_fast.cpython-37m-x86_64-linux-gnu.so
+2b0238177000-2b0238376000 ---p 00013000 00:31 38301987                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/datasets/_svmlight_format_fast.cpython-37m-x86_64-linux-gnu.so
+2b0238376000-2b0238377000 r--p 00012000 00:31 38301987                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/datasets/_svmlight_format_fast.cpython-37m-x86_64-linux-gnu.so
+2b0238377000-2b0238379000 rw-p 00013000 00:31 38301987                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/datasets/_svmlight_format_fast.cpython-37m-x86_64-linux-gnu.so
+2b0238379000-2b023837c000 rw-p 0007c000 00:31 38301987                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/datasets/_svmlight_format_fast.cpython-37m-x86_64-linux-gnu.so
+2b023837c000-2b023837f000 r--p 00000000 00:31 26781307                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/io/matlab/mio_utils.cpython-37m-x86_64-linux-gnu.so
+2b023837f000-2b0238384000 r-xp 00003000 00:31 26781307                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/io/matlab/mio_utils.cpython-37m-x86_64-linux-gnu.so
+2b0238384000-2b0238385000 r--p 00008000 00:31 26781307                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/io/matlab/mio_utils.cpython-37m-x86_64-linux-gnu.so
+2b0238385000-2b0238386000 ---p 00009000 00:31 26781307                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/io/matlab/mio_utils.cpython-37m-x86_64-linux-gnu.so
+2b0238386000-2b0238387000 r--p 00009000 00:31 26781307                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/io/matlab/mio_utils.cpython-37m-x86_64-linux-gnu.so
+2b0238387000-2b0238388000 rw-p 0000a000 00:31 26781307                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/io/matlab/mio_utils.cpython-37m-x86_64-linux-gnu.so
+2b0238388000-2b023838e000 r--p 00000000 00:31 26781410                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/io/matlab/mio5_utils.cpython-37m-x86_64-linux-gnu.so
+2b023838e000-2b02383aa000 r-xp 00006000 00:31 26781410                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/io/matlab/mio5_utils.cpython-37m-x86_64-linux-gnu.so
+2b02383aa000-2b02383b0000 r--p 00022000 00:31 26781410                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/io/matlab/mio5_utils.cpython-37m-x86_64-linux-gnu.so
+2b02383b0000-2b02383b1000 r--p 00027000 00:31 26781410                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/io/matlab/mio5_utils.cpython-37m-x86_64-linux-gnu.so
+2b02383b1000-2b02383b5000 rw-p 00028000 00:31 26781410                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/io/matlab/mio5_utils.cpython-37m-x86_64-linux-gnu.so
+2b02383b5000-2b02383b9000 r--p 00000000 00:31 26781578                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/io/matlab/streams.cpython-37m-x86_64-linux-gnu.so
+2b02383b9000-2b02383c7000 r-xp 00004000 00:31 26781578                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/io/matlab/streams.cpython-37m-x86_64-linux-gnu.so
+2b02383c7000-2b02383ca000 r--p 00012000 00:31 26781578                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/io/matlab/streams.cpython-37m-x86_64-linux-gnu.so
+2b02383ca000-2b02383cb000 ---p 00015000 00:31 26781578                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/io/matlab/streams.cpython-37m-x86_64-linux-gnu.so
+2b02383cb000-2b02383cc000 r--p 00015000 00:31 26781578                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/io/matlab/streams.cpython-37m-x86_64-linux-gnu.so
+2b02383cc000-2b02383ce000 rw-p 00016000 00:31 26781578                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/scipy/io/matlab/streams.cpython-37m-x86_64-linux-gnu.so
+2b02383ce000-2b023844e000 rw-p 00000000 00:00 0 
+2b023844e000-2b0238466000 r-xp 00000000 00:31 38301849                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/metrics/cluster/_expected_mutual_info_fast.cpython-37m-x86_64-linux-gnu.so
+2b0238466000-2b0238665000 ---p 00018000 00:31 38301849                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/metrics/cluster/_expected_mutual_info_fast.cpython-37m-x86_64-linux-gnu.so
+2b0238665000-2b0238666000 r--p 00017000 00:31 38301849                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/metrics/cluster/_expected_mutual_info_fast.cpython-37m-x86_64-linux-gnu.so
+2b0238666000-2b0238668000 rw-p 00018000 00:31 38301849                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/metrics/cluster/_expected_mutual_info_fast.cpython-37m-x86_64-linux-gnu.so
+2b0238668000-2b023866b000 rw-p 00087000 00:31 38301849                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/metrics/cluster/_expected_mutual_info_fast.cpython-37m-x86_64-linux-gnu.so
+2b023866b000-2b02386ab000 rw-p 00000000 00:00 0 
+2b02386ab000-2b02386df000 r-xp 00000000 00:31 38301978                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/metrics/_pairwise_fast.cpython-37m-x86_64-linux-gnu.so
+2b02386df000-2b02388df000 ---p 00034000 00:31 38301978                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/metrics/_pairwise_fast.cpython-37m-x86_64-linux-gnu.so
+2b02388df000-2b02388e0000 r--p 00034000 00:31 38301978                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/metrics/_pairwise_fast.cpython-37m-x86_64-linux-gnu.so
+2b02388e0000-2b02388e4000 rw-p 00035000 00:31 38301978                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/metrics/_pairwise_fast.cpython-37m-x86_64-linux-gnu.so
+2b02388e4000-2b02388e7000 rw-p 0013f000 00:31 38301978                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/metrics/_pairwise_fast.cpython-37m-x86_64-linux-gnu.so
+2b02388e7000-2b0238927000 rw-p 00000000 00:00 0 
+2b0238927000-2b023898b000 r-xp 00000000 00:31 38301141                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/neighbors/_ball_tree.cpython-37m-x86_64-linux-gnu.so
+2b023898b000-2b0238b8a000 ---p 00064000 00:31 38301141                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/neighbors/_ball_tree.cpython-37m-x86_64-linux-gnu.so
+2b0238b8a000-2b0238b8b000 r--p 00063000 00:31 38301141                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/neighbors/_ball_tree.cpython-37m-x86_64-linux-gnu.so
+2b0238b8b000-2b0238b92000 rw-p 00064000 00:31 38301141                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/neighbors/_ball_tree.cpython-37m-x86_64-linux-gnu.so
+2b0238b92000-2b0238b94000 rw-p 00000000 00:00 0 
+2b0238b94000-2b0238b98000 rw-p 0028c000 00:31 38301141                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/neighbors/_ball_tree.cpython-37m-x86_64-linux-gnu.so
+2b0238b98000-2b0238bd7000 r-xp 00000000 00:31 38301720                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/neighbors/_dist_metrics.cpython-37m-x86_64-linux-gnu.so
+2b0238bd7000-2b0238dd6000 ---p 0003f000 00:31 38301720                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/neighbors/_dist_metrics.cpython-37m-x86_64-linux-gnu.so
+2b0238dd6000-2b0238dd7000 r--p 0003e000 00:31 38301720                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/neighbors/_dist_metrics.cpython-37m-x86_64-linux-gnu.so
+2b0238dd7000-2b0238dde000 rw-p 0003f000 00:31 38301720                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/neighbors/_dist_metrics.cpython-37m-x86_64-linux-gnu.so
+2b0238dde000-2b0238ddf000 rw-p 00000000 00:00 0 
+2b0238ddf000-2b0238de2000 rw-p 00197000 00:31 38301720                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/neighbors/_dist_metrics.cpython-37m-x86_64-linux-gnu.so
+2b0238de2000-2b0238de7000 r-xp 00000000 00:31 38301979                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/neighbors/_typedefs.cpython-37m-x86_64-linux-gnu.so
+2b0238de7000-2b0238fe6000 ---p 00005000 00:31 38301979                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/neighbors/_typedefs.cpython-37m-x86_64-linux-gnu.so
+2b0238fe6000-2b0238fe7000 r--p 00004000 00:31 38301979                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/neighbors/_typedefs.cpython-37m-x86_64-linux-gnu.so
+2b0238fe7000-2b0238fe8000 rw-p 00005000 00:31 38301979                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/neighbors/_typedefs.cpython-37m-x86_64-linux-gnu.so
+2b0238fe8000-2b0238fea000 rw-p 0001c000 00:31 38301979                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/neighbors/_typedefs.cpython-37m-x86_64-linux-gnu.so
+2b0238fea000-2b023904e000 r-xp 00000000 00:31 38301600                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/neighbors/_kd_tree.cpython-37m-x86_64-linux-gnu.so
+2b023904e000-2b023924d000 ---p 00064000 00:31 38301600                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/neighbors/_kd_tree.cpython-37m-x86_64-linux-gnu.so
+2b023924d000-2b023924e000 r--p 00063000 00:31 38301600                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/neighbors/_kd_tree.cpython-37m-x86_64-linux-gnu.so
+2b023924e000-2b0239255000 rw-p 00064000 00:31 38301600                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/neighbors/_kd_tree.cpython-37m-x86_64-linux-gnu.so
+2b0239255000-2b0239256000 rw-p 00000000 00:00 0 
+2b0239256000-2b023925a000 rw-p 00281000 00:31 38301600                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/neighbors/_kd_tree.cpython-37m-x86_64-linux-gnu.so
+2b023925a000-2b023929a000 rw-p 00000000 00:00 0 
+2b023929a000-2b02392c6000 r-xp 00000000 00:31 38297726                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/decomposition/_cdnmf_fast.cpython-37m-x86_64-linux-gnu.so
+2b02392c6000-2b02394c5000 ---p 0002c000 00:31 38297726                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/decomposition/_cdnmf_fast.cpython-37m-x86_64-linux-gnu.so
+2b02394c5000-2b02394c6000 r--p 0002b000 00:31 38297726                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/decomposition/_cdnmf_fast.cpython-37m-x86_64-linux-gnu.so
+2b02394c6000-2b02394c9000 rw-p 0002c000 00:31 38297726                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/decomposition/_cdnmf_fast.cpython-37m-x86_64-linux-gnu.so
+2b02394c9000-2b02394ca000 rw-p 00000000 00:00 0 
+2b02394ca000-2b02394cd000 rw-p 00119000 00:31 38297726                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/decomposition/_cdnmf_fast.cpython-37m-x86_64-linux-gnu.so
+2b02394cd000-2b023950d000 rw-p 00000000 00:00 0 
+2b023950d000-2b0239527000 r-xp 00000000 00:31 38298964                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_seq_dataset.cpython-37m-x86_64-linux-gnu.so
+2b0239527000-2b0239726000 ---p 0001a000 00:31 38298964                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_seq_dataset.cpython-37m-x86_64-linux-gnu.so
+2b0239726000-2b0239727000 r--p 00019000 00:31 38298964                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_seq_dataset.cpython-37m-x86_64-linux-gnu.so
+2b0239727000-2b0239729000 rw-p 0001a000 00:31 38298964                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_seq_dataset.cpython-37m-x86_64-linux-gnu.so
+2b0239729000-2b023972a000 rw-p 00000000 00:00 0 
+2b023972a000-2b023972d000 rw-p 000a8000 00:31 38298964                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_seq_dataset.cpython-37m-x86_64-linux-gnu.so
+2b023972d000-2b023975a000 r-xp 00000000 00:31 38300967                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/arrayfuncs.cpython-37m-x86_64-linux-gnu.so
+2b023975a000-2b0239959000 ---p 0002d000 00:31 38300967                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/arrayfuncs.cpython-37m-x86_64-linux-gnu.so
+2b0239959000-2b023995a000 r--p 0002c000 00:31 38300967                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/arrayfuncs.cpython-37m-x86_64-linux-gnu.so
+2b023995a000-2b023995e000 rw-p 0002d000 00:31 38300967                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/arrayfuncs.cpython-37m-x86_64-linux-gnu.so
+2b023995e000-2b0239961000 rw-p 00126000 00:31 38300967                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/arrayfuncs.cpython-37m-x86_64-linux-gnu.so
+2b0239961000-2b02399b8000 r-xp 00000000 00:31 38299989                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_cython_blas.cpython-37m-x86_64-linux-gnu.so
+2b02399b8000-2b0239bb7000 ---p 00057000 00:31 38299989                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_cython_blas.cpython-37m-x86_64-linux-gnu.so
+2b0239bb7000-2b0239bb8000 r--p 00056000 00:31 38299989                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_cython_blas.cpython-37m-x86_64-linux-gnu.so
+2b0239bb8000-2b0239bbd000 rw-p 00057000 00:31 38299989                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_cython_blas.cpython-37m-x86_64-linux-gnu.so
+2b0239bbd000-2b0239bbe000 rw-p 00000000 00:00 0 
+2b0239bbe000-2b0239bc1000 rw-p 00238000 00:31 38299989                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_cython_blas.cpython-37m-x86_64-linux-gnu.so
+2b0239bc1000-2b0239c41000 rw-p 00000000 00:00 0 
+2b0239c41000-2b0239c9f000 r-xp 00000000 00:31 38301875                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/linear_model/_cd_fast.cpython-37m-x86_64-linux-gnu.so
+2b0239c9f000-2b0239e9e000 ---p 0005e000 00:31 38301875                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/linear_model/_cd_fast.cpython-37m-x86_64-linux-gnu.so
+2b0239e9e000-2b0239e9f000 r--p 0005d000 00:31 38301875                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/linear_model/_cd_fast.cpython-37m-x86_64-linux-gnu.so
+2b0239e9f000-2b0239ea4000 rw-p 0005e000 00:31 38301875                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/linear_model/_cd_fast.cpython-37m-x86_64-linux-gnu.so
+2b0239ea4000-2b0239ea5000 rw-p 00000000 00:00 0 
+2b0239ea5000-2b0239ea8000 rw-p 00273000 00:31 38301875                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/linear_model/_cd_fast.cpython-37m-x86_64-linux-gnu.so
+2b0239ea8000-2b0239ede000 r-xp 00000000 00:31 38302618                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/linear_model/_sgd_fast.cpython-37m-x86_64-linux-gnu.so
+2b0239ede000-2b023a0de000 ---p 00036000 00:31 38302618                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/linear_model/_sgd_fast.cpython-37m-x86_64-linux-gnu.so
+2b023a0de000-2b023a0df000 r--p 00036000 00:31 38302618                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/linear_model/_sgd_fast.cpython-37m-x86_64-linux-gnu.so
+2b023a0df000-2b023a0e5000 rw-p 00037000 00:31 38302618                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/linear_model/_sgd_fast.cpython-37m-x86_64-linux-gnu.so
+2b023a0e5000-2b023a0e6000 rw-p 00000000 00:00 0 
+2b023a0e6000-2b023a0e9000 rw-p 00181000 00:31 38302618                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/linear_model/_sgd_fast.cpython-37m-x86_64-linux-gnu.so
+2b023a0e9000-2b023a10f000 r-xp 00000000 00:31 38301137                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_weight_vector.cpython-37m-x86_64-linux-gnu.so
+2b023a10f000-2b023a30e000 ---p 00026000 00:31 38301137                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_weight_vector.cpython-37m-x86_64-linux-gnu.so
+2b023a30e000-2b023a30f000 r--p 00025000 00:31 38301137                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_weight_vector.cpython-37m-x86_64-linux-gnu.so
+2b023a30f000-2b023a312000 rw-p 00026000 00:31 38301137                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_weight_vector.cpython-37m-x86_64-linux-gnu.so
+2b023a312000-2b023a315000 rw-p 000f9000 00:31 38301137                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_weight_vector.cpython-37m-x86_64-linux-gnu.so
+2b023a315000-2b023a355000 rw-p 00000000 00:00 0 
+2b023a355000-2b023a374000 r-xp 00000000 00:31 38300983                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/linear_model/_sag_fast.cpython-37m-x86_64-linux-gnu.so
+2b023a374000-2b023a573000 ---p 0001f000 00:31 38300983                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/linear_model/_sag_fast.cpython-37m-x86_64-linux-gnu.so
+2b023a573000-2b023a574000 r--p 0001e000 00:31 38300983                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/linear_model/_sag_fast.cpython-37m-x86_64-linux-gnu.so
+2b023a574000-2b023a577000 rw-p 0001f000 00:31 38300983                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/linear_model/_sag_fast.cpython-37m-x86_64-linux-gnu.so
+2b023a577000-2b023a57a000 rw-p 000b1000 00:31 38300983                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/linear_model/_sag_fast.cpython-37m-x86_64-linux-gnu.so
+2b023a57a000-2b023a5ba000 rw-p 00000000 00:00 0 
+2b023a5ba000-2b023a5ff000 r-xp 00000000 00:31 38301599                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/svm/_libsvm.cpython-37m-x86_64-linux-gnu.so
+2b023a5ff000-2b023a7fe000 ---p 00045000 00:31 38301599                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/svm/_libsvm.cpython-37m-x86_64-linux-gnu.so
+2b023a7fe000-2b023a7ff000 r--p 00044000 00:31 38301599                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/svm/_libsvm.cpython-37m-x86_64-linux-gnu.so
+2b023a7ff000-2b023a804000 rw-p 00045000 00:31 38301599                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/svm/_libsvm.cpython-37m-x86_64-linux-gnu.so
+2b023a804000-2b023a806000 rw-p 00000000 00:00 0 
+2b023a806000-2b023a80c000 rw-p 00165000 00:31 38301599                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/svm/_libsvm.cpython-37m-x86_64-linux-gnu.so
+2b023a80c000-2b023a82d000 r-xp 00000000 00:31 38302721                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/svm/_liblinear.cpython-37m-x86_64-linux-gnu.so
+2b023a82d000-2b023aa2c000 ---p 00021000 00:31 38302721                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/svm/_liblinear.cpython-37m-x86_64-linux-gnu.so
+2b023aa2c000-2b023aa2d000 r--p 00020000 00:31 38302721                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/svm/_liblinear.cpython-37m-x86_64-linux-gnu.so
+2b023aa2d000-2b023aa2f000 rw-p 00021000 00:31 38302721                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/svm/_liblinear.cpython-37m-x86_64-linux-gnu.so
+2b023aa2f000-2b023aa30000 rw-p 00000000 00:00 0 
+2b023aa30000-2b023aa34000 rw-p 000c0000 00:31 38302721                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/svm/_liblinear.cpython-37m-x86_64-linux-gnu.so
+2b023aa34000-2b023aa74000 r-xp 00000000 00:31 38299443                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/svm/_libsvm_sparse.cpython-37m-x86_64-linux-gnu.so
+2b023aa74000-2b023ac74000 ---p 00040000 00:31 38299443                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/svm/_libsvm_sparse.cpython-37m-x86_64-linux-gnu.so
+2b023ac74000-2b023ac75000 r--p 00040000 00:31 38299443                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/svm/_libsvm_sparse.cpython-37m-x86_64-linux-gnu.so
+2b023ac75000-2b023ac77000 rw-p 00041000 00:31 38299443                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/svm/_libsvm_sparse.cpython-37m-x86_64-linux-gnu.so
+2b023ac77000-2b023ac79000 rw-p 00000000 00:00 0 
+2b023ac79000-2b023ac7f000 rw-p 00145000 00:31 38299443                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/svm/_libsvm_sparse.cpython-37m-x86_64-linux-gnu.so
+2b023ac7f000-2b023acbf000 rw-p 00000000 00:00 0 
+2b023acbf000-2b023acca000 r-xp 00000000 00:31 38296535                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/decomposition/_online_lda_fast.cpython-37m-x86_64-linux-gnu.so
+2b023acca000-2b023aec9000 ---p 0000b000 00:31 38296535                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/decomposition/_online_lda_fast.cpython-37m-x86_64-linux-gnu.so
+2b023aec9000-2b023aeca000 r--p 0000a000 00:31 38296535                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/decomposition/_online_lda_fast.cpython-37m-x86_64-linux-gnu.so
+2b023aeca000-2b023aecb000 rw-p 0000b000 00:31 38296535                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/decomposition/_online_lda_fast.cpython-37m-x86_64-linux-gnu.so
+2b023aecb000-2b023aecc000 rw-p 00000000 00:00 0 
+2b023aecc000-2b023aecf000 rw-p 0003b000 00:31 38296535                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/decomposition/_online_lda_fast.cpython-37m-x86_64-linux-gnu.so
+2b023aecf000-2b023aee4000 r-xp 00000000 00:31 38301974                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/graph_shortest_path.cpython-37m-x86_64-linux-gnu.so
+2b023aee4000-2b023b0e3000 ---p 00015000 00:31 38301974                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/graph_shortest_path.cpython-37m-x86_64-linux-gnu.so
+2b023b0e3000-2b023b0e4000 r--p 00014000 00:31 38301974                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/graph_shortest_path.cpython-37m-x86_64-linux-gnu.so
+2b023b0e4000-2b023b0e6000 rw-p 00015000 00:31 38301974                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/graph_shortest_path.cpython-37m-x86_64-linux-gnu.so
+2b023b0e6000-2b023b0e9000 rw-p 00081000 00:31 38301974                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/graph_shortest_path.cpython-37m-x86_64-linux-gnu.so
+2b023b0e9000-2b023b129000 rw-p 00000000 00:00 0 
+2b023b129000-2b023b15e000 r-xp 00000000 00:31 38301966                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/_isotonic.cpython-37m-x86_64-linux-gnu.so
+2b023b15e000-2b023b35e000 ---p 00035000 00:31 38301966                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/_isotonic.cpython-37m-x86_64-linux-gnu.so
+2b023b35e000-2b023b35f000 r--p 00035000 00:31 38301966                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/_isotonic.cpython-37m-x86_64-linux-gnu.so
+2b023b35f000-2b023b363000 rw-p 00036000 00:31 38301966                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/_isotonic.cpython-37m-x86_64-linux-gnu.so
+2b023b363000-2b023b366000 rw-p 0015a000 00:31 38301966                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/_isotonic.cpython-37m-x86_64-linux-gnu.so
+2b023b366000-2b023b372000 r-xp 00000000 00:31 38298985                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/manifold/_utils.cpython-37m-x86_64-linux-gnu.so
+2b023b372000-2b023b571000 ---p 0000c000 00:31 38298985                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/manifold/_utils.cpython-37m-x86_64-linux-gnu.so
+2b023b571000-2b023b572000 r--p 0000b000 00:31 38298985                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/manifold/_utils.cpython-37m-x86_64-linux-gnu.so
+2b023b572000-2b023b573000 rw-p 0000c000 00:31 38298985                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/manifold/_utils.cpython-37m-x86_64-linux-gnu.so
+2b023b573000-2b023b576000 rw-p 00044000 00:31 38298985                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/manifold/_utils.cpython-37m-x86_64-linux-gnu.so
+2b023b576000-2b023b5a1000 r-xp 00000000 00:31 38302622                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/manifold/_barnes_hut_tsne.cpython-37m-x86_64-linux-gnu.so
+2b023b5a1000-2b023b7a0000 ---p 0002b000 00:31 38302622                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/manifold/_barnes_hut_tsne.cpython-37m-x86_64-linux-gnu.so
+2b023b7a0000-2b023b7a1000 r--p 0002a000 00:31 38302622                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/manifold/_barnes_hut_tsne.cpython-37m-x86_64-linux-gnu.so
+2b023b7a1000-2b023b7a4000 rw-p 0002b000 00:31 38302622                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/manifold/_barnes_hut_tsne.cpython-37m-x86_64-linux-gnu.so
+2b023b7a4000-2b023b7a7000 rw-p 00113000 00:31 38302622                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/manifold/_barnes_hut_tsne.cpython-37m-x86_64-linux-gnu.so
+2b023b7a7000-2b023b7da000 r-xp 00000000 00:31 38302102                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/neighbors/_quad_tree.cpython-37m-x86_64-linux-gnu.so
+2b023b7da000-2b023b9d9000 ---p 00033000 00:31 38302102                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/neighbors/_quad_tree.cpython-37m-x86_64-linux-gnu.so
+2b023b9d9000-2b023b9da000 r--p 00032000 00:31 38302102                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/neighbors/_quad_tree.cpython-37m-x86_64-linux-gnu.so
+2b023b9da000-2b023b9de000 rw-p 00033000 00:31 38302102                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/neighbors/_quad_tree.cpython-37m-x86_64-linux-gnu.so
+2b023b9de000-2b023b9df000 rw-p 00000000 00:00 0 
+2b023b9df000-2b023b9e2000 rw-p 00155000 00:31 38302102                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/neighbors/_quad_tree.cpython-37m-x86_64-linux-gnu.so
+2b023b9e2000-2b023ba10000 r-xp 00000000 00:31 38301858                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/tree/_criterion.cpython-37m-x86_64-linux-gnu.so
+2b023ba10000-2b023bc0f000 ---p 0002e000 00:31 38301858                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/tree/_criterion.cpython-37m-x86_64-linux-gnu.so
+2b023bc0f000-2b023bc10000 r--p 0002d000 00:31 38301858                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/tree/_criterion.cpython-37m-x86_64-linux-gnu.so
+2b023bc10000-2b023bc14000 rw-p 0002e000 00:31 38301858                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/tree/_criterion.cpython-37m-x86_64-linux-gnu.so
+2b023bc14000-2b023bc15000 rw-p 00000000 00:00 0 
+2b023bc15000-2b023bc18000 rw-p 00130000 00:31 38301858                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/tree/_criterion.cpython-37m-x86_64-linux-gnu.so
+2b023bc18000-2b023bc47000 r-xp 00000000 00:31 38299451                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/tree/_splitter.cpython-37m-x86_64-linux-gnu.so
+2b023bc47000-2b023be46000 ---p 0002f000 00:31 38299451                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/tree/_splitter.cpython-37m-x86_64-linux-gnu.so
+2b023be46000-2b023be47000 r--p 0002e000 00:31 38299451                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/tree/_splitter.cpython-37m-x86_64-linux-gnu.so
+2b023be47000-2b023be4b000 rw-p 0002f000 00:31 38299451                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/tree/_splitter.cpython-37m-x86_64-linux-gnu.so
+2b023be4b000-2b023be4e000 rw-p 0013c000 00:31 38299451                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/tree/_splitter.cpython-37m-x86_64-linux-gnu.so
+2b023be4e000-2b023bea7000 r-xp 00000000 00:31 38300977                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/tree/_tree.cpython-37m-x86_64-linux-gnu.so
+2b023bea7000-2b023c0a6000 ---p 00059000 00:31 38300977                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/tree/_tree.cpython-37m-x86_64-linux-gnu.so
+2b023c0a6000-2b023c0a7000 r--p 00058000 00:31 38300977                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/tree/_tree.cpython-37m-x86_64-linux-gnu.so
+2b023c0a7000-2b023c0ad000 rw-p 00059000 00:31 38300977                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/tree/_tree.cpython-37m-x86_64-linux-gnu.so
+2b023c0ad000-2b023c0af000 rw-p 00000000 00:00 0 
+2b023c0af000-2b023c0b2000 rw-p 00253000 00:31 38300977                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/tree/_tree.cpython-37m-x86_64-linux-gnu.so
+2b023c0b2000-2b023c0dd000 r-xp 00000000 00:31 38302728                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/tree/_utils.cpython-37m-x86_64-linux-gnu.so
+2b023c0dd000-2b023c2dc000 ---p 0002b000 00:31 38302728                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/tree/_utils.cpython-37m-x86_64-linux-gnu.so
+2b023c2dc000-2b023c2dd000 r--p 0002a000 00:31 38302728                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/tree/_utils.cpython-37m-x86_64-linux-gnu.so
+2b023c2dd000-2b023c2e0000 rw-p 0002b000 00:31 38302728                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/tree/_utils.cpython-37m-x86_64-linux-gnu.so
+2b023c2e0000-2b023c2e1000 rw-p 00000000 00:00 0 
+2b023c2e1000-2b023c2e4000 rw-p 00126000 00:31 38302728                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/tree/_utils.cpython-37m-x86_64-linux-gnu.so
+2b023c2e4000-2b023c364000 rw-p 00000000 00:00 0 
+2b023c364000-2b023c3d0000 r-xp 00000000 00:31 38302596                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/cluster/_k_means_fast.cpython-37m-x86_64-linux-gnu.so
+2b023c3d0000-2b023c5cf000 ---p 0006c000 00:31 38302596                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/cluster/_k_means_fast.cpython-37m-x86_64-linux-gnu.so
+2b023c5cf000-2b023c5d0000 r--p 0006b000 00:31 38302596                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/cluster/_k_means_fast.cpython-37m-x86_64-linux-gnu.so
+2b023c5d0000-2b023c5d5000 rw-p 0006c000 00:31 38302596                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/cluster/_k_means_fast.cpython-37m-x86_64-linux-gnu.so
+2b023c5d5000-2b023c5d6000 rw-p 00000000 00:00 0 
+2b023c5d6000-2b023c5d9000 rw-p 00294000 00:31 38302596                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/cluster/_k_means_fast.cpython-37m-x86_64-linux-gnu.so
+2b023c5d9000-2b023c621000 r-xp 00000000 00:31 38297289                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/cluster/_k_means_lloyd.cpython-37m-x86_64-linux-gnu.so
+2b023c621000-2b023c820000 ---p 00048000 00:31 38297289                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/cluster/_k_means_lloyd.cpython-37m-x86_64-linux-gnu.so
+2b023c820000-2b023c821000 r--p 00047000 00:31 38297289                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/cluster/_k_means_lloyd.cpython-37m-x86_64-linux-gnu.so
+2b023c821000-2b023c826000 rw-p 00048000 00:31 38297289                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/cluster/_k_means_lloyd.cpython-37m-x86_64-linux-gnu.so
+2b023c826000-2b023c827000 rw-p 00000000 00:00 0 
+2b023c827000-2b023c82b000 rw-p 001b7000 00:31 38297289                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/cluster/_k_means_lloyd.cpython-37m-x86_64-linux-gnu.so
+2b023c82b000-2b023c883000 r-xp 00000000 00:31 38301853                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/cluster/_k_means_elkan.cpython-37m-x86_64-linux-gnu.so
+2b023c883000-2b023ca83000 ---p 00058000 00:31 38301853                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/cluster/_k_means_elkan.cpython-37m-x86_64-linux-gnu.so
+2b023ca83000-2b023ca84000 r--p 00058000 00:31 38301853                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/cluster/_k_means_elkan.cpython-37m-x86_64-linux-gnu.so
+2b023ca84000-2b023ca8a000 rw-p 00059000 00:31 38301853                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/cluster/_k_means_elkan.cpython-37m-x86_64-linux-gnu.so
+2b023ca8a000-2b023ca8b000 rw-p 00000000 00:00 0 
+2b023ca8b000-2b023ca8f000 rw-p 0020b000 00:31 38301853                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/cluster/_k_means_elkan.cpython-37m-x86_64-linux-gnu.so
+2b023ca8f000-2b023cac0000 r-xp 00000000 00:31 38300521                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_fast_dict.cpython-37m-x86_64-linux-gnu.so
+2b023cac0000-2b023ccbf000 ---p 00031000 00:31 38300521                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_fast_dict.cpython-37m-x86_64-linux-gnu.so
+2b023ccbf000-2b023ccc0000 r--p 00030000 00:31 38300521                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_fast_dict.cpython-37m-x86_64-linux-gnu.so
+2b023ccc0000-2b023ccc4000 rw-p 00031000 00:31 38300521                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_fast_dict.cpython-37m-x86_64-linux-gnu.so
+2b023ccc4000-2b023ccc9000 rw-p 00177000 00:31 38300521                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/utils/_fast_dict.cpython-37m-x86_64-linux-gnu.so
+2b023ccc9000-2b023cd04000 r-xp 00000000 00:31 38302105                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/cluster/_hierarchical_fast.cpython-37m-x86_64-linux-gnu.so
+2b023cd04000-2b023cf03000 ---p 0003b000 00:31 38302105                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/cluster/_hierarchical_fast.cpython-37m-x86_64-linux-gnu.so
+2b023cf03000-2b023cf04000 r--p 0003a000 00:31 38302105                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/cluster/_hierarchical_fast.cpython-37m-x86_64-linux-gnu.so
+2b023cf04000-2b023cf0a000 rw-p 0003b000 00:31 38302105                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/cluster/_hierarchical_fast.cpython-37m-x86_64-linux-gnu.so
+2b023cf0a000-2b023cf0b000 rw-p 00000000 00:00 0 
+2b023cf0b000-2b023cf0e000 rw-p 001b6000 00:31 38302105                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/cluster/_hierarchical_fast.cpython-37m-x86_64-linux-gnu.so
+2b023cf0e000-2b023cf18000 r-xp 00000000 00:31 38301468                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/cluster/_dbscan_inner.cpython-37m-x86_64-linux-gnu.so
+2b023cf18000-2b023d117000 ---p 0000a000 00:31 38301468                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/cluster/_dbscan_inner.cpython-37m-x86_64-linux-gnu.so
+2b023d117000-2b023d118000 r--p 00009000 00:31 38301468                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/cluster/_dbscan_inner.cpython-37m-x86_64-linux-gnu.so
+2b023d118000-2b023d119000 rw-p 0000a000 00:31 38301468                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/cluster/_dbscan_inner.cpython-37m-x86_64-linux-gnu.so
+2b023d119000-2b023d11c000 rw-p 0004a000 00:31 38301468                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/sklearn/cluster/_dbscan_inner.cpython-37m-x86_64-linux-gnu.so
+2b023d11c000-2b023d15c000 rw-p 00000000 00:00 0 
+2b023d15c000-2b023db7e000 r-xp 00000000 00:31 41382780                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/minicore-0.3.1-py3.7-linux-x86_64.egg/pyminicore.cpython-37m-x86_64-linux-gnu.so
+2b023db7e000-2b023dd7e000 ---p 00a22000 00:31 41382780                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/minicore-0.3.1-py3.7-linux-x86_64.egg/pyminicore.cpython-37m-x86_64-linux-gnu.so
+2b023dd7e000-2b023dd84000 r--p 00a22000 00:31 41382780                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/minicore-0.3.1-py3.7-linux-x86_64.egg/pyminicore.cpython-37m-x86_64-linux-gnu.so
+2b023dd84000-2b023dd85000 rw-p 00a28000 00:31 41382780                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/python3.7/site-packages/minicore-0.3.1-py3.7-linux-x86_64.egg/pyminicore.cpython-37m-x86_64-linux-gnu.so
+2b023dd85000-2b023dd8f000 r--p 00000000 00:31 26779610                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libgomp.so.1.0.0
+2b023dd8f000-2b023dda6000 r-xp 0000a000 00:31 26779610                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libgomp.so.1.0.0
+2b023dda6000-2b023ddaf000 r--p 00021000 00:31 26779610                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libgomp.so.1.0.0
+2b023ddaf000-2b023ddb0000 ---p 0002a000 00:31 26779610                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libgomp.so.1.0.0
+2b023ddb0000-2b023ddb1000 r--p 0002a000 00:31 26779610                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libgomp.so.1.0.0
+2b023ddb1000-2b023ddb2000 rw-p 0002b000 00:31 26779610                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/lib/libgomp.so.1.0.0
+2b023ddb2000-2b023e509000 rw-p 00000000 00:00 0 
+2b023e509000-2b023e50a000 ---p 00000000 00:00 0 
+2b023e50a000-2b023e90b000 rw-p 00000000 00:00 0 
+2b023e90b000-2b023e90c000 ---p 00000000 00:00 0 
+2b023e90c000-2b023ed0d000 rw-p 00000000 00:00 0 
+2b023ed0d000-2b023ed0e000 ---p 00000000 00:00 0 
+2b023ed0e000-2b023f10f000 rw-p 00000000 00:00 0 
+2b023f10f000-2b023f110000 ---p 00000000 00:00 0 
+2b023f110000-2b023f511000 rw-p 00000000 00:00 0 
+2b023f511000-2b023f512000 ---p 00000000 00:00 0 
+2b023f512000-2b023f913000 rw-p 00000000 00:00 0 
+2b023f913000-2b023f914000 ---p 00000000 00:00 0 
+2b023f914000-2b023fd15000 rw-p 00000000 00:00 0 
+2b0240000000-2b0240021000 rw-p 00000000 00:00 0 
+2b0240021000-2b0244000000 ---p 00000000 00:00 0 
+2b0244000000-2b0244021000 rw-p 00000000 00:00 0 
+2b0244021000-2b0248000000 ---p 00000000 00:00 0 
+2b0248000000-2b0248021000 rw-p 00000000 00:00 0 
+2b0248021000-2b024c000000 ---p 00000000 00:00 0 
+2b024c000000-2b024c021000 rw-p 00000000 00:00 0 
+2b024c021000-2b0250000000 ---p 00000000 00:00 0 
+2b0250000000-2b0250001000 ---p 00000000 00:00 0 
+2b0250001000-2b0250402000 rw-p 00000000 00:00 0 
+2b0250402000-2b0250403000 ---p 00000000 00:00 0 
+2b0250403000-2b0250804000 rw-p 00000000 00:00 0 
+2b0250804000-2b0250805000 ---p 00000000 00:00 0 
+2b0250805000-2b0250c06000 rw-p 00000000 00:00 0 
+2b0250c06000-2b0250c07000 ---p 00000000 00:00 0 
+2b0250c07000-2b0251008000 rw-p 00000000 00:00 0 
+2b0251008000-2b0251009000 ---p 00000000 00:00 0 
+2b0251009000-2b025140a000 rw-p 00000000 00:00 0 
+2b025140a000-2b025140b000 ---p 00000000 00:00 0 
+2b025140b000-2b025180c000 rw-p 00000000 00:00 0 
+2b025180c000-2b025180d000 ---p 00000000 00:00 0 
+2b025180d000-2b0251c0e000 rw-p 00000000 00:00 0 
+2b0251c0e000-2b0251c0f000 ---p 00000000 00:00 0 
+2b0251c0f000-2b0252010000 rw-p 00000000 00:00 0 
+2b0252010000-2b0252011000 ---p 00000000 00:00 0 
+2b0252011000-2b0252412000 rw-p 00000000 00:00 0 
+2b0252412000-2b0252413000 ---p 00000000 00:00 0 
+2b0252413000-2b0252814000 rw-p 00000000 00:00 0 
+2b0252814000-2b0252815000 ---p 00000000 00:00 0 
+2b0252815000-2b0252c16000 rw-p 00000000 00:00 0 
+2b0252c16000-2b0252c17000 ---p 00000000 00:00 0 
+2b0252c17000-2b0253018000 rw-p 00000000 00:00 0 
+2b0253018000-2b0253019000 ---p 00000000 00:00 0 
+2b0253019000-2b025341a000 rw-p 00000000 00:00 0 
+2b0254000000-2b0254021000 rw-p 00000000 00:00 0 
+2b0254021000-2b0258000000 ---p 00000000 00:00 0 
+2b0258000000-2b0258021000 rw-p 00000000 00:00 0 
+2b0258021000-2b025c000000 ---p 00000000 00:00 0 
+2b025c000000-2b025c021000 rw-p 00000000 00:00 0 
+2b025c021000-2b0260000000 ---p 00000000 00:00 0 
+2b0260000000-2b0260021000 rw-p 00000000 00:00 0 
+2b0260021000-2b0264000000 ---p 00000000 00:00 0 
+2b0264000000-2b0264021000 rw-p 00000000 00:00 0 
+2b0264021000-2b0268000000 ---p 00000000 00:00 0 
+2b0268000000-2b0268021000 rw-p 00000000 00:00 0 
+2b0268021000-2b026c000000 ---p 00000000 00:00 0 
+2b026c000000-2b026c021000 rw-p 00000000 00:00 0 
+2b026c021000-2b0270000000 ---p 00000000 00:00 0 
+2b0270000000-2b0270021000 rw-p 00000000 00:00 0 
+2b0270021000-2b0274000000 ---p 00000000 00:00 0 
+2b0274000000-2b0274021000 rw-p 00000000 00:00 0 
+2b0274021000-2b0278000000 ---p 00000000 00:00 0 
+2b0278000000-2b0278021000 rw-p 00000000 00:00 0 
+2b0278021000-2b027c000000 ---p 00000000 00:00 0 
+2b027c000000-2b027c021000 rw-p 00000000 00:00 0 
+2b027c021000-2b0280000000 ---p 00000000 00:00 0 
+2b0280000000-2b0280021000 rw-p 00000000 00:00 0 
+2b0280021000-2b0284000000 ---p 00000000 00:00 0 
+2b0284000000-2b0284021000 rw-p 00000000 00:00 0 
+2b0284021000-2b0288000000 ---p 00000000 00:00 0 
+2b0288000000-2b0288021000 rw-p 00000000 00:00 0 
+2b0288021000-2b028c000000 ---p 00000000 00:00 0 
+2b028c000000-2b028c021000 rw-p 00000000 00:00 0 
+2b028c021000-2b0290000000 ---p 00000000 00:00 0 
+2b04b2adb000-2b04b2b1b000 rw-p 00000000 00:00 0 
+2b04b2d7b000-2b04b3cfb000 rw-p 00000000 00:00 0 
+2b04b41bb000-2b04d52a3000 rw-p 00000000 00:00 0 
+55b4f4b4b000-55b4f4ba6000 r--p 00000000 00:31 26792459                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/bin/python3.7
+55b4f4ba6000-55b4f4d95000 r-xp 0005b000 00:31 26792459                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/bin/python3.7
+55b4f4d95000-55b4f4e46000 r--p 0024a000 00:31 26792459                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/bin/python3.7
+55b4f4e47000-55b4f4e4a000 r--p 002fb000 00:31 26792459                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/bin/python3.7
+55b4f4e4a000-55b4f4eb3000 rw-p 002fe000 00:31 26792459                   /home-net/home-1/dbaker49@jhu.edu/miniconda3/bin/python3.7
+55b4f4eb3000-55b4f4ed3000 rw-p 00000000 00:00 0 
+55b4f586d000-55b5041a3000 rw-p 00000000 00:00 0                          [heap]
+7ffe26a92000-7ffe26ab7000 rw-p 00000000 00:00 0                          [stack]
+7ffe26aef000-7ffe26af1000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+Command terminated by signal 6
+	Command being timed: "python3 pipeline.py -M3 -M4 -M5 -M7 -M9 --dataset cao4m --nthreads 20 --maxiter 50 --mbsize 10000 --prior 1. --hvg 50 --lspp 25"
+	User time (seconds): 81491.77
+	System time (seconds): 4890.15
+	Percent of CPU this job got: 1861%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:17:19
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 133872144
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 244539383
+	Voluntary context switches: 3373826
+	Involuntary context switches: 129353
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 712
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

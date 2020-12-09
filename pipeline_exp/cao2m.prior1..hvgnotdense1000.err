@@ -1,0 +1,125 @@
+/home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/scikit_learn-0.24.1-py3.9-linux-x86_64.egg/sklearn/metrics/cluster/_supervised.py:389: RuntimeWarning: overflow encountered in long_scalars
+  return 2. * (tp * tn - fn * fp) / ((tp + fn) * (fn + tn) +
+/home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/scikit_learn-0.24.1-py3.9-linux-x86_64.egg/sklearn/metrics/cluster/_supervised.py:390: RuntimeWarning: overflow encountered in long_scalars
+  (tp + fp) * (fp + tn))
+Cost at iter 0 (mbsize 10000): 3807377408
+Cost at iter 10 (mbsize 10000): 2326519552
+Distance between old and new centers: 1525.10449219
+Cost at iter 20 (mbsize 10000): 2300827648
+Distance between old and new centers: 894.033813477
+Cost at iter 30 (mbsize 10000): 2299592448
+Distance between old and new centers: 1054.62512207
+Cost at iter 40 (mbsize 10000): 2289839104
+Distance between old and new centers: 1021.24572754
+Cost at iter 49 (mbsize 10000): 2277430272
+Distance between old and new centers: 632.436096191
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 3807377408->2277430272, in 62118.9ms
+/home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/scikit_learn-0.24.1-py3.9-linux-x86_64.egg/sklearn/metrics/cluster/_supervised.py:389: RuntimeWarning: overflow encountered in long_scalars
+  return 2. * (tp * tn - fn * fp) / ((tp + fn) * (fn + tn) +
+/home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/scikit_learn-0.24.1-py3.9-linux-x86_64.egg/sklearn/metrics/cluster/_supervised.py:390: RuntimeWarning: overflow encountered in long_scalars
+  (tp + fp) * (fp + tn))
+/home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/scikit_learn-0.24.1-py3.9-linux-x86_64.egg/sklearn/metrics/cluster/_supervised.py:389: RuntimeWarning: overflow encountered in long_scalars
+  return 2. * (tp * tn - fn * fp) / ((tp + fn) * (fn + tn) +
+/home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/scikit_learn-0.24.1-py3.9-linux-x86_64.egg/sklearn/metrics/cluster/_supervised.py:390: RuntimeWarning: overflow encountered in long_scalars
+  (tp + fp) * (fp + tn))
+Cost at iter 0 (mbsize 10000): 368732.46875
+Cost at iter 10 (mbsize 10000): 307426.375
+Distance between old and new centers: 1503.97143555
+Cost at iter 20 (mbsize 10000): 307077.25
+Distance between old and new centers: 677.896484375
+Cost at iter 30 (mbsize 10000): 306906.28125
+Distance between old and new centers: 503.792480469
+Cost at iter 40 (mbsize 10000): 306990.65625
+Cost at iter 49 (mbsize 10000): 306539.0625
+Distance between old and new centers: 599.758422852
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 368732.46875->306539.0625, in 143457ms
+/home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/scikit_learn-0.24.1-py3.9-linux-x86_64.egg/sklearn/metrics/cluster/_supervised.py:389: RuntimeWarning: overflow encountered in long_scalars
+  return 2. * (tp * tn - fn * fp) / ((tp + fn) * (fn + tn) +
+/home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/scikit_learn-0.24.1-py3.9-linux-x86_64.egg/sklearn/metrics/cluster/_supervised.py:390: RuntimeWarning: overflow encountered in long_scalars
+  (tp + fp) * (fp + tn))
+/home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/scikit_learn-0.24.1-py3.9-linux-x86_64.egg/sklearn/metrics/cluster/_supervised.py:389: RuntimeWarning: overflow encountered in long_scalars
+  return 2. * (tp * tn - fn * fp) / ((tp + fn) * (fn + tn) +
+/home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/scikit_learn-0.24.1-py3.9-linux-x86_64.egg/sklearn/metrics/cluster/_supervised.py:390: RuntimeWarning: overflow encountered in long_scalars
+  (tp + fp) * (fp + tn))
+Cost at iter 0 (mbsize 10000): 73652.171875
+Cost at iter 10 (mbsize 10000): 48492.18359375
+Distance between old and new centers: 1355.0012207
+Cost at iter 20 (mbsize 10000): 48471.58203125
+Distance between old and new centers: 563.212524414
+Cost at iter 30 (mbsize 10000): 48353.7421875
+Distance between old and new centers: 479.735168457
+Cost at iter 40 (mbsize 10000): 48415.67578125
+Cost at iter 49 (mbsize 10000): 48442.90625
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 73652.171875->48353.7421875, in 146714ms
+/home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/scikit_learn-0.24.1-py3.9-linux-x86_64.egg/sklearn/metrics/cluster/_supervised.py:389: RuntimeWarning: overflow encountered in long_scalars
+  return 2. * (tp * tn - fn * fp) / ((tp + fn) * (fn + tn) +
+/home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/scikit_learn-0.24.1-py3.9-linux-x86_64.egg/sklearn/metrics/cluster/_supervised.py:390: RuntimeWarning: overflow encountered in long_scalars
+  (tp + fp) * (fp + tn))
+/home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/scikit_learn-0.24.1-py3.9-linux-x86_64.egg/sklearn/metrics/cluster/_supervised.py:389: RuntimeWarning: overflow encountered in long_scalars
+  return 2. * (tp * tn - fn * fp) / ((tp + fn) * (fn + tn) +
+/home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/scikit_learn-0.24.1-py3.9-linux-x86_64.egg/sklearn/metrics/cluster/_supervised.py:390: RuntimeWarning: overflow encountered in long_scalars
+  (tp + fp) * (fp + tn))
+Cost at iter 0 (mbsize 10000): 281106.125
+Cost at iter 10 (mbsize 10000): 195834.25
+Distance between old and new centers: 1961.01013184
+Cost at iter 20 (mbsize 10000): 195071.765625
+Distance between old and new centers: 1359.08642578
+Cost at iter 30 (mbsize 10000): 195235.265625
+Cost at iter 40 (mbsize 10000): 194828.5
+Distance between old and new centers: 1169.92297363
+Cost at iter 49 (mbsize 10000): 195603.296875
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 281106.125->194828.5, in 121425ms
+/home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/scikit_learn-0.24.1-py3.9-linux-x86_64.egg/sklearn/metrics/cluster/_supervised.py:389: RuntimeWarning: overflow encountered in long_scalars
+  return 2. * (tp * tn - fn * fp) / ((tp + fn) * (fn + tn) +
+/home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/scikit_learn-0.24.1-py3.9-linux-x86_64.egg/sklearn/metrics/cluster/_supervised.py:390: RuntimeWarning: overflow encountered in long_scalars
+  (tp + fp) * (fp + tn))
+/home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/scikit_learn-0.24.1-py3.9-linux-x86_64.egg/sklearn/metrics/cluster/_supervised.py:389: RuntimeWarning: overflow encountered in long_scalars
+  return 2. * (tp * tn - fn * fp) / ((tp + fn) * (fn + tn) +
+/home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/scikit_learn-0.24.1-py3.9-linux-x86_64.egg/sklearn/metrics/cluster/_supervised.py:390: RuntimeWarning: overflow encountered in long_scalars
+  (tp + fp) * (fp + tn))
+Cost at iter 0 (mbsize 10000): 373379.5
+Cost at iter 10 (mbsize 10000): 326186.8125
+Distance between old and new centers: 914.577758789
+Cost at iter 20 (mbsize 10000): 327510.4375
+Cost at iter 30 (mbsize 10000): 327159.71875
+Cost at iter 40 (mbsize 10000): 327196.5
+Cost at iter 49 (mbsize 10000): 326954.28125
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 373379.5->326186.8125, in 60097.7ms
+/home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/scikit_learn-0.24.1-py3.9-linux-x86_64.egg/sklearn/metrics/cluster/_supervised.py:389: RuntimeWarning: overflow encountered in long_scalars
+  return 2. * (tp * tn - fn * fp) / ((tp + fn) * (fn + tn) +
+/home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/scikit_learn-0.24.1-py3.9-linux-x86_64.egg/sklearn/metrics/cluster/_supervised.py:390: RuntimeWarning: overflow encountered in long_scalars
+  (tp + fp) * (fp + tn))
+/home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/scikit_learn-0.24.1-py3.9-linux-x86_64.egg/sklearn/metrics/cluster/_supervised.py:389: RuntimeWarning: overflow encountered in long_scalars
+  return 2. * (tp * tn - fn * fp) / ((tp + fn) * (fn + tn) +
+/home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/scikit_learn-0.24.1-py3.9-linux-x86_64.egg/sklearn/metrics/cluster/_supervised.py:390: RuntimeWarning: overflow encountered in long_scalars
+  (tp + fp) * (fp + tn))
+Cost at iter 0 (mbsize 10000): 372995.8125
+Command terminated by signal 6
+	Command being timed: "python3 pipeline.py -M3 -M4 -M5 -M7 -M9 --dataset cao2m --nthreads 20 --maxiter 50 --mbsize 10000 --prior 1. --hvg 1000 --lspp 0"
+	User time (seconds): 15061.04
+	System time (seconds): 618.08
+	Percent of CPU this job got: 1734%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 15:03.92
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 51463488
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 191939018
+	Voluntary context switches: 1136310
+	Involuntary context switches: 27311
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 288
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

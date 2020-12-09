@@ -1,0 +1,38 @@
+Cost at iter 0 (mbsize 10000): 4247637377
+Cost at iter 10 (mbsize 10000): 2783480163.2395524979
+Distance between old and new centers: 1398.33007812
+Cost at iter 20 (mbsize 10000): 2775015463.4873690605
+Distance between old and new centers: 638.38269043
+Cost at iter 30 (mbsize 10000): 2777486573.3732566833
+Cost at iter 40 (mbsize 10000): 2774219150.324432373
+Distance between old and new centers: 1032.30871582
+Cost at iter 49 (mbsize 10000): 2765842140.806558609
+Distance between old and new centers: 685.843200684
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 4247637377->2765842140.81, in 23373.7ms
+terminate called after throwing an instance of 'std::runtime_error'
+terminate called recursively
+Command terminated by signal 6
+	Command being timed: "python3 pipeline.py -M3 -M4 -M5 -M7 -M9 -M10 -M15 --densify --dataset cao2m --nthreads 20 --maxiter 50 --mbsize 10000 --prior 0.01 --hvg 2500 --lspp 25"
+	User time (seconds): 1125.54
+	System time (seconds): 1069.06
+	Percent of CPU this job got: 545%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 6:42.04
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 51476404
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 101087758
+	Voluntary context switches: 24822
+	Involuntary context switches: 3723
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 24
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
