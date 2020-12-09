@@ -12,7 +12,6 @@ PATH="/net/langmead-bigmem-ib.bluecrab.cluster/storage/dnb/code2/clusterdash/min
 
 pbmc_mat = pickle.load(open(PATH, "rb"))
 
-# pbmc_mat.indices = pbmc_mat.indices.astype(np.uint32)
-pbmc_mat = mc.csr_tuple(data=pbmc_mat.data, indices=pbmc_mat.indices.astype(np.uint16), indptr=pbmc_mat.indptr, shape=pbmc_mat.shape, nnz=len(pbmc_mat.data))
+pbmc_mat = mc.csr_tuple(data=pbmc_mat.data.astype(np.uint16), indices=pbmc_mat.indices.astype(np.uint16), indptr=pbmc_mat.indptr, shape=pbmc_mat.shape, nnz=len(pbmc_mat.data))
 
 __all__ = ["pbmc_mat"]

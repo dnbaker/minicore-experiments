@@ -18,5 +18,7 @@ def load_files(pref):
 
 data, indices, indptr, shape = load_files(PREFIX)
 cao_mat= sp.csr_matrix((data, indices, indptr), shape)
+cao_mat.indices = cao_mat.indices.astype(np.uint16)
+cao_mat.data = cao_mat.data.astype(np.uint16)
 
 __all__ = ["cao_mat"]

@@ -19,5 +19,7 @@ def load_files(pref):
 data, indices, indptr, shape = load_files(PREFIX)
 zeisel_cns_mat = sp.csr_matrix((data, indices, indptr), shape)
 zeisel_cns_mat.indices = zeisel_cns_mat.indices.astype(np.uint16)
+zeisel_cns_mat.data = zeisel_cns_mat.data.astype(np.uint16)
+zeisel_cns_mat.indptr = zeisel_cns_mat.indptr.astype(np.uint64)
 
 __all__ = ["zeisel_cns_mat"]

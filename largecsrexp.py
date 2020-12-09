@@ -27,6 +27,9 @@ KMC2 = [0]
 NTIMES = 1
 
 matcao = exp_loads[args.dataset]();
+if (matcao.data.dtype.kind != 'f' and matcao.data.dtype.itemsize > 2) or matcao.data.dtype is np.dtype("float64"):
+    print("Converting matcao's data type from %s to f" % matcao.data.dtype)
+    matcao.data = matcao.data.astype(np.float32)
 #csrcao = sp.csr_matrix(matcao, dtype=np.float32)
 #csrcao.indices = csrcao.indices.astype(np.uint32)
 #csrcao.indptr = csrcao.indptr.astype(np.uint64)
@@ -61,4 +64,4 @@ for nthreads in [min(64, multiprocessing.cpu_count()), 32, 16]:
             ncomplete += 1
             print("Completed %d " % ncomplete, file=sys.stderr)
         print("Completed nkmc for k = %d" % k, file=sys.stderr)
-    print("Completed experiment for nthreads = %d", nthreads, file=sys.stderr)
+    print("Completed experiment for nthreads = %d" % nthreads, file=sys.stderr)
