@@ -39,20 +39,26 @@ sumdict = {}
 
 ncomplete = 0
 print("#dataset\tmsr\tk\tnthreads\tnkmc\tmsr\tmedtime\tmeancost\tmincost")
-for nthreads in [min(64, multiprocessing.cpu_count()), 32, 16]:
+for nthreads in [32, 16]:
     mc.set_num_threads(nthreads)
     for k in KSET:
         for nkmc in KMC2:
             times = np.zeros(NTIMES)
             costs = np.zeros(NTIMES)
             kms = []
+            fail = False
             for nt in range(NTIMES):
                 st = gett()
-                caokm = mc.kmeanspp(smcao, seed=args.seed + nt, msr=args.msr, k=k, betaprior=args.prior, nkmc=nkmc)
+                try:
+                    caokm = mc.kmeanspp(smcao, seed=args.seed + nt, msr=args.msr, k=k, betaprior=args.prior, nkmc=nkmc)
+                except RuntimeError as e:
+                    fail = True
+                    break
                 et = gett()
                 times[nt] = et - st
                 costs[nt] = np.sum(caokm[2])
                 kms.append(caokm)
+            if fail: break
             med = np.median(times)
             meancost = np.mean(costs)
             bestcost = np.argmin(costs)

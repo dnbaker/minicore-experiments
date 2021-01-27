@@ -1,0 +1,5 @@
+usage: Kmeans++ Experiment [-h] [--msr MSR] [--prior PRIOR]
+                           [--dataset {pbmc,cao,zeisel,293t,1.3M,cao4m}]
+                           [--mbsize MBSIZE] [--maxiter MAXITER]
+                           [--ncheckins NCHECKINS] [--seed SEED]
+Kmeans++ Experiment: error: argument --dataset: invalid choice: 'cao2m' (choose from 'pbmc', 'cao', 'zeisel', '293t', '1.3M', 'cao4m')
