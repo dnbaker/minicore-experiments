@@ -6,21 +6,14 @@ output: html_notebook
 ```{r libs, message=FALSE}
 library(ggplot2)
 library(dplyr)
+library(tidyr)
+library(cowplot)
 ```
 
 ```{r wd}
 setwd('~/git/minicore-experiments')
 ```
 
-```{r rd}
-cao4 <- read.table('p0.cao4m.filt.txt', header=T, sep='\t')
-cao2 <- read.table('p0.cao2m.txt', header=F, sep='\t')
-zeis <- read.table('zeisel.cat.txt', header=F, sep='\t')
-colnames(cao2) <- colnames(cao4)
-colnames(zeis) <- colnames(cao4)
-all <- rbind(cao4, cao2, zeis)
-all$msr_name <- unlist(lapply(all$msr, function(x) { measures[[as.character(x)]] }))
-```
 
 ```{r measures}
 # From https://github.com/dnbaker/minicore/blob/main/docs/msr.md
@@ -41,8 +34,20 @@ measures <- list('0'='L1',
                  '14'='UWLLR')
 ```
 
+```{r rd}
+cao4 <- read.table('p0.cao4m.filt.txt', header=T, sep='\t')
+cao2 <- read.table('p0.cao2m.txt', header=F, sep='\t')
+zeis <- read.table('zeisel.cat.txt', header=F, sep='\t')
+colnames(cao2) <- colnames(cao4)
+colnames(zeis) <- colnames(cao4)
+all <- rbind(cao4, cao2, zeis)
+all$msr_name <- unlist(lapply(all$msr, function(x) { measures[[as.character(x)]] }))
+all$msr_name <- ifelse(grepl('p1$', all$Name), unlist(lapply(all$msr_name, function(x) {paste0(x, 'p1')})), all$msr_name)
+all$Name <- sub('p1$', '', all$Name)
+```
+
 ```{r time_for_32threads}
-ggplot(all %>% filter(Name %in% c('cao4m', 'cao', 'zeisel') & msr_name != 'SIS' & nthreads == 32),
+ggplot(all %>% filter(Name %in% c('cao4m', 'cao', 'zeisel') & msr_name != 'SIS' & nthreads == 32 & kmc == 0),
        aes(colour=msr_name, x=k, y=I(medtime/k))) + 
   geom_point() +
   facet_wrap(~Name) +
@@ -50,11 +55,48 @@ ggplot(all %>% filter(Name %in% c('cao4m', 'cao', 'zeisel') & msr_name != 'SIS' 
   theme_bw() + theme(legend.title = element_blank())
 ```
 
+Methods that do the log are slower (LLR, JSD, MKL, UWLLR).
+
 ```{r time_for_k25}
-ggplot(all %>% filter(Name %in% c('cao4m', 'cao', 'zeisel') & msr_name != 'SIS' & k == 25),
-       aes(colour=msr_name, x=nthreads, y=I(medtime/k))) + 
+ggplot(all %>% filter(Name %in% c('cao4m', 'cao', 'zeisel') & msr_name != 'SIS' & k == 25 & kmc == 0),
+       aes(colour=msr_name, x=nthreads, y=I(medtime/(k*nthreads)))) + 
   geom_point() +
   facet_wrap(~Name) +
-  labs(x='threads', y='time/k', title='Time-per-k versus # threads for k=25') +
+  labs(x='threads', y='time/k/nthreads', title='Time-per-k versus # threads for k=25') +
   theme_bw() + theme(legend.title = element_blank())
 ```
+
+## New results as of 2/5/21
+
+```{r loadnew}
+res <- read.table('newexp/btop32.1e-4.mbonly.v2', header=T, sep='\t', comment.char='')
+methods <- c('skl_kmpp', 'mc_kmpp', 'mc_kmpp_plus_lspp', 'skl_km', 'mc_mbkm', 'mc_cskm')
+colnm <- c('name', 'k',
+           paste0(methods[1], '_time'), paste0(methods[1], '_cost'),
+           paste0(methods[2], '_time'), paste0(methods[2], '_cost'),
+           paste0(methods[3], '_cost'), paste0(methods[3], '_time'),
+           paste0(methods[4], '_time'), paste0(methods[4], '_cost'),
+           paste0(methods[5], '_time'), paste0(methods[5], '_cost'),
+           paste0(methods[6], '_time'), paste0(methods[6], '_cost'))
+colnames(res) <- colnm
+res_time <- pivot_longer(res, cols=ends_with('_time'), names_to='method', values_to='value')
+res_cost <- pivot_longer(res, cols=ends_with('_cost'), names_to='method', values_to='value')
+res_time <- res_time[res_cost$value < 1e300,]
+res_cost <- res_cost[res_cost$value < 1e300,]
+```
+
+```{r res_time}
+pl <- ggplot(res_time %>% filter(name %in% c('Cao4m')), aes(colour=method, x=k, y=value)) + 
+  geom_point() +
+  labs(x='k', y='seconds', title='Cao4m time') +
+  theme_bw() + theme(legend.title = element_blank())
+plot_grid(pl, pl + ylim(0, 3500) + labs(title='Cao4m time (zoom)'), nrow = 2)
+```
+```{r res_cost}
+pl <- ggplot(res_cost %>% filter(name %in% c('Cao4m')), aes(colour=method, x=k, y=value)) + 
+  geom_point() +
+  labs(x='k', y='cost', title='Cao4m cost') +
+  theme_bw() + theme(legend.title = element_blank())
+plot_grid(pl, pl + ylim(0, 3.5e10) + labs(title='Cao4m cost (zoom)'), nrow = 2)
+```
+
