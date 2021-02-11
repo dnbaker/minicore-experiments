@@ -86,7 +86,7 @@ def print_set(csr, csm, *, name, kset=KSET):
         with open(basename + "kmpp.pyd", "wb") as f:
             import pickle
             pickle.dump(mcols, f)
-        for m in msrs:
+        for i, m in enumerate(msrs):
             t = time()
             mcom = mc.kmeanspp(csm, k=k, ntimes=1, msr=m, n_local_trials=nlt, prior=args.prior)
             t2 = time()
@@ -94,17 +94,17 @@ def print_set(csr, csm, *, name, kset=KSET):
             with open(mybasename + "kmpp.pyd", "wb") as f:
                 import pickle
                 pickle.dump(mcom, f)
-            print(f"{t2 - t}\t{np.sum(mcom[2])}", flush=True, end="")
+            print(f"{t2 - t}\t{np.sum(mcom[2])}", flush=True, end="\t")
             t = time()
             mcom = mc.kmeanspp(csm, k=k, ntimes=1, msr=m, n_local_trials=nlt, lspp=int(k + 3 + np.log(k)), prior=args.prior)
             t2 = time()
             mybasename = basename + ".msr%s.ls++." % m
-            with open(mybasename + "kmpp.pyd", "wb") as f:
+            with open("%s.msr%s.ls++.%s" % (basename, m, "kmpp.pyd"), "wb") as f:
                 import pickle
                 pickle.dump(mcom, f)
-            print(f"\t{t2 - t}\t{np.sum(mcom[2])}", flush=True, end="")
-        print("")
-    
+            endchar = '\n' if i == len(msrs) - 1 else '\t'
+            print(f"\t{t2 - t}\t{np.sum(mcom[2])}", flush=True, end=endchar)
+
 
 print_set(tiny_csr, tiny_csm, name="tiny")
 print("loading data from disk...\n", file=sys.stderr)
@@ -128,6 +128,6 @@ cao2_csm = mc.CSparseMatrix(cao2)
 print(f"cao2 load: {time() - t0}", file=sys.stderr)
 
 print("Loaded data, processing with %d threads" % mc.get_num_threads(), file=sys.stderr, flush=True)
+print_set(pbmc_csr, pbmc_csm, name="PBMC")
 print_set(cao4_csr, cao4_csm, name="Cao4m")
 print_set(cao2_csr, cao2_csm, name="Cao2m")
-print_set(pbmc_csr, pbmc_csm, name="PBMC")
