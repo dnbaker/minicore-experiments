@@ -1,13 +1,13 @@
 import sys
+
+sys.path.append("..")
+from time import time
 from sklearn.datasets import make_classification
 
 import numpy as np
 import scipy.sparse as sp
 import sklearn.cluster as skc
 import minicore as mc
-
-from time import time
-from multiprocessing import cpu_count
 
 from load_lazy import *
 
@@ -29,7 +29,8 @@ nlt = args.n_local_trials
 
 print("#args=" + str(args))
 
-print("#Name\tk\tSKL_KMplusplus_time\tSKL_KMplusplus_cost\tMC_KMplusplus_time\tMC_KMplusplus_cost\tMC_KMpp_and_LSpp_time\tMC_KMplusplusLSpp_cost\tnthreads")
+sklheadtxt = "\tSKL_KMplusplus_time\tSKL_KMplusplus_cost" if not args.skip_skl else ""
+print(f"#Name\t{sklheadtxt}\tMC_KMplusplus_time\tMC_KMplusplus_cost\tMC_KMpp_and_LSpp_time\tMC_KMplusplusLSpp_cost\tnthreads", end="")
 
 fakedata = make_classification(n_samples=50000, n_classes=10, n_clusters_per_class=4, n_informative=50, n_features=100)[0]
 fakedata[np.abs(fakedata) < 1.] = 0.
@@ -51,6 +52,7 @@ for m in args.msr if args.msr else []:
         msrs.append(int(m))
     except:
         msrs.append(m)
+print("\t".join(f"\tMC_KMLS++_MSR_Time{m}\tMC_KMLS++_MSR{m}_Cost" for m in msrs))
 
 def print_set(csr, csm, *, name, kset=KSET):
     smw = mc.smw(csr.astype(np.float32))
@@ -59,6 +61,8 @@ def print_set(csr, csm, *, name, kset=KSET):
         t = time()
         if args.skip_skl:
             ids = np.random.choice(csr.shape[0], size=k)
+            t2 = time()
+            skcost = 1e308
         else:
             try:
                 ctrs, ids = skc.kmeans_plusplus(csr, n_clusters=k, n_local_trials=nlt)
@@ -66,8 +70,10 @@ def print_set(csr, csm, *, name, kset=KSET):
                 csr.indices = csr.indices.astype(np.uint32)
                 csr.indptr = csr.indptr.astype(np.uint32)
                 ctrs, ids = skc.kmeans_plusplus(csr, n_clusters=k, n_local_trials=nlt)
-        t2 = time()
-        skcost = np.sum(np.min(mc.cmp(smw, csr[np.array(sorted(ids))].todense()), axis=1))
+            try:
+                skcost = np.sum(np.min(mc.cmp(smw, csr[np.array(sorted(ids))].todense()), axis=1))
+            except: skcost = 1e308
+            t2 = time()
         t3 = time()
         mco = mc.kmeanspp(csm, k=k, ntimes=1, msr="SQRL2", n_local_trials=nlt)
         t4 = time()
@@ -82,13 +88,13 @@ def print_set(csr, csm, *, name, kset=KSET):
             pickle.dump(mcols, f)
         for m in msrs:
             t = time()
-            mcom = mc.kmeanspp(csm, k=k, ntimes=1, msr=m, n_local_trials=nlt, lspp=10, prior=args.prior)
+            mcom = mc.kmeanspp(csm, k=k, ntimes=1, msr=m, n_local_trials=nlt, lspp=int(k + 3 + np.log(k)), prior=args.prior)
             t2 = time()
             mybasename = basename + ".msr%s." % m
             with open(mybasename + "kmpp.pyd", "wb") as f:
                 import pickle
                 pickle.dump(mcom, f)
-            print(f"{t2 - t}\t{np.sum(mcom[2])}", flush=True)
+            print(f"\t{t2 - t}\t{np.sum(mcom[2])}", flush=True, end="")
     
 
 print_set(tiny_csr, tiny_csm, name="tiny")
@@ -113,6 +119,6 @@ cao2_csm = mc.CSparseMatrix(cao2)
 print(f"cao2 load: {time() - t0}", file=sys.stderr)
 
 print("Loaded data, processing with %d threads" % mc.get_num_threads(), file=sys.stderr, flush=True)
-print_set(pbmc_csr, pbmc_csm, name="PBMC")
-print_set(cao2_csr, cao2_csm, name="Cao2m")
 print_set(cao4_csr, cao4_csm, name="Cao4m")
+print_set(cao2_csr, cao2_csm, name="Cao2m")
+print_set(pbmc_csr, pbmc_csm, name="PBMC")
