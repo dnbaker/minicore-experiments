@@ -52,7 +52,7 @@ for m in args.msr if args.msr else []:
         msrs.append(int(m))
     except:
         msrs.append(m)
-print("\t".join(f"\tMC_KMLS++_MSR_Time{m}\tMC_KMLS++_MSR{m}_Cost" for m in msrs))
+print("\t" + "\t".join(f"MC_KM++_MSR_Time{m}\tMC_KM++_MSR{m}_Cost\tMC_KMLS++_MSR_Time{m}\tMC_KMLS++_MSR{m}_Cost" for m in msrs))
 
 def print_set(csr, csm, *, name, kset=KSET):
     smw = mc.smw(csr.astype(np.float32))
@@ -88,13 +88,22 @@ def print_set(csr, csm, *, name, kset=KSET):
             pickle.dump(mcols, f)
         for m in msrs:
             t = time()
-            mcom = mc.kmeanspp(csm, k=k, ntimes=1, msr=m, n_local_trials=nlt, lspp=int(k + 3 + np.log(k)), prior=args.prior)
+            mcom = mc.kmeanspp(csm, k=k, ntimes=1, msr=m, n_local_trials=nlt, prior=args.prior)
             t2 = time()
             mybasename = basename + ".msr%s." % m
             with open(mybasename + "kmpp.pyd", "wb") as f:
                 import pickle
                 pickle.dump(mcom, f)
+            print(f"{t2 - t}\t{np.sum(mcom[2])}", flush=True, end="")
+            t = time()
+            mcom = mc.kmeanspp(csm, k=k, ntimes=1, msr=m, n_local_trials=nlt, lspp=int(k + 3 + np.log(k)), prior=args.prior)
+            t2 = time()
+            mybasename = basename + ".msr%s.ls++." % m
+            with open(mybasename + "kmpp.pyd", "wb") as f:
+                import pickle
+                pickle.dump(mcom, f)
             print(f"\t{t2 - t}\t{np.sum(mcom[2])}", flush=True, end="")
+        print("")
     
 
 print_set(tiny_csr, tiny_csm, name="tiny")
