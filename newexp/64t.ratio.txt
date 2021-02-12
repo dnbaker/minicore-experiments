@@ -1,0 +1,15 @@
+```
+[(1.0, 'SQRL2'),
+ (1.1386763268351703, 'JSD'),
+ (1.086587201024312, 'MKL'),
+ (1.0564781924239903, 'HELLINGER'),
+ (0.9657298127925644, 'BHATTACHARYYA_DISTANCE'),
+ (1.4554155481814872, 'LLR'),
+ (1.083642571344859, 'REVERSE_MKL'),
+ (1.1362114691776593, 'ITAKURA_SAITO'),
+ (1.9029033819203256, 'COSINE_DISTANCE')]
+```
+
+This is the ratio of times for the different measures compared to squared L2.
+
+Bhattacharyya is faster than squared L2, while the other measures are nearly the same speed, with LLR and cosine distance at 1.5 and 2x runtime costs as outliers.
