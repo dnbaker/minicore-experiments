@@ -29,8 +29,8 @@ nlt = args.n_local_trials
 
 print("#args=" + str(args))
 
-sklheadtxt = "\tSKL_KMplusplus_time\tSKL_KMplusplus_cost" if not args.skip_skl else ""
-print(f"#Name\t{sklheadtxt}\tMC_KMplusplus_time\tMC_KMplusplus_cost\tMC_KMpp_and_LSpp_time\tMC_KMplusplusLSpp_cost\tnthreads", end="")
+sklheadtxt = ["\tSKL_KMplusplus_time\tSKL_KMplusplus_cost", ""][args.skip_skl]
+print(f"#Name\tk{sklheadtxt}\tMC_KMplusplus_time\tMC_KMplusplus_cost\tMC_KMpp_and_LSpp_time\tMC_KMplusplusLSpp_cost\tnthreads", end="")
 
 fakedata = make_classification(n_samples=50000, n_classes=10, n_clusters_per_class=4, n_informative=50, n_features=100)[0]
 fakedata[np.abs(fakedata) < 1.] = 0.
