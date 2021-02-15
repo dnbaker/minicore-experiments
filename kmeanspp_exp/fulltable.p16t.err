@@ -1,0 +1,32 @@
+Parsed matrix of 50000/100
+Performing k=3 for name = tiny
+Performing k=10 for name = tiny
+Performing k=25 for name = tiny
+Performing k=50 for name = tiny
+Performing k=100 for name = tiny
+loading data from disk...
+
+loaded data from disk...
+
+pmbc load: 0.11877918243408203
+cao4 load: 12.552418947219849
+cao2 load: 2.002716064453125e-05
+Loaded data, processing with 16 threads
+Parsed matrix of 68579/32738
+Parsed matrix of 4062980/63561
+Parsed matrix of 2058652/26183
+Performing k=3 for name = PBMC
+Performing k=10 for name = PBMC
+Performing k=25 for name = PBMC
+Performing k=50 for name = PBMC
+Performing k=100 for name = PBMC
+Performing k=3 for name = Cao4m
+Performing k=10 for name = Cao4m
+Performing k=25 for name = Cao4m
+Performing k=50 for name = Cao4m
+Performing k=100 for name = Cao4m
+Performing k=3 for name = Cao2m
+Performing k=10 for name = Cao2m
+Performing k=25 for name = Cao2m
+Performing k=50 for name = Cao2m
+Performing k=100 for name = Cao2m
