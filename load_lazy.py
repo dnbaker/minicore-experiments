@@ -21,6 +21,19 @@ def getmat(name):
         from load_1M import million_mat as ret
     elif name == 'cao4m':
         ret = loadcao4m()
+    elif name == 'pbmcd':
+        def fn():
+            from load_dense import pbmcd
+        return fn
+    elif name == 'pbmcd':
+        from load_dense import pbmcd
+        return pbmcd
+    elif name == 'cao4d':
+        from load_dense import cao4d
+        return cao4d
+    elif name == 'cao2d':
+        from load_dense import cao2d
+        return cao2d
     else:
         raise RuntimeError("Not found: name")
     return ret
@@ -31,7 +44,10 @@ exp_loads = {
     "293t": lambda: getmat("293t"),
     "pbmc": lambda: getmat("pbmc"),
     "1.3M": lambda: getmat("1.3M"),
-    "cao4m": lambda: getmat('cao4m')
+    "cao4m": lambda: getmat('cao4m'),
+    "cao2d": lambda: getmat("cao2d"),
+    "cao4d": lambda: getmat("cao4d"),
+    "pbmcd": lambda: getmat("pbmcd")
 }
 exp_loads['cao2m'] = exp_loads['cao']
 
