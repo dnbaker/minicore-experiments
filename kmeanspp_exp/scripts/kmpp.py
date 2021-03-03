@@ -42,7 +42,8 @@ for i, s in enumerate(fdsums):
 
 nzc = np.sum(fakedata != 0, axis=1)
 # print("Nnza: %g, %g\n" % (np.mean(fdsums), np.median(fdsums)))
-tiny_csr = sp.csr_matrix(fakedata.astype(np.float32))
+tiny_dense = fakedata.astype(np.float32).copy()
+tiny_csr = sp.csr_matrix(tiny_dense)
 tiny_csm = mc.CSparseMatrix(tiny_csr)
 KSET = [3, 10, 25, 50, 100]
 
@@ -52,32 +53,31 @@ for m in args.msr if args.msr else []:
         msrs.append(int(m))
     except:
         msrs.append(m)
-print("\t" + "\t".join(f"MC_KM++_MSR_Time{m}\tMC_KM++_MSR{m}_Cost\tMC_KMLS++_MSR_Time{m}\tMC_KMLS++_MSR{m}_Cost" for m in msrs))
+print("\t" + "\t".join(f"MC_KM++_MSR_Time{m}\tMC_KM++_MSR{m}_Cost\tMC_KMLS++_MSR_Time{m}\tMC_KMLS++_MSR{m}_Cost" for m in msrs), end="")
+print(f"\t{sklheadtxt}\tMCDense_KMplusplus_time\tMCDense_KMplusplus_cost\tMCDense_KMpp_and_LSpp_time\tMCDense_KMplusplusLSpp_cost\tnthreads", end="")
+print("\t" + "\t".join(f"MCDense_KM++_MSR_Time{m}\tMCDense_KM++_MSR{m}_Cost\tMCDense_KMLS++_MSR_Time{m}\tMCDense_KMLS++_MSR{m}_Cost" for m in msrs))
+
 
 def k2lsppn(k):
     return int(np.ceil(k + 3 + np.log(k)))
 
-def print_set(csr, csm, *, name, kset=KSET):
-    smw = mc.smw(csr.astype(np.float32))
+def print_set(csr, csm, *, name, kset=KSET, dense=None):
     for k in kset:
         lsppn = k2lsppn(k)
         print(f"Performing k={k} for name = {name}", file=sys.stderr)
         t = time()
-        if args.skip_skl:
-            ids = np.random.choice(csr.shape[0], size=k)
-            t2 = time()
+        try:
+            ctrs, ids = skc.kmeans_plusplus(csr, n_clusters=k, n_local_trials=nlt)
+        except (TypeError, ValueError) as e:
+            csr.indices = csr.indices.astype(np.uint32)
+            csr.indptr = csr.indptr.astype(np.uint32)
+            ctrs, ids = skc.kmeans_plusplus(csr, n_clusters=k, n_local_trials=nlt)
+        try:
+            smw = mc.smw(csr.astype(np.float32))
+            skcost = np.sum(np.min(mc.cmp(smw, csr[np.array(sorted(ids))].todense()), axis=1))
+        except:
             skcost = 1e308
-        else:
-            try:
-                ctrs, ids = skc.kmeans_plusplus(csr, n_clusters=k, n_local_trials=nlt)
-            except (TypeError, ValueError) as e:
-                csr.indices = csr.indices.astype(np.uint32)
-                csr.indptr = csr.indptr.astype(np.uint32)
-                ctrs, ids = skc.kmeans_plusplus(csr, n_clusters=k, n_local_trials=nlt)
-            try:
-                skcost = np.sum(np.min(mc.cmp(smw, csr[np.array(sorted(ids))].todense()), axis=1))
-            except: skcost = 1e308
-            t2 = time()
+        t2 = time()
         t3 = time()
         mco = mc.kmeanspp(csm, k=k, ntimes=1, msr="SQRL2", n_local_trials=nlt)
         t4 = time()
@@ -106,13 +106,55 @@ def print_set(csr, csm, *, name, kset=KSET):
             with open("%s.msr%s.ls++.%s" % (basename, m, "kmpp.pyd"), "wb") as f:
                 import pickle
                 pickle.dump(mcom, f)
-            endchar = '\n' if i == len(msrs) - 1 else '\t'
+            endchar = "\t\n"[i == len(msrs) - 1]
             print(f"{t2 - t}\t{np.sum(mcom[2])}", flush=True, end=endchar)
+        # Dense now
+        if dense is not None:
+            try:
+                ctrs, ids = skc.kmeans_plusplus(dense, n_clusters=k, n_local_trials=nlt)
+            except (TypeError, ValueError) as e:
+                raise
+            t2 = time()
+            try:
+                import scipy.spatial.distance as ssd
+                skcost = np.sum(np.min(ssd.cdist(dense, csr[np.array(sorted(ids))].todense()), axis=1))
+            except:
+                skcost = 1e308
+            t3 = time()
+            mco = mc.kmeanspp(dense, k=k, ntimes=1, msr="SQRL2", n_local_trials=nlt)
+            t4 = time()
+            print(f"{t2 - t}\t{skcost}\t{t4 - t3}\t{np.sum(mco[2])}", end='\t', flush=True)
+            t5 = time()
+            mcols = mc.kmeanspp(dense, k=k, ntimes=1, msr="SQRL2", lspp=lsppn, n_local_trials=nlt)
+            t6 = time()
+            print(f"{t6 - t5}\t{np.sum(mcols[2])}", flush=True, end='\t')
+            basename = f"{name}.{k}.{args.nthreads}."
+            with open(basename + "dense.kmpp.pyd", "wb") as f:
+                import pickle
+                pickle.dump(mcols, f)
+            for i, m in enumerate(msrs):
+                t = time()
+                mcom = mc.kmeanspp(dense, k=k, ntimes=1, msr=m, n_local_trials=nlt, prior=args.prior)
+                t2 = time()
+                mybasename = basename + ".msr%s." % m
+                with open(mybasename + "dense.kmpp.pyd", "wb") as f:
+                    import pickle
+                    pickle.dump(mcom, f)
+                print(f"{t2 - t}\t{np.sum(mcom[2])}", flush=True, end="\t")
+                t = time()
+                mcom = mc.kmeanspp(dense, k=k, ntimes=1, msr=m, n_local_trials=nlt, lspp=lsppn, prior=args.prior)
+                t2 = time()
+                mybasename = basename + ".msr%s.ls++." % m
+                with open("%s.msr%s.ls++.%s" % (basename, m, "dense.kmpp.pyd"), "wb") as f:
+                    import pickle
+                    pickle.dump(mcom, f)
+                endchar = "\t\n"[i == len(msrs) - 1]
+                print(f"{t2 - t}\t{np.sum(mcom[2])}", flush=True, end=endchar)
 
 
-print_set(tiny_csr, tiny_csm, name="tiny")
+print_set(tiny_csr, tiny_csm, name="tiny", dense=tiny_dense)
 print("loading data from disk...\n", file=sys.stderr)
-pbmc, cao2, cao4 = [exp_loads[x]() for x in ['pbmc', 'cao', 'cao4m']]
+pbmc, cao2, cao4, pbmcd, cao2d, cao4d = [exp_loads[x]() for x in ['pbmc', 'cao', 'cao4m', 'pbmcd', 'cao2d', 'cao4d']]
 
 print("loaded data from disk...\n", file=sys.stderr)
 
@@ -127,11 +169,11 @@ cao4_csm = mc.CSparseMatrix(cao4)
 print(f"cao4 load: {time() - t0}", file=sys.stderr)
 
 t0 = time()
-cao2_csr = cao2
+cao2_csr = sp.csr_matrix((cao2.data, cao2.indices, cao2.indptr), shape=cao2.shape)
 cao2_csm = mc.CSparseMatrix(cao2)
 print(f"cao2 load: {time() - t0}", file=sys.stderr)
 
 print("Loaded data, processing with %d threads" % mc.get_num_threads(), file=sys.stderr, flush=True)
-print_set(pbmc_csr, pbmc_csm, name="PBMC")
-print_set(cao4_csr, cao4_csm, name="Cao4m")
-print_set(cao2_csr, cao2_csm, name="Cao2m")
+print_set(pbmc_csr, pbmc_csm, name="PBMC", dense=pbmcd)
+print_set(cao4_csr, cao4_csm, name="Cao4m", dense=cao4d)
+print_set(cao2_csr, cao2_csm, name="Cao2m", dense=cao2d)

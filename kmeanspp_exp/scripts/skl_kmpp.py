@@ -65,8 +65,7 @@ def print_set(csr, csm, dmat, *, name, kset=KSET):
         try:
             ctrs, ids = skc.kmeans_plusplus(csr, n_clusters=k, n_local_trials=nlt)
         except (TypeError, ValueError) as e:
-            csr.indices = csr.indices.astype(np.uint32)
-            csr.indptr = csr.indptr.astype(np.uint32)
+            csr = sp.csr_matrix((csr.data, csr.indices, csr.indptr), shape=csr.shape)
             ctrs, ids = skc.kmeans_plusplus(csr, n_clusters=k, n_local_trials=nlt)
         try:
             skcost = np.sum(np.min(mc.cmp(smw, csr[np.array(sorted(ids))].todense()), axis=1))
@@ -78,7 +77,8 @@ def print_set(csr, csm, dmat, *, name, kset=KSET):
         t3 = time()
         dctrs, dids = skc.kmeans_plusplus(dmat, n_clusters=k, n_local_trials=nlt)
         t4 = time()
-        skcost = np.sum(np.min(mc.cmp(smw, csr[np.array(sorted(ids))].todense()), axis=1))
+        import scipy.spatial.distance as ssd
+        skcost = np.sum(np.min(ssd.cdist(dmat, csr[np.array(sorted(dids))].todense()), axis=1))
         print(f"{t4 - t3}\t{skcost}\t1", flush=True, end='\n')
 
 
@@ -105,5 +105,5 @@ print(f"cao2 load: {time() - t0}", file=sys.stderr)
 
 print("Loaded data, processing with %d threads" % mc.get_num_threads(), file=sys.stderr, flush=True)
 print_set(pbmc_csr, pbmc_csm, pbmcd, name="PBMC")
-print_set(cao4_csr, cao4_csm, cao4d, name="Cao4m")
 print_set(cao2_csr, cao2_csm, cao2d, name="Cao2m")
+print_set(cao4_csr, cao4_csm, cao4d, name="Cao4m")
