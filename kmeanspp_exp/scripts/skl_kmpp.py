@@ -20,6 +20,7 @@ ap.add_argument("--n-local-trials", type=int, default=1)
 ap.add_argument("--mbsize", type=int, default=5000)
 ap.add_argument("--msr", '-M', action='append')
 ap.add_argument("--prior", type=float, default=1.)
+mc.set_num_threads(1)
 args = ap.parse_args()
 maxiter=args.maxiter
 nlt = args.n_local_trials
@@ -75,7 +76,6 @@ def print_set(csr, csm, dmat, *, name, kset=KSET):
         t2 = time()
         print(f"{name}\t{k}\t{t2 - t}\t{skcost}", end='\t', flush=True)
         t3 = time()
-        print(dmat,type(dmat),file=sys.stderr)
         dctrs, dids = skc.kmeans_plusplus(dmat, n_clusters=k, n_local_trials=nlt)
         t4 = time()
         skcost = np.sum(np.min(mc.cmp(smw, csr[np.array(sorted(ids))].todense()), axis=1))
