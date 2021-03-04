@@ -86,7 +86,7 @@ def print_set(csr, csm, *, name, kset=KSET, dense=None):
         mcols = mc.kmeanspp(csm, k=k, ntimes=1, msr="SQRL2", lspp=lsppn, n_local_trials=nlt)
         t6 = time()
         print(f"{t6 - t5}\t{np.sum(mcols[2])}\t{args.nthreads}", flush=True, end='\t')
-        basename = f"{name}.{k}.{args.nthreads}"
+        basename = f"__{name}.{k}.{args.nthreads}"
         with open(basename + "kmpp.pyd", "wb") as f:
             import pickle
             pickle.dump(mcols, f)
@@ -106,8 +106,7 @@ def print_set(csr, csm, *, name, kset=KSET, dense=None):
             with open("%s.msr%s.ls++.%s" % (basename, m, "kmpp.pyd"), "wb") as f:
                 import pickle
                 pickle.dump(mcom, f)
-            endchar = "\t\n"[i == len(msrs) - 1]
-            print(f"{t2 - t}\t{np.sum(mcom[2])}", flush=True, end=endchar)
+            print(f"{t2 - t}\t{np.sum(mcom[2])}", flush=True, end='\t')
         # Dense now
         if dense is not None:
             try:
@@ -128,7 +127,7 @@ def print_set(csr, csm, *, name, kset=KSET, dense=None):
             mcols = mc.kmeanspp(dense, k=k, ntimes=1, msr="SQRL2", lspp=lsppn, n_local_trials=nlt)
             t6 = time()
             print(f"{t6 - t5}\t{np.sum(mcols[2])}", flush=True, end='\t')
-            basename = f"{name}.{k}.{args.nthreads}."
+            basename = f"__{name}.{k}.{args.nthreads}."
             with open(basename + "dense.kmpp.pyd", "wb") as f:
                 import pickle
                 pickle.dump(mcols, f)
@@ -148,8 +147,8 @@ def print_set(csr, csm, *, name, kset=KSET, dense=None):
                 with open("%s.msr%s.ls++.%s" % (basename, m, "dense.kmpp.pyd"), "wb") as f:
                     import pickle
                     pickle.dump(mcom, f)
-                endchar = "\t\n"[i == len(msrs) - 1]
-                print(f"{t2 - t}\t{np.sum(mcom[2])}", flush=True, end=endchar)
+                print(f"{t2 - t}\t{np.sum(mcom[2])}", flush=True, end='\t')
+        print("")
 
 
 print_set(tiny_csr, tiny_csm, name="tiny", dense=tiny_dense)

@@ -78,7 +78,7 @@ def print_set(csr, csm, dmat, *, name, kset=KSET):
         dctrs, dids = skc.kmeans_plusplus(dmat, n_clusters=k, n_local_trials=nlt)
         t4 = time()
         import scipy.spatial.distance as ssd
-        skcost = np.sum(np.min(ssd.cdist(dmat, csr[np.array(sorted(dids))].todense()), axis=1))
+        skcost = np.sum(np.min(ssd.cdist(dmat, dmat[np.array(sorted(dids))]), axis=1))
         print(f"{t4 - t3}\t{skcost}\t1", flush=True, end='\n')
 
 
