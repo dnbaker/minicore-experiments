@@ -131,6 +131,8 @@ def print_set(csr, csm, *, name, kset=KSET, dense=None):
             with open(basename + "dense.kmpp.pyd", "wb") as f:
                 import pickle
                 pickle.dump(mcols, f)
+            print("")
+            continue
             for i, m in enumerate(msrs):
                 t = time()
                 mcom = mc.kmeanspp(dense, k=k, ntimes=1, msr=m, n_local_trials=nlt, prior=args.prior)
@@ -153,7 +155,8 @@ def print_set(csr, csm, *, name, kset=KSET, dense=None):
 
 print_set(tiny_csr, tiny_csm, name="tiny", dense=tiny_dense)
 print("loading data from disk...\n", file=sys.stderr)
-pbmc, cao2, cao4, pbmcd, cao2d, cao4d = [exp_loads[x]() for x in ['pbmc', 'cao', 'cao4m', 'pbmcd', 'cao2d', 'cao4d']]
+pbmc = exp_loads['pbmc']()
+pbmcd = exp_loads['pbmcd']()
 
 print("loaded data from disk...\n", file=sys.stderr)
 
@@ -162,6 +165,11 @@ pbmc_csr = sp.csr_matrix((pbmc.data, pbmc.indices, pbmc.indptr), shape=pbmc.shap
 pbmc_csm = mc.CSparseMatrix(pbmc_csr)
 print(f"pmbc load: {time() - t0}", file=sys.stderr)
 
+
+print("Loaded data, processing with %d threads" % mc.get_num_threads(), file=sys.stderr, flush=True)
+print_set(pbmc_csr, pbmc_csm, name="PBMC", dense=pbmcd)
+cao2 = exp_loads['cao']()
+cao4 = exp_loads['cao4m']()
 t0 = time()
 cao4_csr = sp.csr_matrix((cao4.data, cao4.indices, cao4.indptr), shape=cao4.shape)
 cao4_csm = mc.CSparseMatrix(cao4)
@@ -171,8 +179,6 @@ t0 = time()
 cao2_csr = sp.csr_matrix((cao2.data, cao2.indices, cao2.indptr), shape=cao2.shape)
 cao2_csm = mc.CSparseMatrix(cao2)
 print(f"cao2 load: {time() - t0}", file=sys.stderr)
-
-print("Loaded data, processing with %d threads" % mc.get_num_threads(), file=sys.stderr, flush=True)
-print_set(pbmc_csr, pbmc_csm, name="PBMC", dense=pbmcd)
+cao2d, cao4d = [exp_loads[x]() for x in ['cao2d', 'cao4d']]
 print_set(cao4_csr, cao4_csm, name="Cao4m", dense=cao4d)
 print_set(cao2_csr, cao2_csm, name="Cao2m", dense=cao2d)
