@@ -1,5 +1,5 @@
 #args=Namespace(maxiter=25, mbsize=5000, msr=None, n_local_trials=1, ncheckins=5, prior=1.0, tol=1e-05)
-#Name	SKLSparse_KMplusplus_time	SKLSparse_KMplusplus_cost	SKLDense_KMplusplus_time	SKLDENSE_KMplusplus_cost	nthreads_always_1	
+#Name	k	SKLSparse_KMplusplus_time	SKLSparse_KMplusplus_cost	SKLDense_KMplusplus_time	SKLDENSE_KMplusplus_cost	nthreads_always_1
 tiny	3	0.5955753326416016	50743236.0	0.08450698852539062	1535917.1417357554	1
 tiny	10	1.809715986251831	36307368.0	0.16084909439086914	1339712.8230590543	1
 tiny	25	3.795382499694824	33247346.0	0.3439633846282959	1269044.9981992426	1
