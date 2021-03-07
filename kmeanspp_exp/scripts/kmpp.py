@@ -1,7 +1,7 @@
 import sys
 
 sys.path.append("..")
-from time import time
+from time import time, perf_counter
 from sklearn.datasets import make_classification
 
 import numpy as np
@@ -29,6 +29,8 @@ nlt = args.n_local_trials
 
 print("#args=" + str(args))
 
+pref = str(perf_counter())[-8:] + "."
+print(f"#pref:{pref}")
 sklheadtxt = ["\tSKL_KMplusplus_time\tSKL_KMplusplus_cost", ""][not args.skip_skl]
 print(f"#Name\tk{sklheadtxt}\tMC_KMplusplus_time\tMC_KMplusplus_cost\tMC_KMpp_and_LSpp_time\tMC_KMplusplusLSpp_cost\tnthreads", end="")
 
@@ -39,6 +41,7 @@ fdsums = np.sum(fakedata, axis=1)
 for i, s in enumerate(fdsums):
     if not s:
         fakedata[i,np.random.choice(1000, size=3, replace=False)] = 1.
+
 
 nzc = np.sum(fakedata != 0, axis=1)
 # print("Nnza: %g, %g\n" % (np.mean(fdsums), np.median(fdsums)))
@@ -54,8 +57,7 @@ for m in args.msr if args.msr else []:
     except:
         msrs.append(m)
 print("\t" + "\t".join(f"MC_KM++_MSR_Time{m}\tMC_KM++_MSR{m}_Cost\tMC_KMLS++_MSR_Time{m}\tMC_KMLS++_MSR{m}_Cost" for m in msrs), end="")
-print(f"\t{sklheadtxt}\tMCDense_KMplusplus_time\tMCDense_KMplusplus_cost\tMCDense_KMpp_and_LSpp_time\tMCDense_KMplusplusLSpp_cost\tnthreads", end="")
-print("\t" + "\t".join(f"MCDense_KM++_MSR_Time{m}\tMCDense_KM++_MSR{m}_Cost\tMCDense_KMLS++_MSR_Time{m}\tMCDense_KMLS++_MSR{m}_Cost" for m in msrs))
+print(f"\t{sklheadtxt}\tMCDense_KMplusplus_time\tMCDense_KMplusplus_cost\tMCDense_KMpp_and_LSpp_time\tMCDense_KMplusplusLSpp_cost\tnthreads")
 
 
 def k2lsppn(k):
@@ -86,7 +88,7 @@ def print_set(csr, csm, *, name, kset=KSET, dense=None):
         mcols = mc.kmeanspp(csm, k=k, ntimes=1, msr="SQRL2", lspp=lsppn, n_local_trials=nlt)
         t6 = time()
         print(f"{t6 - t5}\t{np.sum(mcols[2])}\t{args.nthreads}", flush=True, end='\t')
-        basename = f"__{name}.{k}.{args.nthreads}"
+        basename = f"{pref}{name}.{k}.{args.nthreads}"
         with open(basename + "kmpp.pyd", "wb") as f:
             import pickle
             pickle.dump(mcols, f)
@@ -127,34 +129,18 @@ def print_set(csr, csm, *, name, kset=KSET, dense=None):
             mcols = mc.kmeanspp(dense, k=k, ntimes=1, msr="SQRL2", lspp=lsppn, n_local_trials=nlt)
             t6 = time()
             print(f"{t6 - t5}\t{np.sum(mcols[2])}", flush=True, end='\t')
-            basename = f"__{name}.{k}.{args.nthreads}."
+            basename = f"{pref}{name}.{k}.{args.nthreads}."
             with open(basename + "dense.kmpp.pyd", "wb") as f:
                 import pickle
                 pickle.dump(mcols, f)
             print("")
             continue
-            for i, m in enumerate(msrs):
-                t = time()
-                mcom = mc.kmeanspp(dense, k=k, ntimes=1, msr=m, n_local_trials=nlt, prior=args.prior)
-                t2 = time()
-                mybasename = basename + ".msr%s." % m
-                with open(mybasename + "dense.kmpp.pyd", "wb") as f:
-                    import pickle
-                    pickle.dump(mcom, f)
-                print(f"{t2 - t}\t{np.sum(mcom[2])}", flush=True, end="\t")
-                t = time()
-                mcom = mc.kmeanspp(dense, k=k, ntimes=1, msr=m, n_local_trials=nlt, lspp=lsppn, prior=args.prior)
-                t2 = time()
-                mybasename = basename + ".msr%s.ls++." % m
-                with open("%s.msr%s.ls++.%s" % (basename, m, "dense.kmpp.pyd"), "wb") as f:
-                    import pickle
-                    pickle.dump(mcom, f)
-                print(f"{t2 - t}\t{np.sum(mcom[2])}", flush=True, end='\t')
-        print("")
+        else:
+            print("")
 
 
 print_set(tiny_csr, tiny_csm, name="tiny", dense=tiny_dense)
-print("loading data from disk...\n", file=sys.stderr)
+#print("loading data from disk...\n", file=sys.stderr)
 pbmc = exp_loads['pbmc']()
 pbmcd = exp_loads['pbmcd']()
 
@@ -167,7 +153,6 @@ print(f"pmbc load: {time() - t0}", file=sys.stderr)
 
 
 print("Loaded data, processing with %d threads" % mc.get_num_threads(), file=sys.stderr, flush=True)
-print_set(pbmc_csr, pbmc_csm, name="PBMC", dense=pbmcd)
 cao2 = exp_loads['cao']()
 cao4 = exp_loads['cao4m']()
 t0 = time()
@@ -180,5 +165,6 @@ cao2_csr = sp.csr_matrix((cao2.data, cao2.indices, cao2.indptr), shape=cao2.shap
 cao2_csm = mc.CSparseMatrix(cao2)
 print(f"cao2 load: {time() - t0}", file=sys.stderr)
 cao2d, cao4d = [exp_loads[x]() for x in ['cao2d', 'cao4d']]
-print_set(cao4_csr, cao4_csm, name="Cao4m", dense=cao4d)
+print_set(pbmc_csr, pbmc_csm, name="PBMC", dense=pbmcd)
 print_set(cao2_csr, cao2_csm, name="Cao2m", dense=cao2d)
+print_set(cao4_csr, cao4_csm, name="Cao4m", dense=cao4d)
