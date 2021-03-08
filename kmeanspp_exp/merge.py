@@ -58,29 +58,34 @@ def parse_experiment_name(nm):
 	if 'Dense' in name:
 		name = name.replace('Dense', '')
 		is_sparse = False
+	name = name.replace('plusplus', 'pp')
+	name = name.replace('++', 'pp')
+	name = name.replace('_and_', '')
+	name = name.replace('KMppLS', 'KMLS')
+	name = name.replace('SKL_KMpp', 'SKL')
 	return (name, dist, is_sparse, is_cost)
 
 
 def is_integer(n):
-    try:
-        float(n)
-    except ValueError:
-        return False
-    else:
-        return float(n).is_integer()
+	try:
+		float(n)
+	except ValueError:
+		return False
+	else:
+		return float(n).is_integer()
 
 
 def is_float(n):
-    try:
-        float(n)
-    except ValueError:
-        return False
-    return True
+	try:
+		float(n)
+	except ValueError:
+		return False
+	return True
 
 
+print(','.join(['dataset', 'k', 'nthreads', 'name', 'distance', 'sparsity', 'measure', 'value']))
 for fn in fns:
 	with open(fn, 'rt') as fh:
-		print(','.join(['dataset', 'k', 'nthreads', 'name', 'distance', 'sparsity', 'measure', 'value']))
 		name_col = 0
 		k_col = 1
 		nthreads_col = None
