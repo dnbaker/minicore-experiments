@@ -5,6 +5,7 @@ Merge script for minicore kmeans++ results
 """
 
 import re
+import sys
 
 fns = ['kmpp.dense.p0.1.4threads.out',
        'kmpp.dense.prior1.16threads.out']
@@ -35,7 +36,14 @@ def parse_experiment_name(nm):
 	"""
 	E.g. 'MC_KM++_MSR4_Cost', 'MC_KMLS++_MSR_Time8'
 	"""
+	orig_name = nm[:]
 	toks = nm.split('_')
+	if toks[-1].endswith('++Cost'):
+		toks[-1] = toks[-1][:-4]
+		toks.append('Cost')
+	if toks[-1].endswith('++Time'):
+		toks[-1] = toks[-1][:-4]
+		toks.append('Time')
 	assert 'time' in toks[-1].lower() or 'cost' in toks[-1].lower(), toks
 	is_cost = 'cost' in toks[-1].lower()
 	name = '_'.join(toks[0:-1])
@@ -63,7 +71,8 @@ def parse_experiment_name(nm):
 	name = name.replace('_and_', '')
 	name = name.replace('KMppLS', 'KMLS')
 	name = name.replace('SKL_KMpp', 'SKL')
-	return (name, dist, is_sparse, is_cost)
+	print((orig_name, name, dist, is_sparse, is_cost), file=sys.stderr)
+	return (name, dist, is_sparse, is_cost, orig_name)
 
 
 def is_integer(n):
@@ -83,7 +92,7 @@ def is_float(n):
 	return True
 
 
-print(','.join(['dataset', 'k', 'nthreads', 'name', 'distance', 'sparsity', 'measure', 'value']))
+print(','.join(['dataset', 'orig_name', 'k', 'nthreads', 'name', 'distance', 'sparsity', 'measure', 'value']))
 for fn in fns:
 	with open(fn, 'rt') as fh:
 		name_col = 0
@@ -101,19 +110,21 @@ for fn in fns:
 					if tok == 'nthreads':
 						nthreads_col = coli
 					else:
-						expt_name, dist, is_sparse, is_cost = parse_experiment_name(tok)
-						experiments[coli] = (expt_name, dist, is_sparse, is_cost)
+						expt_name, dist, is_sparse, is_cost, orig_name = parse_experiment_name(tok)
+						assert coli not in experiments
+						experiments[coli] = (expt_name, dist, is_sparse, is_cost, orig_name)
 				assert nthreads_col is not None
 			elif ln[0] == '#':
 				pass
 			else:
+				assert len(experiments) > 0
 				toks = ln.rstrip().split()
 				assert is_integer(toks[nthreads_col]), (toks[nthreads_col], toks, nthreads_col)
 				name, k, nthreads = toks[name_col], int(toks[k_col]), int(toks[nthreads_col])
 				for coli, tup in experiments.items():
 					assert is_float(toks[coli])
-					expt_name, dist, is_sparse, is_cost = tup
-					print(','.join([name, str(k), str(nthreads)]), end=',')
+					expt_name, dist, is_sparse, is_cost, orig_name = tup
+					print(','.join([name, orig_name, str(k), str(nthreads)]), end=',')
 					print(','.join([expt_name, dist]), end=',')
 					print(','.join(['sparse' if is_sparse else 'dense']), end=',')
 					print(','.join(['cost' if is_cost else 'time', toks[coli]]))
