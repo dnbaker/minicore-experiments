@@ -67,18 +67,18 @@ def print_set(csr, csm, dmat, *, name, kset=KSET):
         except (TypeError, ValueError) as e:
             csr = sp.csr_matrix((csr.data, csr.indices, csr.indptr), shape=csr.shape)
             ctrs, ids = skc.kmeans_plusplus(csr, n_clusters=k, n_local_trials=nlt)
+        t2 = time()
         try:
             skcost = np.sum(np.min(mc.cmp(smw, csr[np.array(sorted(ids))].todense()), axis=1))
         except:
             print("Exception thrown, skcost is infinite", file=sys.stderr)
             skcost = 1e308
-        t2 = time()
         print(f"{name}\t{k}\t{t2 - t}\t{skcost}", end='\t', flush=True)
         t3 = time()
         dctrs, dids = skc.kmeans_plusplus(dmat, n_clusters=k, n_local_trials=nlt)
         t4 = time()
         import scipy.spatial.distance as ssd
-        skcost = np.sum(np.min(ssd.cdist(dmat, dmat[np.array(sorted(dids))]), axis=1))
+        skcost = np.sum(np.square(np.min(ssd.cdist(dmat, dmat[np.array(sorted(dids))]), axis=1)))
         print(f"{t4 - t3}\t{skcost}\t1", flush=True, end='\n')
 
 

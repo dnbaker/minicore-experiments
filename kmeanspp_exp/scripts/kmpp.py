@@ -31,8 +31,8 @@ print("#args=" + str(args))
 
 pref = str(perf_counter())[-8:] + "."
 print(f"#pref:{pref}")
-sklheadtxt = ["\tSKL_KMplusplus_time\tSKL_KMplusplus_cost", ""][not args.skip_skl]
-print(f"#Name\tk{sklheadtxt}\tMC_KMplusplus_time\tMC_KMplusplus_cost\tMC_KMpp_and_LSpp_time\tMC_KMplusplusLSpp_cost\tnthreads", end="")
+sklheadtxt = "SKL_KMplusplus_time\tSKL_KMplusplus_cost"
+print(f"#Name\tk\t{sklheadtxt}\tMC_KMplusplus_time\tMC_KMplusplus_cost\tMC_KMpp_and_LSpp_time\tMC_KMplusplusLSpp_cost\tnthreads", end="")
 
 fakedata = make_classification(n_samples=50000, n_classes=10, n_clusters_per_class=4, n_informative=50, n_features=100)[0]
 fakedata[np.abs(fakedata) < 1.] = 0.
@@ -48,7 +48,7 @@ nzc = np.sum(fakedata != 0, axis=1)
 tiny_dense = fakedata.astype(np.float32).copy()
 tiny_csr = sp.csr_matrix(tiny_dense)
 tiny_csm = mc.CSparseMatrix(tiny_csr)
-KSET = [3, 10, 25, 50, 100]
+KSET = [10, 25, 50, 100]
 
 msrs = []
 for m in args.msr if args.msr else []:
@@ -57,13 +57,14 @@ for m in args.msr if args.msr else []:
     except:
         msrs.append(m)
 print("\t" + "\t".join(f"MC_KM++_MSR_Time{m}\tMC_KM++_MSR{m}_Cost\tMC_KMLS++_MSR_Time{m}\tMC_KMLS++_MSR{m}_Cost" for m in msrs), end="")
-print(f"\t{sklheadtxt}\tMCDense_KMplusplus_time\tMCDense_KMplusplus_cost\tMCDense_KMpp_and_LSpp_time\tMCDense_KMplusplusLSpp_cost\tnthreads")
+print(f"\t{sklheadtxt.replace('KM', 'DenseKM')}\tMCDense_KMplusplus_time\tMCDense_KMplusplus_cost\tMCDense_KMpp_and_LSpp_time\tMCDense_KMplusplusLSpp_cost\tnthreads")
 
 
 def k2lsppn(k):
     return int(np.ceil(k + 3 + np.log(k)))
 
 def print_set(csr, csm, *, name, kset=KSET, dense=None):
+    smw = None
     for k in kset:
         lsppn = k2lsppn(k)
         print(f"Performing k={k} for name = {name}", file=sys.stderr)
@@ -71,15 +72,19 @@ def print_set(csr, csm, *, name, kset=KSET, dense=None):
         try:
             ctrs, ids = skc.kmeans_plusplus(csr, n_clusters=k, n_local_trials=nlt)
         except (TypeError, ValueError) as e:
-            csr.indices = csr.indices.astype(np.uint32)
-            csr.indptr = csr.indptr.astype(np.uint32)
+                
+            csr.indices = csr.indices.astype(np.int32)
+            if np.max(csr.indptr) < (1<<31):
+                csr.indptr = csr.indptr.astype(np.int32)
             ctrs, ids = skc.kmeans_plusplus(csr, n_clusters=k, n_local_trials=nlt)
-        try:
-            smw = mc.smw(csr.astype(np.float32))
-            skcost = np.sum(np.min(mc.cmp(smw, csr[np.array(sorted(ids))].todense()), axis=1))
-        except:
-            skcost = 1e308
         t2 = time()
+        try:
+            if smw is None:
+                smw = mc.smw(csr.astype(np.float32))
+            skcost = np.sum(np.min(mc.cmp(smw, csr[np.array(sorted(ids))].todense()), axis=1))
+        except Exception as e:
+            print(e)
+            skcost = 1e308
         t3 = time()
         mco = mc.kmeanspp(csm, k=k, ntimes=1, msr="SQRL2", n_local_trials=nlt)
         t4 = time()
@@ -116,11 +121,8 @@ def print_set(csr, csm, *, name, kset=KSET, dense=None):
             except (TypeError, ValueError) as e:
                 raise
             t2 = time()
-            try:
-                import scipy.spatial.distance as ssd
-                skcost = np.sum(np.min(ssd.cdist(dense, csr[np.array(sorted(ids))].todense()), axis=1))
-            except:
-                skcost = 1e308
+            import scipy.spatial.distance as ssd
+            skcost = np.sum(np.square(np.min(ssd.cdist(dense, dense[np.array(sorted(ids))]), axis=1)))
             t3 = time()
             mco = mc.kmeanspp(dense, k=k, ntimes=1, msr="SQRL2", n_local_trials=nlt)
             t4 = time()
