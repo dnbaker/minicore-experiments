@@ -167,6 +167,6 @@ cao2_csr = sp.csr_matrix((cao2.data, cao2.indices, cao2.indptr), shape=cao2.shap
 cao2_csm = mc.CSparseMatrix(cao2)
 print(f"cao2 load: {time() - t0}", file=sys.stderr)
 cao2d, cao4d = [exp_loads[x]() for x in ['cao2d', 'cao4d']]
+print_set(cao4_csr, cao4_csm, name="Cao4m", dense=cao4d)
 print_set(pbmc_csr, pbmc_csm, name="PBMC", dense=pbmcd)
 print_set(cao2_csr, cao2_csm, name="Cao2m", dense=cao2d)
-print_set(cao4_csr, cao4_csm, name="Cao4m", dense=cao4d)
