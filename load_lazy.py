@@ -30,6 +30,9 @@ def getmat(name):
     elif name == 'cao2d':
         import load_dense
         return load_dense.cao2d
+    elif name == 'cao2dkl':
+        import load_dense
+        return load_dense.cao2d_klnmf
     else:
         raise RuntimeError("Not found: name")
     return ret
@@ -43,8 +46,10 @@ exp_loads = {
     "cao4m": lambda: getmat('cao4m'),
     "cao2d": lambda: getmat("cao2d"),
     "cao4d": lambda: getmat("cao4d"),
-    "pbmcd": lambda: getmat("pbmcd")
+    "pbmcd": lambda: getmat("pbmcd"),
+    "cao2d_klnmf": lambda: getmat("cao2dkl")
 }
+
 exp_loads['cao2m'] = exp_loads['cao']
 
 ordering = ['293t', 'pbmc', 'zeisel', 'cao', '1.3M', 'cao4m']
