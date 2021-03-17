@@ -1,0 +1,2 @@
+#args=Namespace(dataset='cao2m', densify=False, hvg=500, k=50, lspp=50, maxiter=50, mbsize=3000, msr=['3', '4', '5', '7', '15'], n_local_trials=1, ncheckins=5, nthreads=20, prior=1.0)
+#pref:83402629.
