@@ -2,3 +2,4 @@
 #pref:69246157.
 #Dataset	k	numberHVG	Measure	Prior	LocalsearchRounds	NumLocalTrials	Densified	MinibatchSize	KmeansplusplusTime	KmeansplusplusCost	KMeansplusplusARI	KMeansTime	KMeansCost	KMeansARI
 cao4m	25	-1	SQRL2	1.0	0	1	False	50000	261.8792998790741	20800861888.0	0.0693799687845975	3161.7203216552734	13019125760.0	-0.014353890004822106
+cao4m	25	-1	JSM	1.0	0	1	False	50000	242.00202322006226	179913.3140635472	-0.015335424288900003
