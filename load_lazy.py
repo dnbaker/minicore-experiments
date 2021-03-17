@@ -1,5 +1,5 @@
+import numpy as np
 def loadcao4m():
-    import numpy as np
     import minicore as mc
     pref = "/net/langmead-bigmem-ib.bluecrab.cluster/storage/dnb/data/10xdata/4MEXP"
     dat = np.fromfile(pref + "/cao4m.data.u16.npy", dtype=np.uint16)
@@ -50,8 +50,12 @@ exp_loads = {
     "cao2d_klnmf": lambda: getmat("cao2dkl")
 }
 
+labels = {"cao4m": lambda: np.fromfile("/net/langmead-bigmem-ib.bluecrab.cluster/storage/dnb/data/10xdata/4MEXP/labels.u8.npy", dtype=np.uint8),
+          "cao2m": lambda: np.fromfile("/net/langmead-bigmem-ib.bluecrab.cluster/storage/dnb/code2/minicore-experiments/cao2m.labels.int8.npy", dtype=np.uint8),
+          "pbmc": lambda: np.array(list(map(int, map(str.strip, open("/net/langmead-bigmem-ib.bluecrab.cluster/storage/dnb/code2/minicore-experiments/68k_labels.txt"))))) - 1}
+
 exp_loads['cao2m'] = exp_loads['cao']
 
 ordering = ['293t', 'pbmc', 'zeisel', 'cao', '1.3M', 'cao4m']
 
-__all__ = ["ordering", "exp_loads"]
+__all__ = ["ordering", "exp_loads", "labels"]
