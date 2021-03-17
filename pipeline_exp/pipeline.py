@@ -23,6 +23,7 @@ ap.add_argument("--prior", type=float, default=1.)
 ap.add_argument("--dataset", type=str, choices=["cao4m", "cao2m", "pbmc"], default="pbmc")
 ap.add_argument("--hvg", type=int, default=-1, help="Number of highly variable genes to filter down to. If -1, use the full data.")
 ap.add_argument("--densify", action='store_true', help="Densify the matrix after filtering to hvg. Requires hvg")
+ap.add_argument("--topnorm", '-N', action='store_true', help="Whether to normalize variance by mean when selecting the most variable genes")
 ap.add_argument("-k", default=25, type=int, help="k for clustering")
 args = ap.parse_args()
 maxiter=args.maxiter
@@ -42,7 +43,7 @@ dataset = exp_loads[args.dataset]()
 truelabels = labels[args.dataset]()
 if args.hvg > 0:
     t = time()
-    hvdata, _, __ = mc.hvg(dataset, args.hvg)
+    hvdata, _, __ = mc.hvg(dataset, args.hvg, args.topnorm)
     print(f"#{args.dataset}\tHVGene{args.hvg}\t{time() - t}")
     if args.densify and isinstance(hvdata, sp.csr_matrix):
         t = time()
