@@ -57,7 +57,7 @@ for m in args.msr if args.msr else []:
     except:
         msrs.append(m)
 print("\t" + "\t".join(f"MC_KM++_MSR_Time{m}\tMC_KM++_MSR{m}_Cost\tMC_KMLS++_MSR_Time{m}\tMC_KMLS++_MSR{m}_Cost" for m in msrs), end="")
-print(f"\t{sklheadtxt.replace('KM', 'DenseKM')}\tMCDense_KMplusplus_time\tMCDense_KMplusplus_cost\tMCDense_KMpp_and_LSpp_time\tMCDense_KMplusplusLSpp_cost\tnthreads")
+print(f"\t{sklheadtxt.replace('KM', 'DenseKM')}\tMCDense_KMplusplus_time\tMCDense_KMplusplus_cost\tMCDense_KMpp_and_LSpp_time\tMCDense_KMplusplusLSpp_cost")
 
 
 def k2lsppn(k):
