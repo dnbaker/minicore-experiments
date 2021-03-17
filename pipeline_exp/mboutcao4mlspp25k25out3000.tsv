@@ -1,0 +1,4 @@
+#args=Namespace(dataset='cao4m', densify=False, hvg=-1, k=25, lspp=25, maxiter=50, mbsize=3000, msr=['3', '4', '5', '7', '15'], n_local_trials=1, ncheckins=5, nthreads=20, prior=1.0, topnorm=False)
+#pref:40655656.
+#Dataset	k	numberHVG	Measure	Prior	LocalsearchRounds	NumLocalTrials	Densified	MinibatchSize	KmeansplusplusTime	KmeansplusplusCost	KMeansplusplusARI	KMeansTime	KMeansCost	KMeansARI
+cao4m	25	-1	SQRL2	1.0	25	1	False	3000	770.4391007423401	20180370649.0	0.06818627793363105
