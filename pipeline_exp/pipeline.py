@@ -59,8 +59,7 @@ for msr in measures:
     td = time() - t
     initcost = np.sum(init[2])
     kmpp_ari = ARI(init[1].astype(np.int32), truelabels)
-    print(f"hvg: {args.hvg}\n", file=sys.stderr)
-    print(f"{args.dataset}\t{args.k}\t{args.hvg}\t{mc.meas2str(msr)}\t{args.prior}\t{args.lspp}\t{args.n_local_trials}\t{args.densify}\t{args.mbsize}\t{td}\t{initcost}\t{kmpp_ari}", end="")
+    print(f"{args.dataset}\t{args.k}\t{args.hvg}\t{mc.meas2str(msr)}\t{args.prior}\t{args.lspp}\t{args.n_local_trials}\t{args.densify}\t{args.mbsize}\t{td}\t{initcost}\t{kmpp_ari}", end="", flush=True)
     t = time()
     if isinstance(dataset, sp.csr_matrix) or isinstance(dataset, mc.csr_tuple):
         cout = mc.hcluster(mc.CSparseMatrix(dataset), init[0], msr=msr, maxiter=args.maxiter, ncheckins=args.ncheckins, prior=args.prior, mbsize=args.mbsize)
@@ -68,4 +67,4 @@ for msr in measures:
         cout = mc.hcluster(dataset, init[0], msr=msr, maxiter=args.maxiter, ncheckins=args.ncheckins, prior=args.prior, mbsize=args.mbsize)
     td = time() - t
     kmeans_ari = ARI(cout['asn'], truelabels)
-    print(f"\t{td}\t{cout['finalcost']}\t{kmeans_ari}")
+    print(f"\t{td}\t{cout['finalcost']}\t{kmeans_ari}", flush=True)
