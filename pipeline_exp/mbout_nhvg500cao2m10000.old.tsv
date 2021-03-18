@@ -1,0 +1,10 @@
+#args=Namespace(dataset='cao2m', densify=False, hvg=500, k=25, lspp=0, maxiter=50, mbsize=10000, msr=['3', '4', '5', '7', '15'], n_local_trials=1, ncheckins=5, nthreads=20, prior=1.0, topnorm=True)
+#pref:16571414.
+#cao2m HVGene500       123.46194100379944
+#Dataset       k       numberHVG       Measure Prior   LocalsearchRounds       NumLocalTrials  Densified       MinibatchSize   KmeansplusplusTime      KmeansplusplusCost      KMeansplusplusARI       KMeansTime      KMeansCost      KMeansARI
+cao2m  25      500     SQRL2   1.0     0       1       False   10000   14.16639256477356       2582186557.0    0.005439476391453387    45.77147197723389       1647471360.0    0.019249005727980172
+cao2m  25      500     JSM     1.0     0       1       False   10000   17.559574604034424      361512.97239955596      0.021678692810635194    93.9999167919159        307452.1875     0.025676408665848218
+cao2m  25      500     JSD     1.0     0       1       False   10000   17.761949062347412      74069.32025822252       0.027642271199352846    95.70597219467163       49351.7734375   0.02786495318088748
+cao2m  25      500     MKL     1.0     0       1       False   10000   14.984794616699219      272296.3615705911       0.018830517489278702    70.7407431602478        202476.0625     0.007235598627195797
+cao2m  25      500     BHATTACHARYYA_METRIC    1.0     0       1       False   10000   11.484395980834961      329015.55319979193      0.051944037719977715    44.93768668174744       279212.3125     0.09027773036825895
+cao2m  25      500     COSINE_DISTANCE 1.0     0       1       False   10000   15.459279775619507      516823.8864610639       0.0010900605275606877   34.01566028594971       457999.1875     0.005449845386986231
