@@ -1,0 +1,63 @@
+Parsed matrix of 68579/32738
+Cost at iter 0 (mbsize 50000): 218630480
+Cost at iter 10 (mbsize 50000): 119183864
+Distance between old and new centers: 1163.60205078
+Cost at iter 20 (mbsize 50000): 118466760
+Distance between old and new centers: 180.062469482
+Cost at iter 30 (mbsize 50000): 118301968
+Distance between old and new centers: 86.2782440186
+Cost at iter 40 (mbsize 50000): 118258224
+Distance between old and new centers: 56.6118392944
+Cost at iter 49 (mbsize 50000): 118228928
+Distance between old and new centers: 50.6585845947
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 218630480->118228928, in 88881.6ms
+Cost at iter 0 (mbsize 50000): 10546.451171875
+Cost at iter 10 (mbsize 50000): 7809.5341796875
+Distance between old and new centers: 1310.09777832
+Cost at iter 20 (mbsize 50000): 7802.30712890625
+Distance between old and new centers: 165.799835205
+Cost at iter 30 (mbsize 50000): 7801.98828125
+Distance between old and new centers: 127.596672058
+Cost at iter 40 (mbsize 50000): 7802.8212890625
+Cost at iter 49 (mbsize 50000): 7803.220703125
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 10546.4511719->7801.98828125, in 141162ms
+Cost at iter 0 (mbsize 50000): 1657.7159423828125
+Cost at iter 10 (mbsize 50000): 898.0406494140625
+Distance between old and new centers: 1378.40344238
+Cost at iter 20 (mbsize 50000): 897.6444091796875
+Distance between old and new centers: 224.236221313
+Cost at iter 30 (mbsize 50000): 897.6884765625
+Cost at iter 40 (mbsize 50000): 897.6734619140625
+Cost at iter 49 (mbsize 50000): 897.6739501953125
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 1657.71594238->897.64440918, in 166984ms
+Cost at iter 0 (mbsize 50000): 6713.998046875
+Cost at iter 10 (mbsize 50000): 3619.03759765625
+Distance between old and new centers: 1518.9284668
+Cost at iter 20 (mbsize 50000): 3630.172607421875
+Cost at iter 30 (mbsize 50000): 3633.81982421875
+Cost at iter 40 (mbsize 50000): 3644.916015625
+Cost at iter 49 (mbsize 50000): 3656.163330078125
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 6713.99804688->3619.03759766, in 118972ms
+Cost at iter 0 (mbsize 50000): 9255.087890625
+Cost at iter 10 (mbsize 50000): 7737.3603515625
+Distance between old and new centers: 2262.61230469
+Cost at iter 20 (mbsize 50000): 8004.59521484375
+Cost at iter 30 (mbsize 50000): 7823.33203125
+Cost at iter 40 (mbsize 50000): 8069.8544921875
+Cost at iter 49 (mbsize 50000): 7945.421875
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 9255.08789062->7737.36035156, in 100500ms
+Cost at iter 0 (mbsize 50000): 15257.927734375
+Cost at iter 10 (mbsize 50000): 6781.45703125
+Distance between old and new centers: 1297.64123535
+Cost at iter 20 (mbsize 50000): 6791.0517578125
+Cost at iter 30 (mbsize 50000): 6783.59765625
+Cost at iter 40 (mbsize 50000): 6776.5009765625
+Distance between old and new centers: 653.041015625
+Cost at iter 49 (mbsize 50000): 6777.84521484375
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 15257.9277344->6776.50097656, in 95434.1ms

@@ -1,0 +1,24 @@
+nohup: ignoring input
+Parsed matrix of 68579/32738
+Cost at iter 0 (mbsize 5000): 58129128
+Cost at iter 17 (mbsize 5000): 35759536
+Distance between old and new centers: 716.494140625
+Cost at iter 34 (mbsize 5000): 35656128
+Distance between old and new centers: 147.022674561
+Cost at iter 49 (mbsize 5000): 35647796
+Distance between old and new centers: 104.251037598
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 58129128->35647796, in 264.111ms
+Cost at iter 0 (mbsize 5000): 4257.1748046875
+Cost at iter 17 (mbsize 5000): 2738.41845703125
+Distance between old and new centers: 765.333740234
+Cost at iter 34 (mbsize 5000): 2737.5185546875
+Distance between old and new centers: 161.325469971
+Cost at iter 49 (mbsize 5000): 2734.82666015625
+Distance between old and new centers: 240.910888672
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 4257.17480469->2734.82666016, in 447.409ms
+hvg: 25
+
+hvg: 25
+

@@ -1,0 +1,5 @@
+Cost at iter 0 (mbsize 50000): 19569264640
+Cost at iter 10 (mbsize 50000): 13237376000
+Distance between old and new centers: 6463.66064453
+Cost at iter 20 (mbsize 50000): 13109540864
+Distance between old and new centers: 3059.03515625

@@ -1,0 +1,58 @@
+Cost at iter 0 (mbsize 3000): 2539166208
+Cost at iter 10 (mbsize 3000): 1867422464
+Distance between old and new centers: 3341.74316406
+Cost at iter 20 (mbsize 3000): 1856382208
+Distance between old and new centers: 2662.53735352
+Cost at iter 30 (mbsize 3000): 1866682112
+Cost at iter 40 (mbsize 3000): 1873509888
+Cost at iter 49 (mbsize 3000): 1887710336
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 2539166208->1856382208, in 104097ms
+Cost at iter 0 (mbsize 3000): 401889.5
+Cost at iter 10 (mbsize 3000): 343859.125
+Distance between old and new centers: 3072.84277344
+Cost at iter 20 (mbsize 3000): 344279.28125
+Cost at iter 30 (mbsize 3000): 344365.65625
+Cost at iter 40 (mbsize 3000): 344055.875
+Cost at iter 49 (mbsize 3000): 344420.5
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 401889.5->343859.125, in 225721ms
+Cost at iter 0 (mbsize 3000): 86694.1796875
+Cost at iter 10 (mbsize 3000): 60355.8984375
+Distance between old and new centers: 2763.46240234
+Cost at iter 20 (mbsize 3000): 60542.04296875
+Cost at iter 30 (mbsize 3000): 60432.1640625
+Cost at iter 40 (mbsize 3000): 60539.6953125
+Cost at iter 49 (mbsize 3000): 60601.48046875
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 86694.1796875->60355.8984375, in 239784ms
+Cost at iter 0 (mbsize 3000): 337725.5
+Cost at iter 10 (mbsize 3000): 243838.375
+Distance between old and new centers: 2836.32958984
+Cost at iter 20 (mbsize 3000): 245627.125
+Cost at iter 30 (mbsize 3000): 246181.125
+Cost at iter 40 (mbsize 3000): 245549.171875
+Cost at iter 49 (mbsize 3000): 245505.96875
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 337725.5->243838.375, in 188858ms
+Cost at iter 0 (mbsize 3000): 415209.375
+Cost at iter 10 (mbsize 3000): 368359.75
+Distance between old and new centers: 1527.71887207
+Cost at iter 20 (mbsize 3000): 369900.75
+Cost at iter 30 (mbsize 3000): 370493.78125
+Cost at iter 40 (mbsize 3000): 370110.15625
+Cost at iter 49 (mbsize 3000): 370008.8125
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 415209.375->368359.75, in 115738ms
+Cost at iter 0 (mbsize 3000): 514781.1875
+Cost at iter 10 (mbsize 3000): 343301.65625
+Distance between old and new centers: 2571.80908203
+Cost at iter 20 (mbsize 3000): 339042.375
+Distance between old and new centers: 2494.55566406
+Cost at iter 30 (mbsize 3000): 334566.0625
+Distance between old and new centers: 2000.1015625
+Cost at iter 40 (mbsize 3000): 336683.625
+Cost at iter 49 (mbsize 3000): 333493.6875
+Distance between old and new centers: 2756.04589844
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 514781.1875->333493.6875, in 133666ms
