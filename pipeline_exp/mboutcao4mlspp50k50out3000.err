@@ -48,3 +48,8 @@ Cost at iter 10 (mbsize 3000): 584774.25
 Distance between old and new centers: 7330.94433594
 Cost at iter 20 (mbsize 3000): 564058.125
 Distance between old and new centers: 5864.04443359
+Cost at iter 30 (mbsize 3000): 567387.3125
+Cost at iter 40 (mbsize 3000): 605287.5
+Cost at iter 49 (mbsize 3000): 566309.5
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 1249534->564058.125, in 5.83195e+06ms
