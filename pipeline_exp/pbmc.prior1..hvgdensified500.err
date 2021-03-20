@@ -56,3 +56,31 @@ clustering for 50 rounds, from cost 13836.6630859->10701.1328125, in 8806.9ms
 Cost at iter 0 (mbsize 10000): 13723.4375
 Cost at iter 10 (mbsize 10000): 14321.0498046875
 Cost at iter 20 (mbsize 10000): 14087.4287109375
+Cost at iter 30 (mbsize 10000): 14578.94140625
+Cost at iter 40 (mbsize 10000): 14478.4326171875
+Cost at iter 49 (mbsize 10000): 14513.453125
+Maximum iterations [50] reached
+clustering for 50 rounds, from cost 13723.4375->13723.4375, in 912054ms
+	Command being timed: "python3 pipeline.py -M3 --densify -M4 -M5 -M7 -M9 --dataset pbmc --nthreads 20 --maxiter 50 --mbsize 10000 --prior 1. --hvg 500 --lspp 0"
+	User time (seconds): 2187.20
+	System time (seconds): 53.29
+	Percent of CPU this job got: 227%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 16:23.07
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1398496
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 6034403
+	Voluntary context switches: 4045
+	Involuntary context switches: 6037
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 96
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
