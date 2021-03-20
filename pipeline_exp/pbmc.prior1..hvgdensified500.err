@@ -54,3 +54,5 @@ Cost at iter 49 (mbsize 10000): 10787.5517578125
 Maximum iterations [50] reached
 clustering for 50 rounds, from cost 13836.6630859->10701.1328125, in 8024.74ms
 Cost at iter 0 (mbsize 10000): 13723.4375
+Cost at iter 10 (mbsize 10000): 14321.0498046875
+Cost at iter 20 (mbsize 10000): 14087.4287109375

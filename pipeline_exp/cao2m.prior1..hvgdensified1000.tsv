@@ -1,0 +1,6 @@
+#args=Namespace(nthreads=20, maxiter=50, ncheckins=5, lspp=0, n_local_trials=1, mbsize=10000, msr=['3', '4', '5', '7', '9'], prior=1.0, dataset='cao2m', hvg=1000, densify=True, topnorm=False, k=25)
+#pref:54524022.
+#cao2m	HVGene1000	88.04123139381409
+#cao2m	DensifyHVG1000	5.558351278305054
+#Dataset	k	numberHVG	Measure	Prior	LocalsearchRounds	NumLocalTrials	Densified	MinibatchSize	KmeansplusplusTime	KmeansplusplusCost	KMeansplusplusARI	KMeansTime	KMeansCost	KMeansARI
+cao2m	25	1000	SQRL2	1.0	0	1	True	10000	9.848194122314453	3807374592.0	9.207809157261039	29.05731225013733	2277432224.665161	-1.0662979850684866

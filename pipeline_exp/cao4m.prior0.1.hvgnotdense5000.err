@@ -26,3 +26,5 @@ Cost at iter 10 (mbsize 10000): 483625.875
 Distance between old and new centers: 2032.06774902
 Cost at iter 20 (mbsize 10000): 483310.75
 Distance between old and new centers: 588.15057373
+Cost at iter 30 (mbsize 10000): 482758.96875
+Distance between old and new centers: 515.529296875
