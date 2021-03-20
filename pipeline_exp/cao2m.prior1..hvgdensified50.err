@@ -1,7 +1,3 @@
-/home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/scikit_learn-0.24.1-py3.9-linux-x86_64.egg/sklearn/metrics/cluster/_supervised.py:389: RuntimeWarning: overflow encountered in long_scalars
-  return 2. * (tp * tn - fn * fp) / ((tp + fn) * (fn + tn) +
-/home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/scikit_learn-0.24.1-py3.9-linux-x86_64.egg/sklearn/metrics/cluster/_supervised.py:390: RuntimeWarning: overflow encountered in long_scalars
-  (tp + fp) * (fp + tn))
 Cost at iter 0 (mbsize 10000): 1433145329
 Cost at iter 10 (mbsize 10000): 927594777.97067224979
 Distance between old and new centers: 1107.09033203
@@ -11,31 +7,27 @@ Cost at iter 40 (mbsize 10000): 927978037.36231851578
 Cost at iter 49 (mbsize 10000): 919366376.20484018326
 Distance between old and new centers: 1574.08154297
 Maximum iterations [50] reached
-clustering for 50 rounds, from cost 1433145329->919366376.205, in 2958.35ms
-/home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/scikit_learn-0.24.1-py3.9-linux-x86_64.egg/sklearn/metrics/cluster/_supervised.py:389: RuntimeWarning: overflow encountered in long_scalars
-  return 2. * (tp * tn - fn * fp) / ((tp + fn) * (fn + tn) +
-/home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/scikit_learn-0.24.1-py3.9-linux-x86_64.egg/sklearn/metrics/cluster/_supervised.py:390: RuntimeWarning: overflow encountered in long_scalars
-  (tp + fp) * (fp + tn))
+clustering for 50 rounds, from cost 1433145329->919366376.205, in 2752.13ms
 terminate called after throwing an instance of 'std::runtime_error'
 terminate called recursively
 Command terminated by signal 6
 	Command being timed: "python3 pipeline.py -M3 --densify -M4 -M5 -M7 -M9 --dataset cao2m --nthreads 20 --maxiter 50 --mbsize 10000 --prior 1. --hvg 50 --lspp 0"
-	User time (seconds): 164.21
-	System time (seconds): 120.06
-	Percent of CPU this job got: 216%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:11.07
+	User time (seconds): 165.90
+	System time (seconds): 100.36
+	Percent of CPU this job got: 238%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:51.42
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 51463488
+	Maximum resident set size (kbytes): 51482540
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 45005517
-	Voluntary context switches: 50511
-	Involuntary context switches: 1077
+	Minor (reclaiming a frame) page faults: 37167881
+	Voluntary context switches: 63138
+	Involuntary context switches: 773
 	Swaps: 0
-	File system inputs: 8
+	File system inputs: 0
 	File system outputs: 16
 	Socket messages sent: 0
 	Socket messages received: 0

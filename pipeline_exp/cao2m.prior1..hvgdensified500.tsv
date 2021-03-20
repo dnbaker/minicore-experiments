@@ -1,6 +1,6 @@
-#args=Namespace(nthreads=20, maxiter=50, ncheckins=5, lspp=0, n_local_trials=1, mbsize=10000, msr=['3', '4', '5', '7', '9'], prior=1.0, dataset='cao2m', hvg=500, densify=True, topnorm=False, k=25)
-#pref:74899396.
-#cao2m	HVGene500	79.59128546714783
-#cao2m	DensifyHVG500	2.781050682067871
+#args=Namespace(dataset='cao2m', densify=True, hvg=500, k=25, lspp=0, maxiter=50, mbsize=10000, msr=['3', '4', '5', '7', '9'], n_local_trials=1, ncheckins=5, nthreads=20, prior=1.0, topnorm=False)
+#pref:52676304.
+#cao2m	HVGene500	73.45877265930176
+#cao2m	DensifyHVG500	2.5451035499572754
 #Dataset	k	numberHVG	Measure	Prior	LocalsearchRounds	NumLocalTrials	Densified	MinibatchSize	KmeansplusplusTime	KmeansplusplusCost	KMeansplusplusARI	KMeansTime	KMeansCost	KMeansARI
-cao2m	25	500	SQRL2	1.0	0	1	True	10000	11.728832244873047	2873984000.0	4.422421613807466	20.213615894317627	1933699485.4352531	0.04163231661716221
+cao2m	25	500	SQRL2	1.0	0	1	True	10000	11.571895599365234	2873984000.0	0.007439551265120133	17.126388788223267	1933699485.4352531	0.024297194175898564
