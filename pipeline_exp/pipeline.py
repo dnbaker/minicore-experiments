@@ -59,7 +59,8 @@ for msr in measures:
         init = mc.kmeanspp(dataset, msr=msr, k=args.k, lspp=args.lspp, n_local_trials=args.n_local_trials, prior=args.prior)
     td = time() - t
     initcost = np.sum(init[2])
-    kmpp_ari = ARI(init[1].astype(np.int32), truelabels)
+    truelabels = truelabels.astype(np.uint64)
+    kmpp_ari = ARI(init[1].astype(np.int64), truelabels)
     print(f"{args.dataset}\t{args.k}\t{args.hvg}\t{mc.meas2str(msr)}\t{args.prior}\t{args.lspp}\t{args.n_local_trials}\t{args.densify}\t{args.mbsize}\t{td}\t{initcost}\t{kmpp_ari}", end="", flush=True)
     t = time()
     if isinstance(dataset, sp.csr_matrix) or isinstance(dataset, mc.csr_tuple):
@@ -67,5 +68,5 @@ for msr in measures:
     else:
         cout = mc.hcluster(dataset, init[0], msr=msr, maxiter=args.maxiter, ncheckins=args.ncheckins, prior=args.prior, mbsize=args.mbsize)
     td = time() - t
-    kmeans_ari = ARI(cout['asn'], truelabels)
+    kmeans_ari = ARI(cout['asn'].astype(np.uint64), truelabels)
     print(f"\t{td}\t{cout['finalcost']}\t{kmeans_ari}", flush=True)

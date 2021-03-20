@@ -1,24 +1,33 @@
-nohup: ignoring input
-Parsed matrix of 68579/32738
-Cost at iter 0 (mbsize 5000): 58129128
-Cost at iter 17 (mbsize 5000): 35759536
-Distance between old and new centers: 716.494140625
-Cost at iter 34 (mbsize 5000): 35656128
-Distance between old and new centers: 147.022674561
-Cost at iter 49 (mbsize 5000): 35647796
-Distance between old and new centers: 104.251037598
-Maximum iterations [50] reached
-clustering for 50 rounds, from cost 58129128->35647796, in 264.111ms
-Cost at iter 0 (mbsize 5000): 4257.1748046875
-Cost at iter 17 (mbsize 5000): 2738.41845703125
-Distance between old and new centers: 765.333740234
-Cost at iter 34 (mbsize 5000): 2737.5185546875
-Distance between old and new centers: 161.325469971
-Cost at iter 49 (mbsize 5000): 2734.82666015625
-Distance between old and new centers: 240.910888672
-Maximum iterations [50] reached
-clustering for 50 rounds, from cost 4257.17480469->2734.82666016, in 447.409ms
-hvg: 25
-
-hvg: 25
-
+nc: 32738
+Center: 32738, 710 nnz
+Center: 32738, 461 nnz
+Center: 32738, 482 nnz
+Cost at iter 0 (mbsize 500): 275.9063720703125
+Traceback (most recent call last):
+  File "pipeline.py", line 67, in <module>
+    cout = mc.hcluster(mc.CSparseMatrix(dataset), init[0], msr=msr, maxiter=args.maxiter, ncheckins=args.ncheckins, prior=args.prior, mbsize=args.mbsize)
+RuntimeError: lhs size is not correct. function: void minicore::clustering::set_center(CtrT&, const minicore::util::CSparseVector<VT, IT>&) [with CtrT = blaze::CompressedVector<float, true>; VT = const short unsigned int; IT = short unsigned int]lhs: 5416, rhs: 32738
+Command exited with non-zero status 1
+	Command being timed: "python3 pipeline.py -M0 -M3 -M5 -M7 --dataset pbmc --nthreads 20 --mbsize 500 -k3"
+	User time (seconds): 15.52
+	System time (seconds): 1.11
+	Percent of CPU this job got: 717%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.32
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 523060
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 188117
+	Voluntary context switches: 4447
+	Involuntary context switches: 271
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 24
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1

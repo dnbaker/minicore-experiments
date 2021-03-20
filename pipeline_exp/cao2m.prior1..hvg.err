@@ -1,0 +1,6 @@
+usage: pipeline.py [-h] [--nthreads NTHREADS] [--maxiter MAXITER]
+                   [--ncheckins NCHECKINS] [--lspp LSPP]
+                   [--n-local-trials N_LOCAL_TRIALS] [--mbsize MBSIZE]
+                   [--msr MSR] [--prior PRIOR] [--dataset {cao4m,cao2m,pbmc}]
+                   [--hvg HVG] [--densify] [--topnorm] [-k K]
+pipeline.py: error: argument --hvg: expected one argument
