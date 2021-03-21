@@ -53,8 +53,10 @@ if args.hvg > 0:
 print("#Dataset\tk\tnumberHVG\tMeasure\tPrior\tLocalsearchRounds\tNumLocalTrials\tDensified\tMinibatchSize\tKmeansplusplusTime\tKmeansplusplusCost\tKMeansplusplusARI\tKMeansTime\tKMeansCost\tKMeansARI")
 for msr in measures:
     t = time()
+    csd = None
     if isinstance(dataset, sp.csr_matrix) or isinstance(dataset, mc.csr_tuple):
-        init = mc.kmeanspp(mc.CSparseMatrix(dataset), k=args.k, msr=msr, lspp=args.lspp, n_local_trials=args.n_local_trials, prior=args.prior)
+        if csd is None: csd = mc.CSparseMatrix(data)
+        init = mc.kmeanspp(csd, k=args.k, msr=msr, lspp=args.lspp, n_local_trials=args.n_local_trials, prior=args.prior)
     else:
         init = mc.kmeanspp(dataset, msr=msr, k=args.k, lspp=args.lspp, n_local_trials=args.n_local_trials, prior=args.prior)
     td = time() - t
@@ -63,7 +65,7 @@ for msr in measures:
     print(f"{args.dataset}\t{args.k}\t{args.hvg}\t{mc.meas2str(msr)}\t{args.prior}\t{args.lspp}\t{args.n_local_trials}\t{args.densify}\t{args.mbsize}\t{td}\t{initcost}\t{kmpp_ari}", end="", flush=True)
     t = time()
     if isinstance(dataset, sp.csr_matrix) or isinstance(dataset, mc.csr_tuple):
-        cout = mc.hcluster(mc.CSparseMatrix(dataset), init[0], msr=msr, maxiter=args.maxiter, ncheckins=args.ncheckins, prior=args.prior, mbsize=args.mbsize)
+        cout = mc.hcluster(csd, init[0], msr=msr, maxiter=args.maxiter, ncheckins=args.ncheckins, prior=args.prior, mbsize=args.mbsize)
     else:
         cout = mc.hcluster(dataset, init[0], msr=msr, maxiter=args.maxiter, ncheckins=args.ncheckins, prior=args.prior, mbsize=args.mbsize)
     td = time() - t
