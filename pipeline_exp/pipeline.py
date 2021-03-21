@@ -43,7 +43,9 @@ dataset = exp_loads[args.dataset]()
 truelabels = labels[args.dataset]().astype(np.uint32)
 if args.hvg > 0:
     t = time()
+    print("Getting hvg", file=sys.stderr)
     hvdata, _, __ = mc.hvg(dataset, args.hvg, args.topnorm)
+    print("Got hvg", file=sys.stderr)
     print(f"#{args.dataset}\tHVGene{args.hvg}\t{time() - t}")
     if args.densify and isinstance(hvdata, sp.csr_matrix):
         t = time()
@@ -55,7 +57,7 @@ for msr in measures:
     t = time()
     csd = None
     if isinstance(dataset, sp.csr_matrix) or isinstance(dataset, mc.csr_tuple):
-        if csd is None: csd = mc.CSparseMatrix(data)
+        if csd is None: csd = mc.CSparseMatrix(dataset)
         init = mc.kmeanspp(csd, k=args.k, msr=msr, lspp=args.lspp, n_local_trials=args.n_local_trials, prior=args.prior)
     else:
         init = mc.kmeanspp(dataset, msr=msr, k=args.k, lspp=args.lspp, n_local_trials=args.n_local_trials, prior=args.prior)

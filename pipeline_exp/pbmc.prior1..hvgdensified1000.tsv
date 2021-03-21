@@ -1,0 +1,6 @@
+#args=Namespace(nthreads=20, maxiter=50, ncheckins=5, lspp=0, n_local_trials=1, mbsize=10000, msr=['3', '4', '5', '7', '9', '15'], prior=1.0, dataset='pbmc', hvg=1000, densify=True, topnorm=False, k=25)
+#pref:71792355.
+#pbmc	HVGene1000	2.934879779815674
+#pbmc	DensifyHVG1000	0.2298753261566162
+#Dataset	k	numberHVG	Measure	Prior	LocalsearchRounds	NumLocalTrials	Densified	MinibatchSize	KmeansplusplusTime	KmeansplusplusCost	KMeansplusplusARI	KMeansTime	KMeansCost	KMeansARI
+pbmc	25	1000	SQRL2	1.0	0	1	True	10000	1.2316255569458008	200602896.0	0.0904543884232255
