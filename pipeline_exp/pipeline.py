@@ -68,6 +68,7 @@ for msr in measures:
         cout = mc.hcluster(csd, init[0], msr=msr, maxiter=args.maxiter, ncheckins=args.ncheckins, prior=args.prior, mbsize=args.mbsize)
     else:
         cout = mc.hcluster(dataset, init[0], msr=msr, maxiter=args.maxiter, ncheckins=args.ncheckins, prior=args.prior, mbsize=args.mbsize)
+    print("Returned from clustering", file=sys.stderr)
     td = time() - t
     kmeans_ari = ARI(cout['asn'].astype(np.uint32), truelabels)
     print(f"\t{td}\t{cout['finalcost']}\t{kmeans_ari}", flush=True)
