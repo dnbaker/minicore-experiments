@@ -13,6 +13,7 @@ aa("--msr", "-M", default="MKL")
 aa("--prior", "-P", default=0.01, type=float)
 aa("--mbsize", type=int, default=10000)
 aa("--maxiter", type=int, default=10)
+aa("--ncheckins", type=int, default=2)
 
 args = ap.parse_args()
 prefix = args.prefix
@@ -34,6 +35,6 @@ print(f"kmeans++ with {args.nthreads} threads, k = {args.k} in {t2 - t2}s", file
 print("cost: " + str(np.sum(costs)))
 
 t1 = tt()
-output = mc.hcluster(csm, ctrs, mbsize=args.mbsize, prior=args.prior, msr=args.msr, maxiter=args.maxiter)
+output = mc.hcluster(csm, ctrs, mbsize=args.mbsize, prior=args.prior, msr=args.msr, maxiter=args.maxiter, ncheckins=args.ncheckins)
 t2 = tt()
 print(f"mbkmeans with {args.nthreads} threads, k = {args.k} in {t2 - t2}s", file=sys.stdout)
