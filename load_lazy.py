@@ -1,6 +1,6 @@
 import numpy as np
 
-def loadcao4m(path="4MEXP"):
+def loadcao4m(pref="4MEXP"):
     #pref = "/net/langmead-bigmem-ib.bluecrab.cluster/storage/dnb/data/10xdata/4MEXP/cao4m/"
     import minicore as mc
     dat = np.fromfile(f"{pref}.data.u16.npy", dtype=np.uint16)
