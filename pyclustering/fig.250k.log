@@ -1,0 +1,19 @@
+About to open /home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/pkg_resources/_vendor/pyparsing.py, ['gen_fig.py']
+About to open /home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/pyparsing.py, ['gen_fig.py']
+50000, 5, 5
+Ratio for 50000,5,5: 8.11684
+50000, 5, 25
+Ratio for 50000,5,25: 12.387
+50000, 5, 50
+Ratio for 50000,5,50: 20.6424
+50000, 50, 5
+Ratio for 50000,50,5: 16.8014
+50000, 50, 25
+Ratio for 50000,50,25: 98.8781
+50000, 50, 50
+Ratio for 50000,50,50: 211.171
+50000, 500, 5
+Ratio for 50000,500,5: 8.30281
+50000, 500, 25
+Ratio for 50000,500,25: 146.587
+50000, 500, 50

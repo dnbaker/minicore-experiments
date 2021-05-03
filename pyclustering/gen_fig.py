@@ -12,8 +12,10 @@ import argparse
 a = argparse.ArgumentParser()
 a.add_argument("-o", "--output", default="/dev/stdout")
 a.add_argument("-F", "--floating", action='store_true')
+a.add_argument("--add-sample-n", action='append')
 
 args = a.parse_args()
+samplens = list(map(int, args.add_sample_n))
 of = open(args.output, "w")
 
 ns = []
@@ -23,7 +25,7 @@ mctimes = []
 pctimes = []
 mccosts, pccosts = [], []
 print("#NumberSamples\tNumFeat\tK\tMCTime_s\tPCTime_s\tMCCost\tPCCost", file=of)
-for nsamples in [50000, 100, 10000]:
+for nsamples in [50000, 100, 10000] + samplens:
     for nfeat in [5, 50, 500, 5000]:
         for K in [5, 25, 50]:
             print(f"{nsamples}, {nfeat}, {K}", file=sys.stderr)
