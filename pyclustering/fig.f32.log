@@ -1,20 +1,19 @@
-nohup: ignoring input and appending output to 'nohup.out'
 About to open /home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/pkg_resources/_vendor/pyparsing.py, ['gen_fig.py']
 About to open /home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/pyparsing.py, ['gen_fig.py']
 50000, 5, 5
-Ratio for 50000,5,5: 5.96847
+Ratio for 50000,5,5: 1.89497
 50000, 5, 25
-Ratio for 50000,5,25: 13.9336
+Ratio for 50000,5,25: 5.37476
 50000, 5, 50
-Ratio for 50000,5,50: 20.1269
+Ratio for 50000,5,50: 3.79375
 50000, 50, 5
-Ratio for 50000,50,5: 11.0502
+Ratio for 50000,50,5: 1.96073
 50000, 50, 25
-Ratio for 50000,50,25: 53.1155
+Ratio for 50000,50,25: 7.62773
 50000, 50, 50
-Ratio for 50000,50,50: 105.221
+Ratio for 50000,50,50: 12.5997
 50000, 500, 5
-Ratio for 50000,500,5: 15.3862
+Ratio for 50000,500,5: 8.59076
 50000, 500, 25
-Ratio for 50000,500,25: 97.3251
+Ratio for 50000,500,25: 60.1264
 50000, 500, 50

@@ -11,6 +11,7 @@ mc.set_num_threads(1)
 import argparse
 a = argparse.ArgumentParser()
 a.add_argument("-o", "--output", default="/dev/stdout")
+a.add_argument("-F", "--floating", action='store_true')
 
 args = a.parse_args()
 of = open(args.output, "w")
@@ -27,6 +28,7 @@ for nsamples in [50000, 100, 10000]:
         for K in [5, 25, 50]:
             print(f"{nsamples}, {nfeat}, {K}", file=sys.stderr)
             data, labels = make_blobs(nsamples, nfeat)
+            if args.floating: data = data.astype(np.float32)
             s = TT()
             o = mc.kmeanspp(data, k=K, msr=2)
             st = TT()
