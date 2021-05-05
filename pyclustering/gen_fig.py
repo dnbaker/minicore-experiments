@@ -15,7 +15,7 @@ a.add_argument("-F", "--floating", action='store_true')
 a.add_argument("--add-sample-n", action='append')
 
 args = a.parse_args()
-samplens = list(map(int, args.add_sample_n))
+samplens = list(map(int, args.add_sample_n)) if args.add_sample_n else []
 of = open(args.output, "w")
 
 ns = []
