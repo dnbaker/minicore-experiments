@@ -3,10 +3,11 @@ This repository contains experiments for `minicore: Fast scRNA-seq clustering wi
 
 
 ### Dependencies
-1. sklearn v0.12
-2. numpy v0.19
-3. scipy v1.5
-4. minicore v0.4
+1. sklearn
+2. numpy
+3. scipy
+4. minicore v0.3
+5. xz/lzma -- for decompressing data files
 
 ### Installing minicore
 To install minicore's Python bindings, clone [minicore recursively](https://github.com/dnbaker/minicore), change into the Python directory and run `python3 setup.py install`.
@@ -16,4 +17,4 @@ Because compilation can be somewhat slow, the build is parallelized by default w
 
 ### Setting up data
 
-Because these datasets are large, you will need to set up paths to the data on disk in order to run these experiments. The changes will be in the `load_*.py` files.
+A zenodo will be provided soon with a tarball of the datasets used in the paper. Decompress this file, and then run `export MINICORE_DATA=${PATH}`. This should enable `load_lazy.py` to load all these datasets easily.
