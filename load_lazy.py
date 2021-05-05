@@ -68,6 +68,18 @@ def getmat(name):
         return np.fromfile(f"{PREFIX}/Dense/cao2m.2058652.500.kl.nmf.float32", dtype=np.float32).reshape((2058652, 500))
     elif name == 'cao4m':
         ret = loadcao4m()
+    elif name == 'pbmcd':
+        import load_dense
+        return load_dense.pbmcd
+    elif name == 'cao4d':
+        import load_dense
+        return load_dense.cao4d
+    elif name == 'cao2d':
+        import load_dense
+        return load_dense.cao2d
+    elif name == 'cao2dkl':
+        import load_dense
+        return load_dense.cao2d_klnmf
     else:
         raise RuntimeError("Not found: name")
     return ret

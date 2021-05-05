@@ -87,19 +87,17 @@ kmpp_plot <- function(m, distance='SQRL2',
     ggplot(aes(x=k, y=value, color=name)) +
       geom_line() + geom_point() + theme_bw() +
       theme(legend.title = element_blank()) +
-      labs(y=measure_pretty, title=paste('PBMC', title_suffix) +
-        scale_shape_manual(values=c(18,20,22))
-      )
+      labs(y=measure_pretty, title=paste('PBMC', title_suffix))
   pl2 <- mfilt %>% filter(dataset == 'Cao2m') %>%
     ggplot(aes(x=k, y=value, color=name)) +
       geom_line() + geom_point() + theme_bw() +
       theme(legend.title = element_blank()) +
-      labs(y=measure_pretty, title=paste('Cao2m', title_suffix) + scale_shape_manual(values=c(18,20,22)))
+      labs(y=measure_pretty, title=paste('Cao2m', title_suffix))
   pl3 <- mfilt %>% filter(dataset == 'Cao4m') %>%
     ggplot(aes(x=k, y=value, color=name)) +
       geom_line() + geom_point() + theme_bw() +
       theme(legend.title = element_blank()) +
-      labs(y=measure_pretty, title=paste('Cao4m', title_suffix) + scale_shape_manual(values=c(18,20,22)))
+      labs(y=measure_pretty, title=paste('Cao4m', title_suffix))
   if(logy) {
     pl1 <- pl1 + scale_y_continuous(trans='log10')
     pl2 <- pl2 + scale_y_continuous(trans='log10')

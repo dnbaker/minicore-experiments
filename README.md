@@ -7,7 +7,6 @@ This repository contains experiments for `minicore: Fast scRNA-seq clustering wi
 2. numpy
 3. scipy
 4. minicore v0.3
-5. xz/lzma -- for decompressing data files
 
 ### Installing minicore
 To install minicore's Python bindings, clone [minicore recursively](https://github.com/dnbaker/minicore), change into the Python directory and run `python3 setup.py install`.
