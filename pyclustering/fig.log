@@ -1,0 +1,75 @@
+nohup: ignoring input and appending output to 'nohup.out'
+About to open /home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/pkg_resources/_vendor/pyparsing.py, ['gen_fig.py']
+About to open /home-1/dbaker49@jhu.edu/miniconda3/envs/mcdemo/lib/python3.9/site-packages/pyparsing.py, ['gen_fig.py']
+50000, 5, 5
+Ratio for 50000,5,5: 5.96847
+50000, 5, 25
+Ratio for 50000,5,25: 13.9336
+50000, 5, 50
+Ratio for 50000,5,50: 20.1269
+50000, 50, 5
+Ratio for 50000,50,5: 11.0502
+50000, 50, 25
+Ratio for 50000,50,25: 53.1155
+50000, 50, 50
+Ratio for 50000,50,50: 105.221
+50000, 500, 5
+Ratio for 50000,500,5: 15.3862
+50000, 500, 25
+Ratio for 50000,500,25: 97.3251
+50000, 500, 50
+Ratio for 50000,500,50: 203.78
+50000, 5000, 5
+Ratio for 50000,5000,5: 16.4498
+50000, 5000, 25
+Ratio for 50000,5000,25: 108.656
+50000, 5000, 50
+Ratio for 50000,5000,50: 226.629
+100, 5, 5
+Ratio for 100,5,5: 35.4576
+100, 5, 25
+Ratio for 100,5,25: 28.426
+100, 5, 50
+Ratio for 100,5,50: 60.1253
+100, 50, 5
+Ratio for 100,50,5: 7.67143
+100, 50, 25
+Ratio for 100,50,25: 40.1083
+100, 50, 50
+Ratio for 100,50,50: 81.7905
+100, 500, 5
+Ratio for 100,500,5: 8.81797
+100, 500, 25
+Ratio for 100,500,25: 54.6074
+100, 500, 50
+Ratio for 100,500,50: 114.617
+100, 5000, 5
+Ratio for 100,5000,5: 10.124
+100, 5000, 25
+Ratio for 100,5000,25: 56.1003
+100, 5000, 50
+Ratio for 100,5000,50: 149.862
+10000, 5, 5
+Ratio for 10000,5,5: 4.82022
+10000, 5, 25
+Ratio for 10000,5,25: 13.4377
+10000, 5, 50
+Ratio for 10000,5,50: 20.7324
+10000, 50, 5
+Ratio for 10000,50,5: 7.544
+10000, 50, 25
+Ratio for 10000,50,25: 26.3552
+10000, 50, 50
+Ratio for 10000,50,50: 45.4436
+10000, 500, 5
+Ratio for 10000,500,5: 16.497
+10000, 500, 25
+Ratio for 10000,500,25: 104.5
+10000, 500, 50
+Ratio for 10000,500,50: 217.568
+10000, 5000, 5
+Ratio for 10000,5000,5: 16.4725
+10000, 5000, 25
+Ratio for 10000,5000,25: 108.132
+10000, 5000, 50
+Ratio for 10000,5000,50: 225.159
