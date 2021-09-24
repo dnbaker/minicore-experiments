@@ -8,7 +8,7 @@ import sys
 PREFIX=os.environ.get("MINICORE_DATA", "")
 
 if not PREFIX:
-    print("MINICORE_DATA must be set for data loading; data avaiable at zenodo [link to be inserted when ready]", file=sys.stderr)
+    print("MINICORE_DATA must be set for data loading; data available at https://zenodo.org/record/4738365. Download, decompress, and set MINICORE_DATA to the path.", file=sys.stderr)
     raise ImportError()
 
 
