@@ -18,4 +18,6 @@ Because compilation can be somewhat slow, the build is parallelized by default w
 ### Setting up data
 
 Data can be downloaded in compressed CSR-format [here](https://doi.org/10.5281/zenodo.4738365).
-Download the datasets, decompress the individual tar-balls, and then `export MINICORE_DATA=${PATH}`. At this point, `load_lazy.py` should load the datasets correctly, and you will be able to perform the experiments in this repository.
+For simplicity, simply run this [download script](https://raw.githubusercontent.com/dnbaker/minicore-experiments/release/download.sh),
+which will download and decompress the tarballs necessary.
+It will prompt you to append `MINICORE_DATA` to your .bashrc; if you choose not to, you simply need to export `export MINICORE_DATA=${PATH}` to the path where you downloaded minicore\_data. Then you should be able to perform these experiments.
